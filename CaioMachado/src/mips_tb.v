@@ -1,0 +1,27 @@
+module testbench;
+    reg clk, reset;
+    wire [31:0] pc, instruction, alu_result, read_data;
+
+    MIPS mips (
+        .clk(clk),
+        .reset(reset),
+        .pc(pc),
+        .instruction(instruction),
+        .alu_result(alu_result),
+        .read_data(read_data)
+    );
+
+    initial begin
+        clk = 0;
+        reset = 1;
+        #10 reset = 0;
+        #100 $finish;
+    end
+
+    always #5 clk = ~clk;
+
+    initial begin
+        $dumpfile("waveform.vcd");
+        $dumpvars(0, testbench);
+    end
+endmodule
