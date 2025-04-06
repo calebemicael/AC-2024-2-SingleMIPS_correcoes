@@ -1,0 +1,4 @@
+20080002  // addi $t0, $zero, 2       | $t0 = 2
+20090003  // addi $t1, $zero, 3       | $t1 = 3
+01095020  // add  $t2, $t0, $t1       | $t2 = $t0 + $t1 (2 + 3 = 5)
+08000000  // j    0x00000000          | Salta para o início do programa (endereço 0x00000000)

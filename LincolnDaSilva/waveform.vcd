@@ -1,0 +1,335 @@
+$date
+	Fri Feb 07 13:56:16 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_mips_cpu $end
+$var wire 32 ! pcAtual [31:0] $end
+$var reg 1 " clk $end
+$var reg 1 # reset $end
+$scope module uut $end
+$var wire 1 " clk $end
+$var wire 1 # reset $end
+$var wire 2 $ pcSrc [1:0] $end
+$var wire 32 % pcAtual [31:0] $end
+$var wire 32 & jumpAddress [31:0] $end
+$var wire 32 ' instrucao [31:0] $end
+$var wire 32 ( branchAddress [31:0] $end
+$var wire 1 ) Zero $end
+$var wire 32 * WriteData [31:0] $end
+$var wire 1 + RegWrite $end
+$var wire 1 , RegDst $end
+$var wire 32 - ReadDataMem [31:0] $end
+$var wire 32 . ReadData2 [31:0] $end
+$var wire 32 / ReadData1 [31:0] $end
+$var wire 1 0 MemWrite $end
+$var wire 1 1 ALUSrc $end
+$var wire 32 2 ALUResult [31:0] $end
+$var wire 4 3 ALUOperation [3:0] $end
+$scope module alu $end
+$var wire 32 4 B [31:0] $end
+$var wire 1 ) Zero $end
+$var wire 4 5 ALUOperation [3:0] $end
+$var wire 32 6 A [31:0] $end
+$var reg 32 7 ALUResult [31:0] $end
+$upscope $end
+$scope module control $end
+$var wire 6 8 funct [5:0] $end
+$var wire 6 9 opcode [5:0] $end
+$var reg 4 : ALUOperation [3:0] $end
+$var reg 1 1 ALUSrc $end
+$var reg 1 0 MemWrite $end
+$var reg 1 , RegDst $end
+$var reg 1 + RegWrite $end
+$var reg 2 ; pcSrc [1:0] $end
+$upscope $end
+$scope module data_mem $end
+$var wire 1 0 MemWrite $end
+$var wire 32 < ReadData [31:0] $end
+$var wire 32 = addr [31:0] $end
+$var wire 1 " clk $end
+$var wire 32 > WriteData [31:0] $end
+$upscope $end
+$scope module fetch $end
+$var wire 32 ? branchAddress [31:0] $end
+$var wire 1 " clk $end
+$var wire 32 @ pcAtual [31:0] $end
+$var wire 2 A pcSrc [1:0] $end
+$var wire 1 # reset $end
+$var wire 32 B jumpAddress [31:0] $end
+$var wire 32 C instrucao [31:0] $end
+$var reg 32 D pc [31:0] $end
+$scope module mem_inst $end
+$var wire 32 E addr [31:0] $end
+$var wire 32 F instrucao [31:0] $end
+$var integer 32 G i [31:0] $end
+$upscope $end
+$upscope $end
+$scope module jump $end
+$var wire 26 H jumpAddr [25:0] $end
+$var wire 32 I pcAtual [31:0] $end
+$var wire 32 J jumpAddress [31:0] $end
+$upscope $end
+$scope module regs $end
+$var wire 32 K ReadData1 [31:0] $end
+$var wire 32 L ReadData2 [31:0] $end
+$var wire 5 M ReadRegister1 [4:0] $end
+$var wire 5 N ReadRegister2 [4:0] $end
+$var wire 1 + RegWrite $end
+$var wire 32 O WriteData [31:0] $end
+$var wire 5 P WriteRegister [4:0] $end
+$var wire 1 " clk $end
+$var integer 32 Q i [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b100000 Q
+b1000 P
+b0 O
+b1000 N
+b0 M
+b0 L
+b0 K
+b1000000000000000000100 J
+b0 I
+b10000000000000000001 H
+b100000000 G
+b100000000010000000000000000001 F
+b0 E
+b0 D
+b100000000010000000000000000001 C
+b1000000000000000000100 B
+b0 A
+b0 @
+b100 ?
+b0 >
+b0 =
+bx <
+b0 ;
+b0 :
+b1000 9
+b1 8
+b0 7
+b0 6
+b0 5
+b0 4
+b0 3
+b0 2
+01
+00
+b0 /
+b0 .
+bx -
+0,
+0+
+b0 *
+1)
+b100 (
+b100000000010000000000000000001 '
+b1000000000000000000100 &
+b0 %
+b0 $
+1#
+0"
+b0 !
+$end
+#5
+1"
+#10
+0"
+0#
+#15
+b1001 P
+b1001000000000000001000 &
+b1001000000000000001000 B
+b1001000000000000001000 J
+b10010000000000000010 H
+b10 8
+b1001 N
+b100000000010010000000000000010 '
+b100000000010010000000000000010 C
+b100000000010010000000000000010 F
+b1100 (
+b1100 ?
+b100 !
+b100 %
+b100 @
+b100 I
+b100 D
+b100 E
+1"
+#20
+0"
+#25
+b1010 P
+b10 3
+b10 5
+b10 :
+1,
+1+
+b100001001010100000010000000 &
+b100001001010100000010000000 B
+b100001001010100000010000000 J
+b1000010010101000000100000 H
+b100000 8
+b0 9
+b1000 M
+b1000010010101000000100000 '
+b1000010010101000000100000 C
+b1000010010101000000100000 F
+b10100000010001000 (
+b10100000010001000 ?
+b1000 !
+b1000 %
+b1000 @
+b1000 I
+b1000 D
+b1000 E
+1"
+#30
+0"
+#35
+bx *
+bx O
+0,
+11
+10
+0+
+b1010 P
+b1010000000000000000000 &
+b1010000000000000000000 B
+b1010000000000000000000 J
+b10100000000000000000 H
+b0 8
+b101011 9
+b1010 N
+b0 M
+b10101100000010100000000000000000 '
+b10101100000010100000000000000000 C
+b10101100000010100000000000000000 F
+b1100 (
+b1100 ?
+b1100 !
+b1100 %
+b1100 @
+b1100 I
+b1100 D
+b1100 E
+1"
+#40
+0"
+#45
+b0 3
+b0 5
+b0 :
+1,
+01
+00
+1+
+b0 P
+b0 &
+b0 B
+b0 J
+b0 H
+b0 9
+b0 N
+b0 *
+b0 O
+b0 '
+b0 C
+b0 F
+b0 -
+b0 <
+b10000 (
+b10000 ?
+b10000 !
+b10000 %
+b10000 @
+b10000 I
+b10000 D
+b10000 E
+1"
+#50
+0"
+#55
+b10100 (
+b10100 ?
+b10100 !
+b10100 %
+b10100 @
+b10100 I
+b10100 D
+b10100 E
+1"
+#60
+0"
+#65
+b11000 (
+b11000 ?
+b11000 !
+b11000 %
+b11000 @
+b11000 I
+b11000 D
+b11000 E
+1"
+#70
+0"
+#75
+b11100 (
+b11100 ?
+b11100 !
+b11100 %
+b11100 @
+b11100 I
+b11100 D
+b11100 E
+1"
+#80
+0"
+#85
+b100000 (
+b100000 ?
+b100000 !
+b100000 %
+b100000 @
+b100000 I
+b100000 D
+b100000 E
+1"
+#90
+0"
+#95
+b100100 (
+b100100 ?
+b100100 !
+b100100 %
+b100100 @
+b100100 I
+b100100 D
+b100100 E
+1"
+#100
+0"
+#105
+b101000 (
+b101000 ?
+b101000 !
+b101000 %
+b101000 @
+b101000 I
+b101000 D
+b101000 E
+1"
+#110
+0"

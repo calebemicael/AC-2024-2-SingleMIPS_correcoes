@@ -1,0 +1,70 @@
+$date
+	Fri Feb 07 10:11:03 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module testbenchControleULA $end
+$var wire 4 ! ALUcontrol [3:0] $end
+$var reg 6 " funct [5:0] $end
+$var reg 2 # opALU [1:0] $end
+$scope module uut $end
+$var wire 6 $ funct [5:0] $end
+$var wire 2 % opALU [1:0] $end
+$var reg 4 & ALUcontrol [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b10 &
+b0 %
+b0 $
+b0 #
+b0 "
+b10 !
+$end
+#10000
+b110 !
+b110 &
+b1 #
+b1 %
+#20000
+b10 !
+b10 &
+b100000 "
+b100000 $
+b10 #
+b10 %
+#30000
+b110 !
+b110 &
+b100010 "
+b100010 $
+#40000
+b0 !
+b0 &
+b100100 "
+b100100 $
+#50000
+b1 !
+b1 &
+b100101 "
+b100101 $
+#60000
+b111 !
+b111 &
+b101010 "
+b101010 $
+#70000
+b0 !
+b0 &
+b0 "
+b0 $
+#110000

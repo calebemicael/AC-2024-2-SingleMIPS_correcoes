@@ -1,0 +1,38 @@
+MAKEFILE:
+    O makefile está configurado para execução no Linux
+    Caso use Windows, modifique:
+            clean:
+	            del $(EXEC) $(VCD) 2> NUL
+
+Instruções:
+
+    addi $t0, $zero, 10 
+        Hexadecimal -> 0x2008000A
+        Binário -> 001000 00000 01000 0000000000001010
+
+    addi $t1, $zero, 12 
+        Hexadecimal -> 0x2009000C
+        Binário -> 001000 00000 01001 0000000000001100
+
+    sub $t2, $t1, $t0 
+        Hexadecimal: 0x01285022
+        Binário: 000000 01001 01000 01010 00000 100010
+    
+    sw $t2, 0($zero) 
+        Hexadecimal: 0xAC0A0000
+        Binário: 101011 00000 01010 0000000000000000
+
+    while:
+        beq $t0, $t1, saida 
+            Hexadecimal: 0x1109000C
+            Binário: 000100 01000 01001 0000000000001100
+        
+        addi $t0, $t0, 1 
+            Hexadecimal: 0x21080001
+            Binário: 001000 01000 01000 0000000000000001
+        
+        j while 
+            Hexadecimal: 0x08000004
+            Binário: 000010 00000000000000000000000100
+
+

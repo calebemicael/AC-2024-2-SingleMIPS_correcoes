@@ -1,0 +1,53 @@
+[*]
+[*] GTKWave Analyzer v3.3.121 (w)1999-2024 BSI
+[*] Sun Feb 16 23:34:47 2025
+[*]
+[dumpfile] "/home/josegabriel/Documents/Ufs/2024.2/Arquitetura/Trabalho3/MIPS.vcd"
+[dumpfile_mtime] "Sun Feb 16 23:34:26 2025"
+[dumpfile_size] 41575
+[savefile] "/home/josegabriel/Documents/Ufs/2024.2/Arquitetura/Trabalho3/gtkconfig.gtkw"
+[timestart] 0
+[size] 1920 1001
+[pos] -1 -1
+*0.000000 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] Simulation.
+[treeopen] Simulation.processor.
+[sst_width] 273
+[signals_width] 190
+[sst_expanded] 1
+[sst_vpaned_height] 279
+@22
+Simulation.processor.registers.\registers[0][31:0]
+Simulation.processor.registers.\registers[1][31:0]
+Simulation.processor.registers.\registers[2][31:0]
+Simulation.processor.registers.\registers[3][31:0]
+Simulation.processor.registers.\registers[4][31:0]
+Simulation.processor.registers.\registers[5][31:0]
+Simulation.processor.registers.\registers[6][31:0]
+Simulation.processor.registers.\registers[7][31:0]
+Simulation.processor.registers.\registers[8][31:0]
+Simulation.processor.registers.\registers[9][31:0]
+Simulation.processor.registers.\registers[10][31:0]
+Simulation.processor.registers.\registers[11][31:0]
+Simulation.processor.registers.\registers[12][31:0]
+Simulation.processor.registers.\registers[13][31:0]
+Simulation.processor.registers.\registers[14][31:0]
+Simulation.processor.registers.\registers[15][31:0]
+Simulation.processor.registers.\registers[16][31:0]
+Simulation.processor.registers.\registers[17][31:0]
+Simulation.processor.registers.\registers[18][31:0]
+Simulation.processor.registers.\registers[19][31:0]
+Simulation.processor.registers.\registers[20][31:0]
+Simulation.processor.registers.\registers[21][31:0]
+Simulation.processor.registers.\registers[22][31:0]
+Simulation.processor.registers.\registers[23][31:0]
+Simulation.processor.registers.\registers[24][31:0]
+Simulation.processor.registers.\registers[25][31:0]
+Simulation.processor.registers.\registers[26][31:0]
+Simulation.processor.registers.\registers[27][31:0]
+Simulation.processor.registers.\registers[28][31:0]
+Simulation.processor.registers.\registers[29][31:0]
+Simulation.processor.registers.\registers[30][31:0]
+Simulation.processor.registers.\registers[31][31:0]
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,0 +1,3033 @@
+$date
+	Sat Feb 08 22:52:32 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module simulacao $end
+$scope module mips $end
+$var wire 1 ! clk $end
+$var wire 1 " reset $end
+$var wire 1 # zero $end
+$var wire 5 $ write_register [4:0] $end
+$var wire 32 % write_data [31:0] $end
+$var wire 32 & sign_extended [31:0] $end
+$var wire 32 ' shift_left_result [31:0] $end
+$var wire 28 ( shift_left_jump_result [27:0] $end
+$var wire 1 ) reg_write $end
+$var wire 1 * reg_dst $end
+$var wire 32 + read_data_2 [31:0] $end
+$var wire 32 , read_data_1 [31:0] $end
+$var wire 32 - read_data [31:0] $end
+$var wire 32 . pc_incrementado_output [31:0] $end
+$var wire 1 / memto_reg $end
+$var wire 1 0 mem_write $end
+$var wire 1 1 mem_read $end
+$var wire 32 2 jump_result [31:0] $end
+$var wire 32 3 jump_adress [31:0] $end
+$var wire 1 4 jump $end
+$var wire 32 5 instrucao [31:0] $end
+$var wire 32 6 branch_result [31:0] $end
+$var wire 1 7 branch_and_zero_result $end
+$var wire 32 8 alu_sum_result [31:0] $end
+$var wire 32 9 alu_result_adress [31:0] $end
+$var wire 4 : alu_operation [3:0] $end
+$var wire 2 ; alu_op [1:0] $end
+$var wire 1 < alu_Src $end
+$var wire 32 = aluSrc_result [31:0] $end
+$scope module adder_32 $end
+$var wire 32 > sum [31:0] $end
+$var wire 32 ? b [31:0] $end
+$var wire 32 @ a [31:0] $end
+$upscope $end
+$scope module alu $end
+$var wire 1 # Zero $end
+$var wire 32 A B [31:0] $end
+$var wire 4 B ALUOperation [3:0] $end
+$var wire 32 C A [31:0] $end
+$var reg 32 D ALUResult [31:0] $end
+$upscope $end
+$scope module alu_control $end
+$var wire 1 E aux1 $end
+$var wire 1 F aux2 $end
+$var wire 1 G aux3 $end
+$var wire 6 H instruction [5:0] $end
+$var wire 4 I ALUOperation [3:0] $end
+$var wire 2 J ALUOp [1:0] $end
+$upscope $end
+$scope module concat $end
+$var wire 4 K B [3:0] $end
+$var wire 32 L out [31:0] $end
+$var wire 28 M A [27:0] $end
+$upscope $end
+$scope module control $end
+$var wire 1 < ALUSrc $end
+$var wire 1 7 Branch_and_zero_result $end
+$var wire 1 1 MemRead $end
+$var wire 1 0 MemWrite $end
+$var wire 1 / MemtoReg $end
+$var wire 6 N OPcode [5:0] $end
+$var wire 1 * RegDst $end
+$var wire 1 ) RegWrite $end
+$var wire 1 O beq $end
+$var wire 1 P lw $end
+$var wire 1 Q r_format $end
+$var wire 1 R sw $end
+$var wire 1 # zero $end
+$var wire 1 4 Jump $end
+$var wire 2 S ALUOp [1:0] $end
+$upscope $end
+$scope module data_memory $end
+$var wire 1 ! Clk $end
+$var wire 1 1 MemRead $end
+$var wire 1 0 MemWrite $end
+$var wire 32 T address [31:0] $end
+$var wire 32 U writeData [31:0] $end
+$var wire 32 V readData [31:0] $end
+$var integer 32 W i [31:0] $end
+$upscope $end
+$scope module extensor_bits $end
+$var wire 16 X in [15:0] $end
+$var wire 32 Y out [31:0] $end
+$upscope $end
+$scope module fetch_unit $end
+$var wire 1 ! clk $end
+$var wire 1 " reset $end
+$var wire 32 Z instrucao [31:0] $end
+$var wire 32 [ PcIncrementadoOutput [31:0] $end
+$var wire 32 \ BranchResult [31:0] $end
+$var reg 32 ] pc [31:0] $end
+$scope module memoria $end
+$var wire 32 ^ addr [31:0] $end
+$var wire 32 _ instrucao [31:0] $end
+$var integer 32 ` i [31:0] $end
+$upscope $end
+$scope module somador $end
+$var wire 32 a in [31:0] $end
+$var wire 32 b out [31:0] $end
+$upscope $end
+$upscope $end
+$scope module mux_aluSrc $end
+$var wire 1 < ALUSrc $end
+$var wire 32 c SignExtend [31:0] $end
+$var wire 32 d out [31:0] $end
+$var wire 32 e ReadData2 [31:0] $end
+$upscope $end
+$scope module mux_beq $end
+$var wire 32 f AddResult [31:0] $end
+$var wire 32 g AluResult [31:0] $end
+$var wire 1 7 seletor $end
+$var wire 32 h out [31:0] $end
+$upscope $end
+$scope module mux_jump $end
+$var wire 1 4 Jump $end
+$var wire 32 i JumpAdress [31:0] $end
+$var wire 32 j muxAnterior [31:0] $end
+$var wire 32 k out [31:0] $end
+$upscope $end
+$scope module mux_memtoReg $end
+$var wire 32 l AluResult [31:0] $end
+$var wire 1 / MemtoReg $end
+$var wire 32 m ReadData [31:0] $end
+$var wire 32 n out [31:0] $end
+$upscope $end
+$scope module mux_regDst $end
+$var wire 1 * RegDst $end
+$var wire 5 o in_1 [4:0] $end
+$var wire 5 p in_2 [4:0] $end
+$var wire 5 q out [4:0] $end
+$upscope $end
+$scope module registradores $end
+$var wire 32 r ReadData1 [31:0] $end
+$var wire 32 s ReadData2 [31:0] $end
+$var wire 5 t ReadRegister1 [4:0] $end
+$var wire 5 u ReadRegister2 [4:0] $end
+$var wire 1 ) RegWrite $end
+$var wire 32 v WriteData [31:0] $end
+$var wire 5 w WriteRegister [4:0] $end
+$var wire 1 ! clk $end
+$var integer 32 x i [31:0] $end
+$upscope $end
+$scope module shift_left $end
+$var wire 32 y in [31:0] $end
+$var wire 32 z out [31:0] $end
+$upscope $end
+$scope module shift_left_jump $end
+$var wire 26 { in [25:0] $end
+$var wire 28 | out [27:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 } \registers[0] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 ~ \registers[1] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 !" \registers[2] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 "" \registers[3] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 #" \registers[4] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 $" \registers[5] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 %" \registers[6] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 &" \registers[7] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 '" \registers[8] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 (" \registers[9] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 )" \registers[10] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 *" \registers[11] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 +" \registers[12] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 ," \registers[13] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 -" \registers[14] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 ." \registers[15] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 /" \registers[16] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 0" \registers[17] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 1" \registers[18] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 2" \registers[19] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 3" \registers[20] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 4" \registers[21] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 5" \registers[22] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 6" \registers[23] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 7" \registers[24] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 8" \registers[25] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 9" \registers[26] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 :" \registers[27] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 ;" \registers[28] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 <" \registers[29] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 =" \registers[30] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module registradores $end
+$var reg 32 >" \registers[31] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 ?" \memory[0] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 @" \memory[1] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 A" \memory[2] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 B" \memory[3] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 C" \memory[4] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 D" \memory[5] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 E" \memory[6] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 F" \memory[7] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 G" \memory[8] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 H" \memory[9] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 I" \memory[10] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 J" \memory[11] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 K" \memory[12] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 L" \memory[13] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 M" \memory[14] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 N" \memory[15] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 O" \memory[16] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 P" \memory[17] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 Q" \memory[18] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 R" \memory[19] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 S" \memory[20] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 T" \memory[21] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 U" \memory[22] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 V" \memory[23] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 W" \memory[24] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 X" \memory[25] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 Y" \memory[26] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 Z" \memory[27] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 [" \memory[28] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 \" \memory[29] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 ]" \memory[30] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 ^" \memory[31] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 _" \memory[32] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 `" \memory[33] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 a" \memory[34] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 b" \memory[35] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 c" \memory[36] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 d" \memory[37] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 e" \memory[38] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 f" \memory[39] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 g" \memory[40] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 h" \memory[41] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 i" \memory[42] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 j" \memory[43] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 k" \memory[44] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 l" \memory[45] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 m" \memory[46] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 n" \memory[47] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 o" \memory[48] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 p" \memory[49] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 q" \memory[50] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 r" \memory[51] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 s" \memory[52] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 t" \memory[53] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 u" \memory[54] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 v" \memory[55] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 w" \memory[56] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 x" \memory[57] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 y" \memory[58] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 z" \memory[59] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 {" \memory[60] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 |" \memory[61] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 }" \memory[62] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 ~" \memory[63] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 !# \memory[64] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 "# \memory[65] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 ## \memory[66] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 $# \memory[67] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 %# \memory[68] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 &# \memory[69] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 '# \memory[70] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 (# \memory[71] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 )# \memory[72] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 *# \memory[73] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 +# \memory[74] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 ,# \memory[75] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 -# \memory[76] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 .# \memory[77] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 /# \memory[78] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 0# \memory[79] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 1# \memory[80] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 2# \memory[81] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 3# \memory[82] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 4# \memory[83] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 5# \memory[84] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 6# \memory[85] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 7# \memory[86] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 8# \memory[87] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 9# \memory[88] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 :# \memory[89] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 ;# \memory[90] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 <# \memory[91] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 =# \memory[92] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 ># \memory[93] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 ?# \memory[94] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 @# \memory[95] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 A# \memory[96] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 B# \memory[97] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 C# \memory[98] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 D# \memory[99] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 E# \memory[100] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 F# \memory[101] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 G# \memory[102] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 H# \memory[103] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 I# \memory[104] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 J# \memory[105] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 K# \memory[106] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 L# \memory[107] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 M# \memory[108] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 N# \memory[109] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 O# \memory[110] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 P# \memory[111] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 Q# \memory[112] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 R# \memory[113] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 S# \memory[114] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 T# \memory[115] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 U# \memory[116] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 V# \memory[117] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 W# \memory[118] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 X# \memory[119] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 Y# \memory[120] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 Z# \memory[121] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 [# \memory[122] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 \# \memory[123] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 ]# \memory[124] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 ^# \memory[125] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 _# \memory[126] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 `# \memory[127] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 a# \memory[128] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 b# \memory[129] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 c# \memory[130] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 d# \memory[131] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 e# \memory[132] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 f# \memory[133] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 g# \memory[134] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 h# \memory[135] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 i# \memory[136] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 j# \memory[137] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 k# \memory[138] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 l# \memory[139] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 m# \memory[140] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 n# \memory[141] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 o# \memory[142] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 p# \memory[143] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 q# \memory[144] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 r# \memory[145] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 s# \memory[146] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 t# \memory[147] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 u# \memory[148] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 v# \memory[149] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 w# \memory[150] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 x# \memory[151] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 y# \memory[152] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 z# \memory[153] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 {# \memory[154] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 |# \memory[155] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 }# \memory[156] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 ~# \memory[157] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 !$ \memory[158] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 "$ \memory[159] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 #$ \memory[160] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 $$ \memory[161] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 %$ \memory[162] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 &$ \memory[163] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 '$ \memory[164] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 ($ \memory[165] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 )$ \memory[166] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 *$ \memory[167] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 +$ \memory[168] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 ,$ \memory[169] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 -$ \memory[170] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 .$ \memory[171] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 /$ \memory[172] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 0$ \memory[173] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 1$ \memory[174] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 2$ \memory[175] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 3$ \memory[176] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 4$ \memory[177] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 5$ \memory[178] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 6$ \memory[179] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 7$ \memory[180] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 8$ \memory[181] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 9$ \memory[182] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 :$ \memory[183] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 ;$ \memory[184] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 <$ \memory[185] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 =$ \memory[186] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 >$ \memory[187] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 ?$ \memory[188] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 @$ \memory[189] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 A$ \memory[190] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 B$ \memory[191] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 C$ \memory[192] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 D$ \memory[193] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 E$ \memory[194] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 F$ \memory[195] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 G$ \memory[196] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 H$ \memory[197] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 I$ \memory[198] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 J$ \memory[199] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 K$ \memory[200] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 L$ \memory[201] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 M$ \memory[202] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 N$ \memory[203] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 O$ \memory[204] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 P$ \memory[205] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 Q$ \memory[206] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 R$ \memory[207] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 S$ \memory[208] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 T$ \memory[209] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 U$ \memory[210] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 V$ \memory[211] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 W$ \memory[212] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 X$ \memory[213] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 Y$ \memory[214] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 Z$ \memory[215] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 [$ \memory[216] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 \$ \memory[217] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 ]$ \memory[218] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 ^$ \memory[219] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 _$ \memory[220] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 `$ \memory[221] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 a$ \memory[222] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 b$ \memory[223] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 c$ \memory[224] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 d$ \memory[225] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 e$ \memory[226] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 f$ \memory[227] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 g$ \memory[228] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 h$ \memory[229] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 i$ \memory[230] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 j$ \memory[231] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 k$ \memory[232] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 l$ \memory[233] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 m$ \memory[234] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 n$ \memory[235] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 o$ \memory[236] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 p$ \memory[237] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 q$ \memory[238] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 r$ \memory[239] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 s$ \memory[240] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 t$ \memory[241] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 u$ \memory[242] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 v$ \memory[243] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 w$ \memory[244] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 x$ \memory[245] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 y$ \memory[246] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 z$ \memory[247] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 {$ \memory[248] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 |$ \memory[249] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 }$ \memory[250] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 ~$ \memory[251] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 !% \memory[252] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 "% \memory[253] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 #% \memory[254] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module mips $end
+$scope module data_memory $end
+$var reg 32 $% \memory[255] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 $%
+b0 #%
+b0 "%
+b0 !%
+b0 ~$
+b0 }$
+b0 |$
+b0 {$
+b0 z$
+b0 y$
+b0 x$
+b0 w$
+b0 v$
+b0 u$
+b0 t$
+b0 s$
+b0 r$
+b0 q$
+b0 p$
+b0 o$
+b0 n$
+b0 m$
+b0 l$
+b0 k$
+b0 j$
+b0 i$
+b0 h$
+b0 g$
+b0 f$
+b0 e$
+b0 d$
+b0 c$
+b0 b$
+b0 a$
+b0 `$
+b0 _$
+b0 ^$
+b0 ]$
+b0 \$
+b0 [$
+b0 Z$
+b0 Y$
+b0 X$
+b0 W$
+b0 V$
+b0 U$
+b0 T$
+b0 S$
+b0 R$
+b0 Q$
+b0 P$
+b0 O$
+b0 N$
+b0 M$
+b0 L$
+b0 K$
+b0 J$
+b0 I$
+b0 H$
+b0 G$
+b0 F$
+b0 E$
+b0 D$
+b0 C$
+b0 B$
+b0 A$
+b0 @$
+b0 ?$
+b0 >$
+b0 =$
+b0 <$
+b0 ;$
+b0 :$
+b0 9$
+b0 8$
+b0 7$
+b0 6$
+b0 5$
+b0 4$
+b0 3$
+b0 2$
+b0 1$
+b0 0$
+b0 /$
+b0 .$
+b0 -$
+b0 ,$
+b0 +$
+b0 *$
+b0 )$
+b0 ($
+b0 '$
+b0 &$
+b0 %$
+b0 $$
+b0 #$
+b0 "$
+b0 !$
+b0 ~#
+b0 }#
+b0 |#
+b0 {#
+b0 z#
+b0 y#
+b0 x#
+b0 w#
+b0 v#
+b0 u#
+b0 t#
+b0 s#
+b0 r#
+b0 q#
+b0 p#
+b0 o#
+b0 n#
+b0 m#
+b0 l#
+b0 k#
+b0 j#
+b0 i#
+b0 h#
+b0 g#
+b0 f#
+b0 e#
+b0 d#
+b0 c#
+b0 b#
+b0 a#
+b0 `#
+b0 _#
+b0 ^#
+b0 ]#
+b0 \#
+b0 [#
+b0 Z#
+b0 Y#
+b0 X#
+b0 W#
+b0 V#
+b0 U#
+b0 T#
+b0 S#
+b0 R#
+b0 Q#
+b0 P#
+b0 O#
+b0 N#
+b0 M#
+b0 L#
+b0 K#
+b0 J#
+b0 I#
+b0 H#
+b0 G#
+b0 F#
+b0 E#
+b0 D#
+b0 C#
+b0 B#
+b0 A#
+b0 @#
+b0 ?#
+b0 >#
+b0 =#
+b0 <#
+b0 ;#
+b0 :#
+b0 9#
+b0 8#
+b0 7#
+b0 6#
+b0 5#
+b0 4#
+b0 3#
+b0 2#
+b0 1#
+b0 0#
+b0 /#
+b0 .#
+b0 -#
+b0 ,#
+b0 +#
+b0 *#
+b0 )#
+b0 (#
+b0 '#
+b0 &#
+b0 %#
+b0 $#
+b0 ##
+b0 "#
+b0 !#
+b0 ~"
+b0 }"
+b0 |"
+b0 {"
+b0 z"
+b0 y"
+b0 x"
+b0 w"
+b0 v"
+b0 u"
+b0 t"
+b0 s"
+b0 r"
+b0 q"
+b0 p"
+b0 o"
+b0 n"
+b0 m"
+b0 l"
+b0 k"
+b0 j"
+b0 i"
+b0 h"
+b0 g"
+b0 f"
+b0 e"
+b0 d"
+b0 c"
+b0 b"
+b0 a"
+b0 `"
+b0 _"
+b0 ^"
+b0 ]"
+b0 \"
+b0 ["
+b0 Z"
+b0 Y"
+b0 X"
+b0 W"
+b0 V"
+b0 U"
+b0 T"
+b0 S"
+b0 R"
+b0 Q"
+b0 P"
+b0 O"
+b0 N"
+b0 M"
+b0 L"
+b0 K"
+b0 J"
+b0 I"
+b0 H"
+b0 G"
+b0 F"
+b0 E"
+b0 D"
+b0 C"
+b0 B"
+b0 A"
+b0 @"
+b0 ?"
+b101 >"
+b101 ="
+b101 <"
+b101 ;"
+b101 :"
+b101 9"
+b101 8"
+b101 7"
+b101 6"
+b101 5"
+b101 4"
+b101 3"
+b101 2"
+b101 1"
+b101 0"
+b101 /"
+b101 ."
+b101 -"
+b101 ,"
+b101 +"
+b101 *"
+b101 )"
+b101 ("
+b101 '"
+b101 &"
+b101 %"
+b101 $"
+b101 #"
+b101 ""
+b101 !"
+b101 ~
+b0 }
+bx00 |
+bx {
+bx00 z
+bx y
+b100000 x
+bx w
+bx v
+bx u
+bx t
+bx s
+bx r
+bx q
+bx p
+bx o
+bx n
+bx m
+bx l
+bx k
+bx j
+bx00 i
+bx h
+bx g
+bx f
+bx e
+bx d
+bx c
+bx b
+bx a
+b100000000 `
+bx _
+bx ^
+bx ]
+bx \
+bx [
+bx Z
+bx Y
+bx X
+b100000000 W
+bx V
+bx U
+bx T
+bx S
+xR
+xQ
+xP
+xO
+bx N
+bx00 M
+bx00 L
+bx K
+bx J
+bx I
+bx H
+xG
+xF
+xE
+bx D
+bx C
+bx B
+bx A
+bx @
+bx00 ?
+bx >
+bx =
+x<
+bx ;
+bx :
+bx 9
+bx 8
+x7
+bx 6
+bx 5
+x4
+bx00 3
+bx 2
+x1
+x0
+x/
+bx .
+bx -
+bx ,
+bx +
+x*
+x)
+bx00 (
+bx00 '
+bx &
+bx %
+bx $
+x#
+0"
+0!
+$end
+#5
+1!
+#10
+1)
+1*
+1Q
+1G
+07
+b100 2
+b100 \
+b100 k
+b10 ;
+b10 J
+b10 S
+0O
+b100 6
+b100 h
+b100 j
+b0 -
+b0 V
+b0 m
+0<
+0E
+b10 :
+b10 B
+b10 I
+0F
+b10110000010000100 8
+b10110000010000100 >
+b10110000010000100 g
+0#
+b1010 %
+b1010 n
+b1010 v
+0/
+01
+0P
+00
+0R
+04
+b100101010010110000010000000 (
+b100101010010110000010000000 M
+b100101010010110000010000000 |
+b10110000010000000 '
+b10110000010000000 ?
+b10110000010000000 z
+b101 =
+b101 A
+b101 d
+b1010 9
+b1010 D
+b1010 T
+b1010 l
+b1011 $
+b1011 q
+b1011 w
+b1001010100101100000100000 {
+b100000 H
+b101100000100000 &
+b101100000100000 Y
+b101100000100000 c
+b101100000100000 y
+b101100000100000 X
+b101 +
+b101 U
+b101 e
+b101 s
+b1010 u
+b101 ,
+b101 C
+b101 r
+b1001 t
+b1011 p
+b1010 o
+b0 N
+b1001010100101100000100000 5
+b1001010100101100000100000 Z
+b1001010100101100000100000 _
+b100101010010110000010000000 3
+b100101010010110000010000000 L
+b100101010010110000010000000 i
+b0 K
+b100 .
+b100 @
+b100 [
+b100 b
+b100 f
+b0 ]
+b0 ^
+b0 a
+0!
+1"
+#15
+b1010 *"
+1!
+#20
+0!
+0"
+#25
+0)
+b10 :
+b10 B
+b10 I
+0*
+b0 ;
+b0 J
+b0 S
+0Q
+0F
+b101 %
+b101 n
+b101 v
+14
+b10000000000000000001000 3
+b10000000000000000001000 L
+b10000000000000000001000 i
+b10000000000000000001000 (
+b10000000000000000001000 M
+b10000000000000000001000 |
+b1000 '
+b1000 ?
+b1000 z
+b101 9
+b101 D
+b101 T
+b101 l
+b10000 $
+b10000 q
+b10000 w
+b100000000000000000010 {
+b10 H
+b10 &
+b10 Y
+b10 c
+b10 y
+b10 X
+b10000 u
+b0 ,
+b0 C
+b0 r
+b0 t
+b0 p
+b10000 o
+b10 N
+b10000000000000000001000 2
+b10000000000000000001000 \
+b10000000000000000001000 k
+b1000000100000000000000000010 5
+b1000000100000000000000000010 Z
+b1000000100000000000000000010 _
+b1000 6
+b1000 h
+b1000 j
+b1010 *"
+b10000 8
+b10000 >
+b10000 g
+b1000 .
+b1000 @
+b1000 [
+b1000 b
+b1000 f
+b100 ]
+b100 ^
+b100 a
+1!
+#30
+0!
+#35
+1)
+1*
+b10 ;
+b10 J
+b10 S
+1Q
+b10000000000000000001100 2
+b10000000000000000001100 \
+b10000000000000000001100 k
+b1111 %
+b1111 n
+b1111 v
+04
+b101101010010110000010000000 3
+b101101010010110000010000000 L
+b101101010010110000010000000 i
+b101101010010110000010000000 (
+b101101010010110000010000000 M
+b101101010010110000010000000 |
+b10110000010000000 '
+b10110000010000000 ?
+b10110000010000000 z
+b1111 9
+b1111 D
+b1111 T
+b1111 l
+b1011 $
+b1011 q
+b1011 w
+b1011010100101100000100000 {
+b100000 H
+b101100000100000 &
+b101100000100000 Y
+b101100000100000 c
+b101100000100000 y
+b101100000100000 X
+b1010 u
+b1010 ,
+b1010 C
+b1010 r
+b1011 t
+b1011 p
+b1010 o
+b0 N
+b1011010100101100000100000 5
+b1011010100101100000100000 Z
+b1011010100101100000100000 _
+b10000000000000000001100 6
+b10000000000000000001100 h
+b10000000000000000001100 j
+b10000010110000010001100 8
+b10000010110000010001100 >
+b10000010110000010001100 g
+b10000000000000000001100 .
+b10000000000000000001100 @
+b10000000000000000001100 [
+b10000000000000000001100 b
+b10000000000000000001100 f
+b10000000000000000001000 ]
+b10000000000000000001000 ^
+b10000000000000000001000 a
+1!
+#40
+0!
+#45
+1#
+b0 3
+b0 L
+b0 i
+b0 (
+b0 M
+b0 |
+b0 '
+b0 ?
+b0 z
+b0 =
+b0 A
+b0 d
+b0 $
+b0 q
+b0 w
+b0 %
+b0 n
+b0 v
+b0 {
+b0 H
+b0 &
+b0 Y
+b0 c
+b0 y
+b0 X
+b0 +
+b0 U
+b0 e
+b0 s
+b0 u
+b0 t
+b0 p
+b0 o
+b10000000000000000010000 2
+b10000000000000000010000 \
+b10000000000000000010000 k
+b0 9
+b0 D
+b0 T
+b0 l
+b0 5
+b0 Z
+b0 _
+b10000000000000000010000 6
+b10000000000000000010000 h
+b10000000000000000010000 j
+b1111 *"
+b0 ,
+b0 C
+b0 r
+b10000000000000000010000 8
+b10000000000000000010000 >
+b10000000000000000010000 g
+b10000000000000000010000 .
+b10000000000000000010000 @
+b10000000000000000010000 [
+b10000000000000000010000 b
+b10000000000000000010000 f
+b10000000000000000001100 ]
+b10000000000000000001100 ^
+b10000000000000000001100 a
+1!
+#50
+0!
+#55
+b10000000000000000010100 2
+b10000000000000000010100 \
+b10000000000000000010100 k
+b10000000000000000010100 6
+b10000000000000000010100 h
+b10000000000000000010100 j
+b10000000000000000010100 8
+b10000000000000000010100 >
+b10000000000000000010100 g
+b10000000000000000010100 .
+b10000000000000000010100 @
+b10000000000000000010100 [
+b10000000000000000010100 b
+b10000000000000000010100 f
+b10000000000000000010000 ]
+b10000000000000000010000 ^
+b10000000000000000010000 a
+1!
+#60
+0!
+#65
+b10000000000000000011000 2
+b10000000000000000011000 \
+b10000000000000000011000 k
+b10000000000000000011000 6
+b10000000000000000011000 h
+b10000000000000000011000 j
+b10000000000000000011000 8
+b10000000000000000011000 >
+b10000000000000000011000 g
+b10000000000000000011000 .
+b10000000000000000011000 @
+b10000000000000000011000 [
+b10000000000000000011000 b
+b10000000000000000011000 f
+b10000000000000000010100 ]
+b10000000000000000010100 ^
+b10000000000000000010100 a
+1!
+#70
+0!
+#75
+b10000000000000000011100 2
+b10000000000000000011100 \
+b10000000000000000011100 k
+b10000000000000000011100 6
+b10000000000000000011100 h
+b10000000000000000011100 j
+b10000000000000000011100 8
+b10000000000000000011100 >
+b10000000000000000011100 g
+b10000000000000000011100 .
+b10000000000000000011100 @
+b10000000000000000011100 [
+b10000000000000000011100 b
+b10000000000000000011100 f
+b10000000000000000011000 ]
+b10000000000000000011000 ^
+b10000000000000000011000 a
+1!
+#80
+0!
+#85
+b10000000000000000100000 2
+b10000000000000000100000 \
+b10000000000000000100000 k
+b10000000000000000100000 6
+b10000000000000000100000 h
+b10000000000000000100000 j
+b10000000000000000100000 8
+b10000000000000000100000 >
+b10000000000000000100000 g
+b10000000000000000100000 .
+b10000000000000000100000 @
+b10000000000000000100000 [
+b10000000000000000100000 b
+b10000000000000000100000 f
+b10000000000000000011100 ]
+b10000000000000000011100 ^
+b10000000000000000011100 a
+1!
+#90
+0!
+#95
+b10000000000000000100100 2
+b10000000000000000100100 \
+b10000000000000000100100 k
+b10000000000000000100100 6
+b10000000000000000100100 h
+b10000000000000000100100 j
+b10000000000000000100100 8
+b10000000000000000100100 >
+b10000000000000000100100 g
+b10000000000000000100100 .
+b10000000000000000100100 @
+b10000000000000000100100 [
+b10000000000000000100100 b
+b10000000000000000100100 f
+b10000000000000000100000 ]
+b10000000000000000100000 ^
+b10000000000000000100000 a
+1!
+#100
+0!
+#105
+b10000000000000000101000 2
+b10000000000000000101000 \
+b10000000000000000101000 k
+b10000000000000000101000 6
+b10000000000000000101000 h
+b10000000000000000101000 j
+b10000000000000000101000 8
+b10000000000000000101000 >
+b10000000000000000101000 g
+b10000000000000000101000 .
+b10000000000000000101000 @
+b10000000000000000101000 [
+b10000000000000000101000 b
+b10000000000000000101000 f
+b10000000000000000100100 ]
+b10000000000000000100100 ^
+b10000000000000000100100 a
+1!
+#110
+0!
+#115
+b10000000000000000101100 2
+b10000000000000000101100 \
+b10000000000000000101100 k
+b10000000000000000101100 6
+b10000000000000000101100 h
+b10000000000000000101100 j
+b10000000000000000101100 8
+b10000000000000000101100 >
+b10000000000000000101100 g
+b10000000000000000101100 .
+b10000000000000000101100 @
+b10000000000000000101100 [
+b10000000000000000101100 b
+b10000000000000000101100 f
+b10000000000000000101000 ]
+b10000000000000000101000 ^
+b10000000000000000101000 a
+1!
+#120
+0!
+#125
+b10000000000000000110000 2
+b10000000000000000110000 \
+b10000000000000000110000 k
+b10000000000000000110000 6
+b10000000000000000110000 h
+b10000000000000000110000 j
+b10000000000000000110000 8
+b10000000000000000110000 >
+b10000000000000000110000 g
+b10000000000000000110000 .
+b10000000000000000110000 @
+b10000000000000000110000 [
+b10000000000000000110000 b
+b10000000000000000110000 f
+b10000000000000000101100 ]
+b10000000000000000101100 ^
+b10000000000000000101100 a
+1!
+#130
+0!

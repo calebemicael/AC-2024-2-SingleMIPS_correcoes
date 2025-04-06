@@ -1,0 +1,7 @@
+// branch.mem
+20080001  // addi $t0, $zero, 1
+20090001  // addi $t1, $zero, 1
+11090002  // beq $t0, $t1, 2 (pula 2 instruções)
+01095020  // add  $t2, $t0, $t1 (não executado)
+AC0A0000  // sw   $t2, 0($zero) (não executado)
+08000005  // j    0x00000014 (PC=20)

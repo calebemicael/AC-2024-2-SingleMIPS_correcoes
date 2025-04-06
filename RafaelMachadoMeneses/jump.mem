@@ -1,0 +1,10 @@
+20080001  // addi $t0, $zero, 1       | $t0 = 1
+20090002  // addi $t1, $zero, 2       | $t1 = 2
+01095020  // add  $t2, $t0, $t1       | $t2 = $t0 + $t1 (1 + 2 = 3)
+11090001  // beq  $t0, $t1, 0x0004    | Se $t0 == $t1, salta para PC + 4 + (1 * 4) = PC + 8
+01095020  // add  $t2, $t0, $t1       | $t2 = $t0 + $t1 (1 + 2 = 3) (não executado se o branch for tomado)
+08000006  // j    0x00000018          | Salta para o endereço 0x00000018 (label: fim)
+01095020  // add  $t2, $t0, $t1       
+01095020  // add  $t2, $t0, $t1       
+01095020  // add  $t2, $t0, $t1       
+01095020  // add  $t2, $t0, $t1       

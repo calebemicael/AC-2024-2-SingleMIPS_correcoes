@@ -1,0 +1,8 @@
+addi $t0, $zero, 5        # $t0 = 5
+addi $t1, $zero, 3        # $t1 = 3
+add  $t2, $t0, $t1        # $t2 = $t0 + $t1 = 8
+sw   $t2, 0($zero)        # Armazena $t2 no endereço 0
+beq  $t2, $zero, skip     # Se $t2 == 0, pula para "skip"
+addi $t3, $zero, 1        # $t3 = 1 (será pulada se $t2 == 0)
+skip:
+lw   $t4, 0($zero)        # Carrega o valor armazenado no endereço 0 para $t4

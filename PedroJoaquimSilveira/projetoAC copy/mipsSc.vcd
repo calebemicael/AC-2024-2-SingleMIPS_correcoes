@@ -1,0 +1,833 @@
+$date
+	Sun Feb 09 15:13:48 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module simulacao $end
+$var wire 1 ! zero $end
+$var wire 32 " srcB [31:0] $end
+$var wire 32 # singimmx4 [31:0] $end
+$var wire 32 $ singimm [31:0] $end
+$var wire 32 % readData [31:0] $end
+$var wire 32 & pcPlus4 [31:0] $end
+$var wire 32 ' pcJ [31:0] $end
+$var wire 32 ( pcI [31:0] $end
+$var wire 32 ) pc [31:0] $end
+$var wire 1 * jump $end
+$var wire 32 + jps [31:0] $end
+$var wire 32 , jp [31:0] $end
+$var wire 32 - instrucao [31:0] $end
+$var wire 5 . WriteRegister [4:0] $end
+$var wire 32 / WriteData [31:0] $end
+$var wire 1 0 RegWrite $end
+$var wire 1 1 RegDst $end
+$var wire 32 2 ReadData2 [31:0] $end
+$var wire 32 3 ReadData1 [31:0] $end
+$var wire 1 4 PCSrc $end
+$var wire 32 5 PCBranch [31:0] $end
+$var wire 1 6 MemtoReg $end
+$var wire 1 7 MemWrite $end
+$var wire 1 8 Branch $end
+$var wire 4 9 ALUcontrol [3:0] $end
+$var wire 1 : ALUSrc $end
+$var wire 32 ; ALUResult [31:0] $end
+$var reg 1 < clk $end
+$var reg 1 = reset $end
+$scope module adder32_unit $end
+$var wire 32 > b [31:0] $end
+$var wire 32 ? sum [31:0] $end
+$var wire 32 @ a [31:0] $end
+$upscope $end
+$scope module adder32_unit2 $end
+$var wire 32 A b [31:0] $end
+$var wire 32 B sum [31:0] $end
+$var wire 32 C a [31:0] $end
+$upscope $end
+$scope module alu_unit $end
+$var wire 32 D B [31:0] $end
+$var wire 1 ! Zero $end
+$var wire 4 E ALUOperation [3:0] $end
+$var wire 32 F A [31:0] $end
+$var reg 32 G ALUResult [31:0] $end
+$upscope $end
+$scope module control_unit $end
+$var wire 6 H Funct [5:0] $end
+$var wire 6 I Opcode [5:0] $end
+$var wire 1 4 PCSrc $end
+$var wire 1 ! zero $end
+$var reg 1 : ALUSrc $end
+$var reg 4 J ALUcontrol [3:0] $end
+$var reg 2 K ALUop [1:0] $end
+$var reg 1 8 Branch $end
+$var reg 1 7 MemWrite $end
+$var reg 1 6 MemtoReg $end
+$var reg 1 1 RegDst $end
+$var reg 1 0 RegWrite $end
+$var reg 1 * jump $end
+$upscope $end
+$scope module extend_unit $end
+$var wire 16 L in [15:0] $end
+$var wire 32 M out [31:0] $end
+$upscope $end
+$scope module memory_unit $end
+$var wire 1 7 MemWrite $end
+$var wire 32 N address [31:0] $end
+$var wire 1 < clk $end
+$var wire 32 O readData [31:0] $end
+$var wire 32 P writeData [31:0] $end
+$var integer 32 Q i [31:0] $end
+$upscope $end
+$scope module mux5bits_unit $end
+$var wire 5 R A [4:0] $end
+$var wire 5 S B [4:0] $end
+$var wire 1 1 s $end
+$var wire 5 T r [4:0] $end
+$upscope $end
+$scope module reg_unit $end
+$var wire 32 U ReadData1 [31:0] $end
+$var wire 32 V ReadData2 [31:0] $end
+$var wire 5 W ReadRegister1 [4:0] $end
+$var wire 5 X ReadRegister2 [4:0] $end
+$var wire 1 0 RegWrite $end
+$var wire 32 Y WriteData [31:0] $end
+$var wire 5 Z WriteRegister [4:0] $end
+$var wire 1 < clk $end
+$var integer 32 [ i [31:0] $end
+$upscope $end
+$scope module shift_jump $end
+$var wire 32 \ out [31:0] $end
+$var wire 32 ] in [31:0] $end
+$upscope $end
+$scope module sift_unit $end
+$var wire 32 ^ in [31:0] $end
+$var wire 32 _ out [31:0] $end
+$upscope $end
+$scope module unidade_fetch $end
+$var wire 1 < clk $end
+$var wire 32 ` pcI [31:0] $end
+$var wire 1 = reset $end
+$var wire 32 a instrucao [31:0] $end
+$var reg 32 b pc [31:0] $end
+$var reg 32 c pcOut [31:0] $end
+$scope module memoria $end
+$var wire 32 d addr [31:0] $end
+$var wire 32 e instrucao [31:0] $end
+$var integer 32 f i [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin $ivl_for_loop0 $end
+$var integer 32 g i [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 h \registers[0] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 i \memory[0] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 j \registers[1] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 k \memory[1] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 l \registers[2] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 m \memory[2] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 n \registers[3] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 o \memory[3] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 p \registers[4] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 q \memory[4] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 r \registers[5] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 s \memory[5] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 t \registers[6] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 u \memory[6] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 v \registers[7] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 w \memory[7] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 x \registers[8] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 y \memory[8] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 z \registers[9] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 { \memory[9] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 | \registers[10] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 } \memory[10] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 ~ \registers[11] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 !" \memory[11] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 "" \registers[12] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 #" \memory[12] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 $" \registers[13] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 %" \memory[13] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 &" \registers[14] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 '" \memory[14] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 (" \registers[15] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 )" \memory[15] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 *" \registers[16] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 +" \memory[16] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 ," \registers[17] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 -" \memory[17] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 ." \registers[18] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 /" \memory[18] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 0" \registers[19] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 1" \memory[19] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 2" \registers[20] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 3" \memory[20] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 4" \registers[21] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 5" \memory[21] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 6" \registers[22] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 7" \memory[22] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 8" \registers[23] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 9" \memory[23] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 :" \registers[24] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 ;" \memory[24] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 <" \registers[25] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 =" \memory[25] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 >" \registers[26] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 ?" \memory[26] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 @" \registers[27] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 A" \memory[27] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 B" \registers[28] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 C" \memory[28] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 D" \registers[29] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 E" \memory[29] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 F" \registers[30] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 G" \memory[30] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module reg_unit $end
+$var reg 32 H" \registers[31] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module simulacao $end
+$scope module memory_unit $end
+$var reg 32 I" \memory[31] [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#10
+$dumpvars
+b0 I"
+b0 H"
+b0 G"
+b0 F"
+b0 E"
+b0 D"
+b0 C"
+b0 B"
+b0 A"
+b0 @"
+b0 ?"
+b0 >"
+b0 ="
+b0 <"
+b0 ;"
+b0 :"
+b0 9"
+b0 8"
+b0 7"
+b0 6"
+b0 5"
+b0 4"
+b0 3"
+b0 2"
+b0 1"
+b0 0"
+b0 /"
+b0 ."
+b0 -"
+b0 ,"
+b0 +"
+b0 *"
+b0 )"
+b0 ("
+b0 '"
+b0 &"
+b0 %"
+b0 $"
+b0 #"
+b0 ""
+b0 !"
+b0 ~
+b0 }
+b0 |
+b0 {
+b0 z
+b0 y
+b1 x
+b0 w
+b0 v
+b0 u
+b0 t
+b0 s
+b0 r
+b0 q
+b0 p
+b0 o
+b0 n
+b0 m
+b0 l
+b0 k
+b0 j
+b0 i
+b0 h
+b100000 g
+b100000000 f
+b100000000010000000000000000001 e
+b0 d
+b0 c
+b0 b
+b100000000010000000000000000001 a
+b100 `
+b100 _
+b1 ^
+b100000000010000000000000000001 ]
+b10000000001000000000000000000100 \
+b100000 [
+b1000 Z
+b1 Y
+b1000 X
+b0 W
+b1 V
+b0 U
+b1000 T
+b1000 S
+b0 R
+b100000000 Q
+b1 P
+b0 O
+b1 N
+b1 M
+b1 L
+b0 K
+b10 J
+b1000 I
+b1 H
+b1 G
+b0 F
+b10 E
+b1 D
+b100 C
+b1000 B
+b100 A
+b0 @
+b100 ?
+b100 >
+0=
+0<
+b1 ;
+1:
+b10 9
+08
+07
+06
+b1000 5
+04
+b0 3
+b1 2
+01
+10
+b1 /
+b1000 .
+b100000000010000000000000000001 -
+b10000000000000000001000000 ,
+b10000000001000000000000000000100 +
+0*
+b0 )
+b100 (
+b100 '
+b100 &
+b0 %
+b1 $
+b100 #
+b1 "
+0!
+$end
+#15
+b10 /
+b10 Y
+b10 ;
+b10 G
+b10 N
+b10010000000000000010000000 ,
+b1001 .
+b1001 T
+b1001 Z
+b1100 5
+b1100 B
+b1000 #
+b1000 C
+b1000 _
+b10 "
+b10 D
+b10000000001001000000000000001000 +
+b10000000001001000000000000001000 \
+b0 2
+b0 P
+b0 V
+b1001 X
+b1001 S
+b10 $
+b10 M
+b10 ^
+b10 L
+b10 H
+b100000000010010000000000000010 -
+b100000000010010000000000000010 ]
+b100000000010010000000000000010 a
+b100000000010010000000000000010 e
+b1 x
+b100 b
+b100 d
+1<
+#20
+0<
+#25
+b1000 '
+b1000 `
+b1000 (
+b10 z
+b10 2
+b10 P
+b10 V
+b10000 5
+b10000 B
+b1000 &
+b1000 ?
+b1000 A
+b100 )
+b100 @
+b100 c
+1<
+#30
+0<
+#35
+b11 /
+b11 Y
+b1010 .
+b1010 T
+b1010 Z
+b1000010010101000000100000000000 ,
+b11 ;
+b11 G
+b11 N
+b10100000010001000 5
+b10100000010001000 B
+b10100000010000000 #
+b10100000010000000 C
+b10100000010000000 _
+b10 K
+0:
+11
+b100001001010100000010000000 +
+b100001001010100000010000000 \
+b1 3
+b1 F
+b1 U
+b1000 W
+b1010 R
+b101000000100000 $
+b101000000100000 M
+b101000000100000 ^
+b101000000100000 L
+b100000 H
+b0 I
+b1000010010101000000100000 -
+b1000010010101000000100000 ]
+b1000010010101000000100000 a
+b1000010010101000000100000 e
+b10 z
+b1000 b
+b1000 d
+1<
+#40
+0<
+#45
+b1100 '
+b1100 `
+b1100 (
+b11 |
+b10100000010001100 5
+b10100000010001100 B
+b1100 &
+b1100 ?
+b1100 A
+b1000 )
+b1000 @
+b1000 c
+1<
+#50
+0<
+#55
+1!
+b10100000000000000000000000 ,
+b0 "
+b0 D
+b11 i
+b11 %
+b11 O
+b0 ;
+b0 G
+b0 N
+b1100 5
+b1100 B
+b0 #
+b0 C
+b0 _
+b0 K
+16
+17
+1:
+01
+00
+b10110000001010000000000000000000 +
+b10110000001010000000000000000000 \
+b11 2
+b11 P
+b11 V
+b1010 X
+b0 3
+b0 F
+b0 U
+b0 W
+b1010 S
+b0 R
+b0 $
+b0 M
+b0 ^
+b0 L
+b0 H
+b101011 I
+b10101100000010100000000000000000 -
+b10101100000010100000000000000000 ]
+b10101100000010100000000000000000 a
+b10101100000010100000000000000000 e
+b11 |
+b1100 b
+b1100 d
+1<
+#60
+0<
+#65
+b10000 '
+b10000 `
+b10000 (
+b10000 5
+b10000 B
+b10000 &
+b10000 ?
+b10000 A
+b1100 )
+b1100 @
+b1100 c
+1<
+#70
+0<
+#75
+b0 /
+b0 Y
+b0 ,
+b0 .
+b0 T
+b0 Z
+b10 K
+06
+07
+0:
+11
+10
+b0 +
+b0 \
+b0 2
+b0 P
+b0 V
+b0 X
+b0 S
+b0 I
+b0 -
+b0 ]
+b0 a
+b0 e
+b10000 b
+b10000 d
+1<
+#80
+0<
+#85
+b10100 '
+b10100 `
+b10100 (
+b10100 5
+b10100 B
+b10100 &
+b10100 ?
+b10100 A
+b10000 )
+b10000 @
+b10000 c
+1<
+#90
+0<
+#95
+b10100 b
+b10100 d
+1<
+#100
+0<
+#105
+b11000 '
+b11000 `
+b11000 (
+b11000 5
+b11000 B
+b11000 &
+b11000 ?
+b11000 A
+b10100 )
+b10100 @
+b10100 c
+1<
+#110
+0<

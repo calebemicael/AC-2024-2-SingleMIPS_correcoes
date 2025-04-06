@@ -1,0 +1,13 @@
+Aluno: Irwing Felipe Pereira Vieira.
+Mat: 202300083533
+Curso: Ciência da computação (UFS).
+
+Preciso fazer algumas coisas: multiplexadores restantes, a unidade de controle, a ALU control e o typeI (para operações imediatas).
+
+. ALU control: É um módulo auxiliar que definirá na ALU o que ela fará. Dentro da alu control teremos dois inputs, a ALUOp e a FunctionField. Ambas são usadas para enviar para a ALU que operação ela deverá fazer. No fim das contas, a ALUControl é um módulo que enviar uma sequência de 4 bits para a ALU.
+. Unidade de controle: Controla todos os sinais para ativar os devidos módulos para funcionamento do MIPS. Pelo o que o livro aborda, basta apenas levar em consideração o OPCODE e depois o que cada sinal recebe a depender.
+. Finalidade dos multiplexadores: controlar o que vai ser lido/escrito pelos componentes (definir o fluxo).
+. Type I: apesar de haver instruções do tipo I (lw e sw), nós não temos como fazer operações como addi para mover os valores a serem usados corretamente. Acredito que seja caso de alterar o OPCODE para 001000 e fazer as devidas mudanças nos sinais da Unidade de controle.
+-> conectar tudo.
+
+Por fim: Fazer uma implementação em binário de assembly MIPS colocando as instruções em um arquivo.bin. Vou fazer algo bem simples (BEM SIMPLES) só pra ver o funcionamento.

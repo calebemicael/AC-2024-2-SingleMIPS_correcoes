@@ -1,0 +1,92 @@
+[*]
+[*] GTKWave Analyzer v3.3.121 (w)1999-2024 BSI
+[*] Sun Feb 16 22:32:47 2025
+[*]
+[dumpfile] "/home/lucascalumbi/College/periodo_4/Arquitetura/projeto_processador_mips_ciclo_unico/MIPS_processor.vcd"
+[dumpfile_mtime] "Sun Feb 16 22:23:20 2025"
+[dumpfile_size] 12535961
+[savefile] "/home/lucascalumbi/College/periodo_4/Arquitetura/projeto_processador_mips_ciclo_unico/gtk_config.gtkw"
+[timestart] 1200
+[size] 1920 1032
+[pos] -46 -46
+*-3.600000 1220 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] Simulation.
+[treeopen] Simulation.processor.
+[sst_width] 243
+[signals_width] 646
+[sst_expanded] 1
+[sst_vpaned_height] 302
+@200
+-MIPS_Processor
+@28
++{Simulation.processor.clk} Simulation.processor.i_clk
++{Simulation.processor.reset} Simulation.processor.i_reset
+@200
+-FetchUnit: 
+@22
++{Simulation.processor.fetchUnit.PC} Simulation.processor.fetchUnit.i_pc_address[31:0]
++{Simulation.processor.fetchUnit.PC+4} Simulation.processor.fetchUnit.o_incremented_pc[31:0]
+@28
++{Simulation.processor.fetchUnit.Instruction} Simulation.processor.fetchUnit.o_instruction[31:0]
+@200
+-ControlUnit:
+@28
++{Simulation.processor.controlUnit.OPCODE} Simulation.processor.controlUnit.i_op_code[5:0]
++{Simulation.processor.controlUnit.RegDst} Simulation.processor.controlUnit.o_reg_destiny_sig
++{Simulation.processor.controlUnit.Branch} Simulation.processor.controlUnit.o_branch_sig
++{Simulation.processor.controlUnit.MemRead} Simulation.processor.controlUnit.o_mem_read_sig
++{Simulation.processor.controlUnit.MemToReg} Simulation.processor.controlUnit.o_mem_to_reg_sig
++{Simulation.processor.controlUnit.ALUOp} Simulation.processor.controlUnit.o_alu_op_sig[1:0]
++{Simulation.processor.controlUnit.MemWrite} Simulation.processor.controlUnit.o_mem_write_sig
++{Simulation.processor.controlUnit.ALUSrc} Simulation.processor.controlUnit.o_alu_src_sig
++{Simulation.processor.controlUnit.RegWrite} Simulation.processor.controlUnit.o_reg_write_sig
++{Simulation.processor.controlUnit.Jump} Simulation.processor.controlUnit.o_jump_sig
++{Simulation.processor.controlUnit.Link} Simulation.processor.controlUnit.o_link_sig
++{Simulation.processor.controlUnit.Mult} Simulation.processor.controlUnit.o_mult_sig
+@200
+-Registers:
+@28
++{Simulation.processor.registers.RegWrite} Simulation.processor.registers.i_reg_write_sig
++{Simulation.processor.registers.rs} Simulation.processor.registers.i_read_register1[4:0]
++{Simulation.processor.registers.rt} Simulation.processor.registers.i_read_register2[4:0]
++{Simulation.processor.registers.write_address} Simulation.processor.registers.i_write_register[4:0]
++{Simulation.processor.registers.write_data} Simulation.processor.registers.i_write_data[31:0]
++{Simulation.processor.registers.read_data1} Simulation.processor.registers.o_read_data1[31:0]
+@29
++{Simulation.processor.registers.read_data2} Simulation.processor.registers.o_read_data2[31:0]
+@24
++{Simulation.processor.registers.acumulador = $v0} Simulation.processor.registers.\r_registers[2][31:0]
+@420
++{Simulation.processor.registers.base = $t0} Simulation.processor.registers.\r_registers[8][31:0]
++{Simulation.processor.registers.expoente = $t1} Simulation.processor.registers.\r_registers[9][31:0]
+@24
++{Simulation.processor.registers.resultado final = $t2} Simulation.processor.registers.\r_registers[10][31:0]
+@22
++{Simulation.processor.registers.$sp} Simulation.processor.registers.\r_registers[29][31:0]
++{Simulation.processor.$ra} Simulation.processor.registers.\r_registers[31][31:0]
+@200
+-ALUcontrol:
+@28
++{Simulation.processor.aluControl.ALUOp} Simulation.processor.aluControl.i_alu_operation_sig[1:0]
++{Simulation.processor.aluControl.FUNC_CODE} Simulation.processor.aluControl.i_fun_code[5:0]
++{Simulation.processor.aluControl.ALU_Operation} Simulation.processor.aluControl.o_alu_operation[3:0]
++{Simulation.processor.aluControl.Jump_signal} Simulation.processor.aluControl.o_jump_register_sig
+Simulation.processor.aluControl.o_is_shift_operation
+@200
+-ALU:
+@28
++{Simulation.processor.alu.Operation} Simulation.processor.alu.i_alu_operation[3:0]
++{Simulation.processor.alu.operando_a} Simulation.processor.alu.i_op_a[31:0]
++{Simulation.processor.alu.operando_b} Simulation.processor.alu.i_op_b[31:0]
++{Simulation.processor.alu.resultado} Simulation.processor.alu.o_alu_result[31:0]
++{Simulation.processor.alu.Zero} Simulation.processor.alu.o_zero_sig
+@200
+-DataMemory:
+@28
++{Simulation.processor.controlUnit.MemRead} Simulation.processor.controlUnit.o_mem_read_sig
++{Simulation.processor.controlUnit.MemWrite} Simulation.processor.controlUnit.o_mem_write_sig
++{Simulation.processor.dataMemory.Address} Simulation.processor.dataMemory.i_address[31:0]
++{Simulation.processor.dataMemory.Write_data} Simulation.processor.dataMemory.i_write_data[31:0]
++{Simulation.processor.dataMemory.Read_data} Simulation.processor.dataMemory.o_read_data[31:0]
+[pattern_trace] 1
+[pattern_trace] 0

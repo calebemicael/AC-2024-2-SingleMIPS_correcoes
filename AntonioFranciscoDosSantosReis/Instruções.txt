@@ -1,0 +1,16 @@
+Verificar o conteúdo do banco de registradores no ciclo simples
+para verificar as instruções usadas.
+
+Código assembly mips abaixo é um loop que dado um vetor V e um índice k
+acessamos V[k] e atualizamos V[k]+=10 até que a condição estipulada seja satisfeita.
+
+slt $t0, $s0, $s3  # Se $s0 < $s3, então $t0 = 1, senão $t0 = 0
+beq $t0, $zero, EXIT  # Se $t0 == 0 (ou seja, $s0 >= $s3), salta para EXIT
+add $t0, $t4, $t4  # $t0 = $t4 + $t4 (multiplicação por 2)
+add $t0, $t0, $t0  # $t0 = $t0 + $t0 (multiplicação por 2, agora $t4 * 4)
+add $t1, $t0, $s6  # $t1 = $t0 + $s6 (calcula um endereço base)
+lw $s1, 0($t1)  # Carrega em $s1 o valor armazenado no endereço $t1
+addi $s1, $s1, 1  # Incrementa $s1 em 1
+sw $s1, 0($t1)  # Armazena $s1 de volta no endereço $t1
+addi $s0, $s0, 1  # Incrementa $s0 em 1
+j 4  # Salta para o endereço 4 

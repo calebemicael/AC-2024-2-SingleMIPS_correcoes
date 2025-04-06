@@ -1,0 +1,202 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_00000171276226d0 .scope module, "pipeline_tb" "pipeline_tb" 2 5;
+ .timescale -9 -9;
+v000001712767a060_0 .var "PcBranchD", 31 0;
+v000001712767a240_0 .net "PcPlus4D", 31 0, L_000001712767a880;  1 drivers
+v000001712767a9c0_0 .var "PcSrcE", 0 0;
+v000001712767bb40_0 .var "clk", 0 0;
+v000001712767b500_0 .net "instructionD", 31 0, L_000001712767b0a0;  1 drivers
+v000001712767ae20_0 .var "reset", 0 0;
+S_0000017127622860 .scope module, "dut" "fetch_cycle" 2 11, 3 5 0, S_00000171276226d0;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "reset";
+    .port_info 2 /INPUT 1 "PcSrcE";
+    .port_info 3 /OUTPUT 32 "instructionD";
+    .port_info 4 /OUTPUT 32 "PcPlus4D";
+    .port_info 5 /INPUT 32 "PcBranchD";
+v0000017127679050_0 .net "PCF", 31 0, v0000017127679af0_0;  1 drivers
+v00000171276794b0_0 .net "PC_", 31 0, L_000001712767a1a0;  1 drivers
+v0000017127679eb0_0 .net "PcBranchD", 31 0, v000001712767a060_0;  1 drivers
+v0000017127679910_0 .net "PcPlus4D", 31 0, L_000001712767a880;  alias, 1 drivers
+v0000017127679230_0 .net "PcPlus4F", 31 0, L_000001712767b820;  1 drivers
+v0000017127679870_0 .var "PcPlus4F_reg", 31 0;
+v00000171276790f0_0 .net "PcSrcE", 0 0, v000001712767a9c0_0;  1 drivers
+L_000001712767c070 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0000017127679690_0 .net/2u *"_ivl_0", 31 0, L_000001712767c070;  1 drivers
+L_000001712767c0b8 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0000017127679f50_0 .net/2u *"_ivl_4", 31 0, L_000001712767c0b8;  1 drivers
+v0000017127679370_0 .net "clk", 0 0, v000001712767bb40_0;  1 drivers
+v0000017127679410_0 .net "instF", 31 0, L_0000017127625e60;  1 drivers
+v00000171276799b0_0 .var "instF_Reg", 31 0;
+v0000017127679a50_0 .net "instructionD", 31 0, L_000001712767b0a0;  alias, 1 drivers
+v000001712767a6a0_0 .net "reset", 0 0, v000001712767ae20_0;  1 drivers
+L_000001712767b0a0 .functor MUXZ 32, v00000171276799b0_0, L_000001712767c070, v000001712767ae20_0, C4<>;
+L_000001712767a880 .functor MUXZ 32, L_000001712767b820, L_000001712767c0b8, v000001712767ae20_0, C4<>;
+S_0000017127616fd0 .scope module, "Imem" "instruction_memory" 3 40, 4 1 0, S_0000017127622860;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "reset";
+    .port_info 2 /INPUT 32 "read_address";
+    .port_info 3 /OUTPUT 32 "instruction_out";
+L_0000017127625e60 .functor BUFZ 32, L_000001712767a7e0, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v00000171275cbec0 .array "I_MEM", 0 63, 31 0;
+v00000171276229f0_0 .net *"_ivl_0", 31 0, L_000001712767a7e0;  1 drivers
+v0000017127622a90_0 .net "clk", 0 0, v000001712767bb40_0;  alias, 1 drivers
+v000001712760ce90_0 .net "instruction_out", 31 0, L_0000017127625e60;  alias, 1 drivers
+v000001712760cf30_0 .var/i "k", 31 0;
+v0000017127617160_0 .net "read_address", 31 0, v0000017127679af0_0;  alias, 1 drivers
+v0000017127617200_0 .net "reset", 0 0, v000001712767ae20_0;  alias, 1 drivers
+E_00000171276048e0 .event posedge, v0000017127617200_0, v0000017127622a90_0;
+L_000001712767a7e0 .array/port v00000171275cbec0, v0000017127679af0_0;
+S_00000171276172a0 .scope module, "Program_counter" "pc_counter" 3 31, 5 1 0, S_0000017127622860;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "reset";
+    .port_info 2 /INPUT 32 "pc_in";
+    .port_info 3 /OUTPUT 32 "pc_out";
+v0000017127679d70_0 .net "clk", 0 0, v000001712767bb40_0;  alias, 1 drivers
+v0000017127679b90_0 .net "pc_in", 31 0, L_000001712767a1a0;  alias, 1 drivers
+v0000017127679af0_0 .var "pc_out", 31 0;
+v00000171276795f0_0 .net "reset", 0 0, v000001712767ae20_0;  alias, 1 drivers
+S_000001712761b350 .scope module, "m1" "mux_fetch" 3 22, 6 4 0, S_0000017127622860;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 32 "a";
+    .port_info 1 /INPUT 32 "b";
+    .port_info 2 /INPUT 1 "s";
+    .port_info 3 /OUTPUT 32 "c";
+L_0000017127625d80 .functor NOT 1, v000001712767a9c0_0, C4<0>, C4<0>, C4<0>;
+v0000017127679730_0 .net *"_ivl_0", 0 0, L_0000017127625d80;  1 drivers
+v0000017127679c30_0 .net "a", 31 0, L_000001712767b820;  alias, 1 drivers
+v0000017127679cd0_0 .net "b", 31 0, v000001712767a060_0;  alias, 1 drivers
+v00000171276792d0_0 .net "c", 31 0, L_000001712767a1a0;  alias, 1 drivers
+v0000017127679550_0 .net "s", 0 0, v000001712767a9c0_0;  alias, 1 drivers
+L_000001712767a1a0 .functor MUXZ 32, v000001712767a060_0, L_000001712767b820, L_0000017127625d80, C4<>;
+S_000001712761b4e0 .scope module, "pcplus4" "PC_PLUS4" 3 48, 5 18 0, S_0000017127622860;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 32 "pc_out";
+    .port_info 1 /OUTPUT 32 "pc_outplus";
+L_000001712767c028 .functor BUFT 1, C4<00000000000000000000000000000100>, C4<0>, C4<0>, C4<0>;
+v00000171276797d0_0 .net/2u *"_ivl_0", 31 0, L_000001712767c028;  1 drivers
+v0000017127679e10_0 .net "pc_out", 31 0, v0000017127679af0_0;  alias, 1 drivers
+v0000017127679190_0 .net "pc_outplus", 31 0, L_000001712767b820;  alias, 1 drivers
+L_000001712767b820 .arith/sum 32, v0000017127679af0_0, L_000001712767c028;
+    .scope S_00000171276172a0;
+T_0 ;
+    %wait E_00000171276048e0;
+    %load/vec4 v00000171276795f0_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.0, 8;
+    %pushi/vec4 0, 0, 32;
+    %assign/vec4 v0000017127679af0_0, 0;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/vec4 v0000017127679b90_0;
+    %assign/vec4 v0000017127679af0_0, 0;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_0000017127616fd0;
+T_1 ;
+    %wait E_00000171276048e0;
+    %load/vec4 v0000017127617200_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_1.0, 8;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v000001712760cf30_0, 0, 32;
+T_1.2 ;
+    %load/vec4 v000001712760cf30_0;
+    %cmpi/s 64, 0, 32;
+    %jmp/0xz T_1.3, 5;
+    %pushi/vec4 0, 0, 32;
+    %ix/getv/s 3, v000001712760cf30_0;
+    %ix/load 4, 0, 0; Constant delay
+    %assign/vec4/a/d v00000171275cbec0, 0, 4;
+    %load/vec4 v000001712760cf30_0;
+    %addi 1, 0, 32;
+    %store/vec4 v000001712760cf30_0, 0, 32;
+    %jmp T_1.2;
+T_1.3 ;
+    %jmp T_1.1;
+T_1.0 ;
+    %pushi/vec4 41109536, 0, 32;
+    %ix/load 4, 4, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000171275cbec0, 4, 0;
+    %pushi/vec4 19482656, 0, 32;
+    %ix/load 4, 8, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000171275cbec0, 4, 0;
+    %pushi/vec4 20334624, 0, 32;
+    %ix/load 4, 12, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000171275cbec0, 4, 0;
+    %pushi/vec4 41109536, 0, 32;
+    %ix/load 4, 16, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000171275cbec0, 4, 0;
+T_1.1 ;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_0000017127622860;
+T_2 ;
+    %wait E_00000171276048e0;
+    %load/vec4 v000001712767a6a0_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_2.0, 8;
+    %pushi/vec4 0, 0, 32;
+    %assign/vec4 v00000171276799b0_0, 0;
+    %pushi/vec4 0, 0, 32;
+    %assign/vec4 v0000017127679870_0, 0;
+    %jmp T_2.1;
+T_2.0 ;
+    %load/vec4 v0000017127679410_0;
+    %assign/vec4 v00000171276799b0_0, 0;
+    %load/vec4 v0000017127679230_0;
+    %assign/vec4 v0000017127679870_0, 0;
+T_2.1 ;
+    %jmp T_2;
+    .thread T_2;
+    .scope S_00000171276226d0;
+T_3 ;
+    %delay 5, 0;
+    %load/vec4 v000001712767bb40_0;
+    %inv;
+    %store/vec4 v000001712767bb40_0, 0, 1;
+    %jmp T_3;
+    .thread T_3;
+    .scope S_00000171276226d0;
+T_4 ;
+    %vpi_call 2 19 "$dumpfile", "tb.vcd" {0 0 0};
+    %vpi_call 2 20 "$dumpvars", 32'sb00000000000000000000000000000000, S_00000171276226d0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001712767bb40_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001712767a9c0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001712767ae20_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001712767ae20_0, 0, 1;
+    %delay 5, 0;
+    %delay 400, 0;
+    %vpi_call 2 29 "$finish" {0 0 0};
+    %end;
+    .thread T_4;
+# The file index is used to find the file name in the following table.
+:file_names 7;
+    "N/A";
+    "<interactive>";
+    ".\pipeline_tb.v";
+    "./fetch.v";
+    "./instruction_memory.v";
+    "./PC_module.v";
+    "./auxiliar.v";

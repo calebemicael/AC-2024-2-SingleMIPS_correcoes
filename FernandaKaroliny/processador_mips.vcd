@@ -1,0 +1,4368 @@
+$date
+	Sun Feb 16 21:29:40 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module processador_mips_tb $end
+$var wire 32 ! instruction [31:0] $end
+$var wire 32 " pc [31:0] $end
+$var wire 1 # RegWrite $end
+$var wire 1 $ Branch $end
+$var wire 1 % ALUSrc $end
+$var reg 1 & clk $end
+$var reg 1 ' reset $end
+$var integer 32 ( idx [31:0] $end
+$scope begin Banco_de_Registradores[0] $end
+$var wire 32 ) registrador [31:0] $end
+$var parameter 2 * i $end
+$upscope $end
+$scope begin Banco_de_Registradores[1] $end
+$var wire 32 + registrador [31:0] $end
+$var parameter 2 , i $end
+$upscope $end
+$scope begin Banco_de_Registradores[2] $end
+$var wire 32 - registrador [31:0] $end
+$var parameter 3 . i $end
+$upscope $end
+$scope begin Banco_de_Registradores[3] $end
+$var wire 32 / registrador [31:0] $end
+$var parameter 3 0 i $end
+$upscope $end
+$scope begin Banco_de_Registradores[4] $end
+$var wire 32 1 registrador [31:0] $end
+$var parameter 4 2 i $end
+$upscope $end
+$scope begin Banco_de_Registradores[5] $end
+$var wire 32 3 registrador [31:0] $end
+$var parameter 4 4 i $end
+$upscope $end
+$scope begin Banco_de_Registradores[6] $end
+$var wire 32 5 registrador [31:0] $end
+$var parameter 4 6 i $end
+$upscope $end
+$scope begin Banco_de_Registradores[7] $end
+$var wire 32 7 registrador [31:0] $end
+$var parameter 4 8 i $end
+$upscope $end
+$scope begin Banco_de_Registradores[8] $end
+$var wire 32 9 registrador [31:0] $end
+$var parameter 5 : i $end
+$upscope $end
+$scope begin Banco_de_Registradores[9] $end
+$var wire 32 ; registrador [31:0] $end
+$var parameter 5 < i $end
+$upscope $end
+$scope begin Banco_de_Registradores[10] $end
+$var wire 32 = registrador [31:0] $end
+$var parameter 5 > i $end
+$upscope $end
+$scope begin Banco_de_Registradores[11] $end
+$var wire 32 ? registrador [31:0] $end
+$var parameter 5 @ i $end
+$upscope $end
+$scope begin Banco_de_Registradores[12] $end
+$var wire 32 A registrador [31:0] $end
+$var parameter 5 B i $end
+$upscope $end
+$scope begin Banco_de_Registradores[13] $end
+$var wire 32 C registrador [31:0] $end
+$var parameter 5 D i $end
+$upscope $end
+$scope begin Banco_de_Registradores[14] $end
+$var wire 32 E registrador [31:0] $end
+$var parameter 5 F i $end
+$upscope $end
+$scope begin Banco_de_Registradores[15] $end
+$var wire 32 G registrador [31:0] $end
+$var parameter 5 H i $end
+$upscope $end
+$scope begin Banco_de_Registradores[16] $end
+$var wire 32 I registrador [31:0] $end
+$var parameter 6 J i $end
+$upscope $end
+$scope begin Banco_de_Registradores[17] $end
+$var wire 32 K registrador [31:0] $end
+$var parameter 6 L i $end
+$upscope $end
+$scope begin Banco_de_Registradores[18] $end
+$var wire 32 M registrador [31:0] $end
+$var parameter 6 N i $end
+$upscope $end
+$scope begin Banco_de_Registradores[19] $end
+$var wire 32 O registrador [31:0] $end
+$var parameter 6 P i $end
+$upscope $end
+$scope begin Banco_de_Registradores[20] $end
+$var wire 32 Q registrador [31:0] $end
+$var parameter 6 R i $end
+$upscope $end
+$scope begin Banco_de_Registradores[21] $end
+$var wire 32 S registrador [31:0] $end
+$var parameter 6 T i $end
+$upscope $end
+$scope begin Banco_de_Registradores[22] $end
+$var wire 32 U registrador [31:0] $end
+$var parameter 6 V i $end
+$upscope $end
+$scope begin Banco_de_Registradores[23] $end
+$var wire 32 W registrador [31:0] $end
+$var parameter 6 X i $end
+$upscope $end
+$scope begin Banco_de_Registradores[24] $end
+$var wire 32 Y registrador [31:0] $end
+$var parameter 6 Z i $end
+$upscope $end
+$scope begin Banco_de_Registradores[25] $end
+$var wire 32 [ registrador [31:0] $end
+$var parameter 6 \ i $end
+$upscope $end
+$scope begin Banco_de_Registradores[26] $end
+$var wire 32 ] registrador [31:0] $end
+$var parameter 6 ^ i $end
+$upscope $end
+$scope begin Banco_de_Registradores[27] $end
+$var wire 32 _ registrador [31:0] $end
+$var parameter 6 ` i $end
+$upscope $end
+$scope begin Banco_de_Registradores[28] $end
+$var wire 32 a registrador [31:0] $end
+$var parameter 6 b i $end
+$upscope $end
+$scope begin Banco_de_Registradores[29] $end
+$var wire 32 c registrador [31:0] $end
+$var parameter 6 d i $end
+$upscope $end
+$scope begin Banco_de_Registradores[30] $end
+$var wire 32 e registrador [31:0] $end
+$var parameter 6 f i $end
+$upscope $end
+$scope begin Banco_de_Registradores[31] $end
+$var wire 32 g registrador [31:0] $end
+$var parameter 6 h i $end
+$upscope $end
+$scope begin Memoria_de_Dados[0] $end
+$var wire 32 i data [31:0] $end
+$var parameter 2 j k $end
+$upscope $end
+$scope begin Memoria_de_Dados[1] $end
+$var wire 32 k data [31:0] $end
+$var parameter 2 l k $end
+$upscope $end
+$scope begin Memoria_de_Dados[2] $end
+$var wire 32 m data [31:0] $end
+$var parameter 3 n k $end
+$upscope $end
+$scope begin Memoria_de_Dados[3] $end
+$var wire 32 o data [31:0] $end
+$var parameter 3 p k $end
+$upscope $end
+$scope begin Memoria_de_Dados[4] $end
+$var wire 32 q data [31:0] $end
+$var parameter 4 r k $end
+$upscope $end
+$scope begin Memoria_de_Dados[5] $end
+$var wire 32 s data [31:0] $end
+$var parameter 4 t k $end
+$upscope $end
+$scope begin Memoria_de_Dados[6] $end
+$var wire 32 u data [31:0] $end
+$var parameter 4 v k $end
+$upscope $end
+$scope begin Memoria_de_Dados[7] $end
+$var wire 32 w data [31:0] $end
+$var parameter 4 x k $end
+$upscope $end
+$scope begin Memoria_de_Dados[8] $end
+$var wire 32 y data [31:0] $end
+$var parameter 5 z k $end
+$upscope $end
+$scope begin Memoria_de_Dados[9] $end
+$var wire 32 { data [31:0] $end
+$var parameter 5 | k $end
+$upscope $end
+$scope begin Memoria_de_Dados[10] $end
+$var wire 32 } data [31:0] $end
+$var parameter 5 ~ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[11] $end
+$var wire 32 !" data [31:0] $end
+$var parameter 5 "" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[12] $end
+$var wire 32 #" data [31:0] $end
+$var parameter 5 $" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[13] $end
+$var wire 32 %" data [31:0] $end
+$var parameter 5 &" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[14] $end
+$var wire 32 '" data [31:0] $end
+$var parameter 5 (" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[15] $end
+$var wire 32 )" data [31:0] $end
+$var parameter 5 *" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[16] $end
+$var wire 32 +" data [31:0] $end
+$var parameter 6 ," k $end
+$upscope $end
+$scope begin Memoria_de_Dados[17] $end
+$var wire 32 -" data [31:0] $end
+$var parameter 6 ." k $end
+$upscope $end
+$scope begin Memoria_de_Dados[18] $end
+$var wire 32 /" data [31:0] $end
+$var parameter 6 0" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[19] $end
+$var wire 32 1" data [31:0] $end
+$var parameter 6 2" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[20] $end
+$var wire 32 3" data [31:0] $end
+$var parameter 6 4" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[21] $end
+$var wire 32 5" data [31:0] $end
+$var parameter 6 6" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[22] $end
+$var wire 32 7" data [31:0] $end
+$var parameter 6 8" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[23] $end
+$var wire 32 9" data [31:0] $end
+$var parameter 6 :" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[24] $end
+$var wire 32 ;" data [31:0] $end
+$var parameter 6 <" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[25] $end
+$var wire 32 =" data [31:0] $end
+$var parameter 6 >" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[26] $end
+$var wire 32 ?" data [31:0] $end
+$var parameter 6 @" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[27] $end
+$var wire 32 A" data [31:0] $end
+$var parameter 6 B" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[28] $end
+$var wire 32 C" data [31:0] $end
+$var parameter 6 D" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[29] $end
+$var wire 32 E" data [31:0] $end
+$var parameter 6 F" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[30] $end
+$var wire 32 G" data [31:0] $end
+$var parameter 6 H" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[31] $end
+$var wire 32 I" data [31:0] $end
+$var parameter 6 J" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[32] $end
+$var wire 32 K" data [31:0] $end
+$var parameter 7 L" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[33] $end
+$var wire 32 M" data [31:0] $end
+$var parameter 7 N" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[34] $end
+$var wire 32 O" data [31:0] $end
+$var parameter 7 P" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[35] $end
+$var wire 32 Q" data [31:0] $end
+$var parameter 7 R" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[36] $end
+$var wire 32 S" data [31:0] $end
+$var parameter 7 T" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[37] $end
+$var wire 32 U" data [31:0] $end
+$var parameter 7 V" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[38] $end
+$var wire 32 W" data [31:0] $end
+$var parameter 7 X" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[39] $end
+$var wire 32 Y" data [31:0] $end
+$var parameter 7 Z" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[40] $end
+$var wire 32 [" data [31:0] $end
+$var parameter 7 \" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[41] $end
+$var wire 32 ]" data [31:0] $end
+$var parameter 7 ^" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[42] $end
+$var wire 32 _" data [31:0] $end
+$var parameter 7 `" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[43] $end
+$var wire 32 a" data [31:0] $end
+$var parameter 7 b" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[44] $end
+$var wire 32 c" data [31:0] $end
+$var parameter 7 d" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[45] $end
+$var wire 32 e" data [31:0] $end
+$var parameter 7 f" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[46] $end
+$var wire 32 g" data [31:0] $end
+$var parameter 7 h" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[47] $end
+$var wire 32 i" data [31:0] $end
+$var parameter 7 j" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[48] $end
+$var wire 32 k" data [31:0] $end
+$var parameter 7 l" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[49] $end
+$var wire 32 m" data [31:0] $end
+$var parameter 7 n" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[50] $end
+$var wire 32 o" data [31:0] $end
+$var parameter 7 p" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[51] $end
+$var wire 32 q" data [31:0] $end
+$var parameter 7 r" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[52] $end
+$var wire 32 s" data [31:0] $end
+$var parameter 7 t" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[53] $end
+$var wire 32 u" data [31:0] $end
+$var parameter 7 v" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[54] $end
+$var wire 32 w" data [31:0] $end
+$var parameter 7 x" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[55] $end
+$var wire 32 y" data [31:0] $end
+$var parameter 7 z" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[56] $end
+$var wire 32 {" data [31:0] $end
+$var parameter 7 |" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[57] $end
+$var wire 32 }" data [31:0] $end
+$var parameter 7 ~" k $end
+$upscope $end
+$scope begin Memoria_de_Dados[58] $end
+$var wire 32 !# data [31:0] $end
+$var parameter 7 "# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[59] $end
+$var wire 32 ## data [31:0] $end
+$var parameter 7 $# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[60] $end
+$var wire 32 %# data [31:0] $end
+$var parameter 7 &# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[61] $end
+$var wire 32 '# data [31:0] $end
+$var parameter 7 (# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[62] $end
+$var wire 32 )# data [31:0] $end
+$var parameter 7 *# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[63] $end
+$var wire 32 +# data [31:0] $end
+$var parameter 7 ,# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[64] $end
+$var wire 32 -# data [31:0] $end
+$var parameter 8 .# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[65] $end
+$var wire 32 /# data [31:0] $end
+$var parameter 8 0# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[66] $end
+$var wire 32 1# data [31:0] $end
+$var parameter 8 2# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[67] $end
+$var wire 32 3# data [31:0] $end
+$var parameter 8 4# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[68] $end
+$var wire 32 5# data [31:0] $end
+$var parameter 8 6# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[69] $end
+$var wire 32 7# data [31:0] $end
+$var parameter 8 8# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[70] $end
+$var wire 32 9# data [31:0] $end
+$var parameter 8 :# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[71] $end
+$var wire 32 ;# data [31:0] $end
+$var parameter 8 <# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[72] $end
+$var wire 32 =# data [31:0] $end
+$var parameter 8 ># k $end
+$upscope $end
+$scope begin Memoria_de_Dados[73] $end
+$var wire 32 ?# data [31:0] $end
+$var parameter 8 @# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[74] $end
+$var wire 32 A# data [31:0] $end
+$var parameter 8 B# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[75] $end
+$var wire 32 C# data [31:0] $end
+$var parameter 8 D# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[76] $end
+$var wire 32 E# data [31:0] $end
+$var parameter 8 F# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[77] $end
+$var wire 32 G# data [31:0] $end
+$var parameter 8 H# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[78] $end
+$var wire 32 I# data [31:0] $end
+$var parameter 8 J# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[79] $end
+$var wire 32 K# data [31:0] $end
+$var parameter 8 L# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[80] $end
+$var wire 32 M# data [31:0] $end
+$var parameter 8 N# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[81] $end
+$var wire 32 O# data [31:0] $end
+$var parameter 8 P# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[82] $end
+$var wire 32 Q# data [31:0] $end
+$var parameter 8 R# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[83] $end
+$var wire 32 S# data [31:0] $end
+$var parameter 8 T# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[84] $end
+$var wire 32 U# data [31:0] $end
+$var parameter 8 V# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[85] $end
+$var wire 32 W# data [31:0] $end
+$var parameter 8 X# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[86] $end
+$var wire 32 Y# data [31:0] $end
+$var parameter 8 Z# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[87] $end
+$var wire 32 [# data [31:0] $end
+$var parameter 8 \# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[88] $end
+$var wire 32 ]# data [31:0] $end
+$var parameter 8 ^# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[89] $end
+$var wire 32 _# data [31:0] $end
+$var parameter 8 `# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[90] $end
+$var wire 32 a# data [31:0] $end
+$var parameter 8 b# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[91] $end
+$var wire 32 c# data [31:0] $end
+$var parameter 8 d# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[92] $end
+$var wire 32 e# data [31:0] $end
+$var parameter 8 f# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[93] $end
+$var wire 32 g# data [31:0] $end
+$var parameter 8 h# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[94] $end
+$var wire 32 i# data [31:0] $end
+$var parameter 8 j# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[95] $end
+$var wire 32 k# data [31:0] $end
+$var parameter 8 l# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[96] $end
+$var wire 32 m# data [31:0] $end
+$var parameter 8 n# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[97] $end
+$var wire 32 o# data [31:0] $end
+$var parameter 8 p# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[98] $end
+$var wire 32 q# data [31:0] $end
+$var parameter 8 r# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[99] $end
+$var wire 32 s# data [31:0] $end
+$var parameter 8 t# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[100] $end
+$var wire 32 u# data [31:0] $end
+$var parameter 8 v# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[101] $end
+$var wire 32 w# data [31:0] $end
+$var parameter 8 x# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[102] $end
+$var wire 32 y# data [31:0] $end
+$var parameter 8 z# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[103] $end
+$var wire 32 {# data [31:0] $end
+$var parameter 8 |# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[104] $end
+$var wire 32 }# data [31:0] $end
+$var parameter 8 ~# k $end
+$upscope $end
+$scope begin Memoria_de_Dados[105] $end
+$var wire 32 !$ data [31:0] $end
+$var parameter 8 "$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[106] $end
+$var wire 32 #$ data [31:0] $end
+$var parameter 8 $$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[107] $end
+$var wire 32 %$ data [31:0] $end
+$var parameter 8 &$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[108] $end
+$var wire 32 '$ data [31:0] $end
+$var parameter 8 ($ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[109] $end
+$var wire 32 )$ data [31:0] $end
+$var parameter 8 *$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[110] $end
+$var wire 32 +$ data [31:0] $end
+$var parameter 8 ,$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[111] $end
+$var wire 32 -$ data [31:0] $end
+$var parameter 8 .$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[112] $end
+$var wire 32 /$ data [31:0] $end
+$var parameter 8 0$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[113] $end
+$var wire 32 1$ data [31:0] $end
+$var parameter 8 2$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[114] $end
+$var wire 32 3$ data [31:0] $end
+$var parameter 8 4$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[115] $end
+$var wire 32 5$ data [31:0] $end
+$var parameter 8 6$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[116] $end
+$var wire 32 7$ data [31:0] $end
+$var parameter 8 8$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[117] $end
+$var wire 32 9$ data [31:0] $end
+$var parameter 8 :$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[118] $end
+$var wire 32 ;$ data [31:0] $end
+$var parameter 8 <$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[119] $end
+$var wire 32 =$ data [31:0] $end
+$var parameter 8 >$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[120] $end
+$var wire 32 ?$ data [31:0] $end
+$var parameter 8 @$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[121] $end
+$var wire 32 A$ data [31:0] $end
+$var parameter 8 B$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[122] $end
+$var wire 32 C$ data [31:0] $end
+$var parameter 8 D$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[123] $end
+$var wire 32 E$ data [31:0] $end
+$var parameter 8 F$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[124] $end
+$var wire 32 G$ data [31:0] $end
+$var parameter 8 H$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[125] $end
+$var wire 32 I$ data [31:0] $end
+$var parameter 8 J$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[126] $end
+$var wire 32 K$ data [31:0] $end
+$var parameter 8 L$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[127] $end
+$var wire 32 M$ data [31:0] $end
+$var parameter 8 N$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[128] $end
+$var wire 32 O$ data [31:0] $end
+$var parameter 9 P$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[129] $end
+$var wire 32 Q$ data [31:0] $end
+$var parameter 9 R$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[130] $end
+$var wire 32 S$ data [31:0] $end
+$var parameter 9 T$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[131] $end
+$var wire 32 U$ data [31:0] $end
+$var parameter 9 V$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[132] $end
+$var wire 32 W$ data [31:0] $end
+$var parameter 9 X$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[133] $end
+$var wire 32 Y$ data [31:0] $end
+$var parameter 9 Z$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[134] $end
+$var wire 32 [$ data [31:0] $end
+$var parameter 9 \$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[135] $end
+$var wire 32 ]$ data [31:0] $end
+$var parameter 9 ^$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[136] $end
+$var wire 32 _$ data [31:0] $end
+$var parameter 9 `$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[137] $end
+$var wire 32 a$ data [31:0] $end
+$var parameter 9 b$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[138] $end
+$var wire 32 c$ data [31:0] $end
+$var parameter 9 d$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[139] $end
+$var wire 32 e$ data [31:0] $end
+$var parameter 9 f$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[140] $end
+$var wire 32 g$ data [31:0] $end
+$var parameter 9 h$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[141] $end
+$var wire 32 i$ data [31:0] $end
+$var parameter 9 j$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[142] $end
+$var wire 32 k$ data [31:0] $end
+$var parameter 9 l$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[143] $end
+$var wire 32 m$ data [31:0] $end
+$var parameter 9 n$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[144] $end
+$var wire 32 o$ data [31:0] $end
+$var parameter 9 p$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[145] $end
+$var wire 32 q$ data [31:0] $end
+$var parameter 9 r$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[146] $end
+$var wire 32 s$ data [31:0] $end
+$var parameter 9 t$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[147] $end
+$var wire 32 u$ data [31:0] $end
+$var parameter 9 v$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[148] $end
+$var wire 32 w$ data [31:0] $end
+$var parameter 9 x$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[149] $end
+$var wire 32 y$ data [31:0] $end
+$var parameter 9 z$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[150] $end
+$var wire 32 {$ data [31:0] $end
+$var parameter 9 |$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[151] $end
+$var wire 32 }$ data [31:0] $end
+$var parameter 9 ~$ k $end
+$upscope $end
+$scope begin Memoria_de_Dados[152] $end
+$var wire 32 !% data [31:0] $end
+$var parameter 9 "% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[153] $end
+$var wire 32 #% data [31:0] $end
+$var parameter 9 $% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[154] $end
+$var wire 32 %% data [31:0] $end
+$var parameter 9 &% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[155] $end
+$var wire 32 '% data [31:0] $end
+$var parameter 9 (% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[156] $end
+$var wire 32 )% data [31:0] $end
+$var parameter 9 *% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[157] $end
+$var wire 32 +% data [31:0] $end
+$var parameter 9 ,% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[158] $end
+$var wire 32 -% data [31:0] $end
+$var parameter 9 .% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[159] $end
+$var wire 32 /% data [31:0] $end
+$var parameter 9 0% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[160] $end
+$var wire 32 1% data [31:0] $end
+$var parameter 9 2% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[161] $end
+$var wire 32 3% data [31:0] $end
+$var parameter 9 4% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[162] $end
+$var wire 32 5% data [31:0] $end
+$var parameter 9 6% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[163] $end
+$var wire 32 7% data [31:0] $end
+$var parameter 9 8% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[164] $end
+$var wire 32 9% data [31:0] $end
+$var parameter 9 :% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[165] $end
+$var wire 32 ;% data [31:0] $end
+$var parameter 9 <% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[166] $end
+$var wire 32 =% data [31:0] $end
+$var parameter 9 >% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[167] $end
+$var wire 32 ?% data [31:0] $end
+$var parameter 9 @% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[168] $end
+$var wire 32 A% data [31:0] $end
+$var parameter 9 B% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[169] $end
+$var wire 32 C% data [31:0] $end
+$var parameter 9 D% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[170] $end
+$var wire 32 E% data [31:0] $end
+$var parameter 9 F% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[171] $end
+$var wire 32 G% data [31:0] $end
+$var parameter 9 H% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[172] $end
+$var wire 32 I% data [31:0] $end
+$var parameter 9 J% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[173] $end
+$var wire 32 K% data [31:0] $end
+$var parameter 9 L% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[174] $end
+$var wire 32 M% data [31:0] $end
+$var parameter 9 N% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[175] $end
+$var wire 32 O% data [31:0] $end
+$var parameter 9 P% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[176] $end
+$var wire 32 Q% data [31:0] $end
+$var parameter 9 R% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[177] $end
+$var wire 32 S% data [31:0] $end
+$var parameter 9 T% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[178] $end
+$var wire 32 U% data [31:0] $end
+$var parameter 9 V% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[179] $end
+$var wire 32 W% data [31:0] $end
+$var parameter 9 X% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[180] $end
+$var wire 32 Y% data [31:0] $end
+$var parameter 9 Z% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[181] $end
+$var wire 32 [% data [31:0] $end
+$var parameter 9 \% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[182] $end
+$var wire 32 ]% data [31:0] $end
+$var parameter 9 ^% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[183] $end
+$var wire 32 _% data [31:0] $end
+$var parameter 9 `% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[184] $end
+$var wire 32 a% data [31:0] $end
+$var parameter 9 b% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[185] $end
+$var wire 32 c% data [31:0] $end
+$var parameter 9 d% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[186] $end
+$var wire 32 e% data [31:0] $end
+$var parameter 9 f% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[187] $end
+$var wire 32 g% data [31:0] $end
+$var parameter 9 h% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[188] $end
+$var wire 32 i% data [31:0] $end
+$var parameter 9 j% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[189] $end
+$var wire 32 k% data [31:0] $end
+$var parameter 9 l% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[190] $end
+$var wire 32 m% data [31:0] $end
+$var parameter 9 n% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[191] $end
+$var wire 32 o% data [31:0] $end
+$var parameter 9 p% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[192] $end
+$var wire 32 q% data [31:0] $end
+$var parameter 9 r% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[193] $end
+$var wire 32 s% data [31:0] $end
+$var parameter 9 t% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[194] $end
+$var wire 32 u% data [31:0] $end
+$var parameter 9 v% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[195] $end
+$var wire 32 w% data [31:0] $end
+$var parameter 9 x% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[196] $end
+$var wire 32 y% data [31:0] $end
+$var parameter 9 z% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[197] $end
+$var wire 32 {% data [31:0] $end
+$var parameter 9 |% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[198] $end
+$var wire 32 }% data [31:0] $end
+$var parameter 9 ~% k $end
+$upscope $end
+$scope begin Memoria_de_Dados[199] $end
+$var wire 32 !& data [31:0] $end
+$var parameter 9 "& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[200] $end
+$var wire 32 #& data [31:0] $end
+$var parameter 9 $& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[201] $end
+$var wire 32 %& data [31:0] $end
+$var parameter 9 && k $end
+$upscope $end
+$scope begin Memoria_de_Dados[202] $end
+$var wire 32 '& data [31:0] $end
+$var parameter 9 (& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[203] $end
+$var wire 32 )& data [31:0] $end
+$var parameter 9 *& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[204] $end
+$var wire 32 +& data [31:0] $end
+$var parameter 9 ,& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[205] $end
+$var wire 32 -& data [31:0] $end
+$var parameter 9 .& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[206] $end
+$var wire 32 /& data [31:0] $end
+$var parameter 9 0& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[207] $end
+$var wire 32 1& data [31:0] $end
+$var parameter 9 2& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[208] $end
+$var wire 32 3& data [31:0] $end
+$var parameter 9 4& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[209] $end
+$var wire 32 5& data [31:0] $end
+$var parameter 9 6& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[210] $end
+$var wire 32 7& data [31:0] $end
+$var parameter 9 8& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[211] $end
+$var wire 32 9& data [31:0] $end
+$var parameter 9 :& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[212] $end
+$var wire 32 ;& data [31:0] $end
+$var parameter 9 <& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[213] $end
+$var wire 32 =& data [31:0] $end
+$var parameter 9 >& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[214] $end
+$var wire 32 ?& data [31:0] $end
+$var parameter 9 @& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[215] $end
+$var wire 32 A& data [31:0] $end
+$var parameter 9 B& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[216] $end
+$var wire 32 C& data [31:0] $end
+$var parameter 9 D& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[217] $end
+$var wire 32 E& data [31:0] $end
+$var parameter 9 F& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[218] $end
+$var wire 32 G& data [31:0] $end
+$var parameter 9 H& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[219] $end
+$var wire 32 I& data [31:0] $end
+$var parameter 9 J& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[220] $end
+$var wire 32 K& data [31:0] $end
+$var parameter 9 L& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[221] $end
+$var wire 32 M& data [31:0] $end
+$var parameter 9 N& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[222] $end
+$var wire 32 O& data [31:0] $end
+$var parameter 9 P& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[223] $end
+$var wire 32 Q& data [31:0] $end
+$var parameter 9 R& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[224] $end
+$var wire 32 S& data [31:0] $end
+$var parameter 9 T& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[225] $end
+$var wire 32 U& data [31:0] $end
+$var parameter 9 V& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[226] $end
+$var wire 32 W& data [31:0] $end
+$var parameter 9 X& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[227] $end
+$var wire 32 Y& data [31:0] $end
+$var parameter 9 Z& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[228] $end
+$var wire 32 [& data [31:0] $end
+$var parameter 9 \& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[229] $end
+$var wire 32 ]& data [31:0] $end
+$var parameter 9 ^& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[230] $end
+$var wire 32 _& data [31:0] $end
+$var parameter 9 `& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[231] $end
+$var wire 32 a& data [31:0] $end
+$var parameter 9 b& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[232] $end
+$var wire 32 c& data [31:0] $end
+$var parameter 9 d& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[233] $end
+$var wire 32 e& data [31:0] $end
+$var parameter 9 f& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[234] $end
+$var wire 32 g& data [31:0] $end
+$var parameter 9 h& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[235] $end
+$var wire 32 i& data [31:0] $end
+$var parameter 9 j& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[236] $end
+$var wire 32 k& data [31:0] $end
+$var parameter 9 l& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[237] $end
+$var wire 32 m& data [31:0] $end
+$var parameter 9 n& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[238] $end
+$var wire 32 o& data [31:0] $end
+$var parameter 9 p& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[239] $end
+$var wire 32 q& data [31:0] $end
+$var parameter 9 r& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[240] $end
+$var wire 32 s& data [31:0] $end
+$var parameter 9 t& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[241] $end
+$var wire 32 u& data [31:0] $end
+$var parameter 9 v& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[242] $end
+$var wire 32 w& data [31:0] $end
+$var parameter 9 x& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[243] $end
+$var wire 32 y& data [31:0] $end
+$var parameter 9 z& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[244] $end
+$var wire 32 {& data [31:0] $end
+$var parameter 9 |& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[245] $end
+$var wire 32 }& data [31:0] $end
+$var parameter 9 ~& k $end
+$upscope $end
+$scope begin Memoria_de_Dados[246] $end
+$var wire 32 !' data [31:0] $end
+$var parameter 9 "' k $end
+$upscope $end
+$scope begin Memoria_de_Dados[247] $end
+$var wire 32 #' data [31:0] $end
+$var parameter 9 $' k $end
+$upscope $end
+$scope begin Memoria_de_Dados[248] $end
+$var wire 32 %' data [31:0] $end
+$var parameter 9 &' k $end
+$upscope $end
+$scope begin Memoria_de_Dados[249] $end
+$var wire 32 '' data [31:0] $end
+$var parameter 9 (' k $end
+$upscope $end
+$scope begin Memoria_de_Dados[250] $end
+$var wire 32 )' data [31:0] $end
+$var parameter 9 *' k $end
+$upscope $end
+$scope begin Memoria_de_Dados[251] $end
+$var wire 32 +' data [31:0] $end
+$var parameter 9 ,' k $end
+$upscope $end
+$scope begin Memoria_de_Dados[252] $end
+$var wire 32 -' data [31:0] $end
+$var parameter 9 .' k $end
+$upscope $end
+$scope begin Memoria_de_Dados[253] $end
+$var wire 32 /' data [31:0] $end
+$var parameter 9 0' k $end
+$upscope $end
+$scope begin Memoria_de_Dados[254] $end
+$var wire 32 1' data [31:0] $end
+$var parameter 9 2' k $end
+$upscope $end
+$scope begin Memoria_de_Dados[255] $end
+$var wire 32 3' data [31:0] $end
+$var parameter 9 4' k $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[0] $end
+$var wire 32 5' instr_mem [31:0] $end
+$var parameter 2 6' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[1] $end
+$var wire 32 7' instr_mem [31:0] $end
+$var parameter 2 8' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[2] $end
+$var wire 32 9' instr_mem [31:0] $end
+$var parameter 3 :' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[3] $end
+$var wire 32 ;' instr_mem [31:0] $end
+$var parameter 3 <' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[4] $end
+$var wire 32 =' instr_mem [31:0] $end
+$var parameter 4 >' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[5] $end
+$var wire 32 ?' instr_mem [31:0] $end
+$var parameter 4 @' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[6] $end
+$var wire 32 A' instr_mem [31:0] $end
+$var parameter 4 B' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[7] $end
+$var wire 32 C' instr_mem [31:0] $end
+$var parameter 4 D' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[8] $end
+$var wire 32 E' instr_mem [31:0] $end
+$var parameter 5 F' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[9] $end
+$var wire 32 G' instr_mem [31:0] $end
+$var parameter 5 H' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[10] $end
+$var wire 32 I' instr_mem [31:0] $end
+$var parameter 5 J' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[11] $end
+$var wire 32 K' instr_mem [31:0] $end
+$var parameter 5 L' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[12] $end
+$var wire 32 M' instr_mem [31:0] $end
+$var parameter 5 N' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[13] $end
+$var wire 32 O' instr_mem [31:0] $end
+$var parameter 5 P' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[14] $end
+$var wire 32 Q' instr_mem [31:0] $end
+$var parameter 5 R' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[15] $end
+$var wire 32 S' instr_mem [31:0] $end
+$var parameter 5 T' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[16] $end
+$var wire 32 U' instr_mem [31:0] $end
+$var parameter 6 V' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[17] $end
+$var wire 32 W' instr_mem [31:0] $end
+$var parameter 6 X' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[18] $end
+$var wire 32 Y' instr_mem [31:0] $end
+$var parameter 6 Z' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[19] $end
+$var wire 32 [' instr_mem [31:0] $end
+$var parameter 6 \' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[20] $end
+$var wire 32 ]' instr_mem [31:0] $end
+$var parameter 6 ^' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[21] $end
+$var wire 32 _' instr_mem [31:0] $end
+$var parameter 6 `' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[22] $end
+$var wire 32 a' instr_mem [31:0] $end
+$var parameter 6 b' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[23] $end
+$var wire 32 c' instr_mem [31:0] $end
+$var parameter 6 d' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[24] $end
+$var wire 32 e' instr_mem [31:0] $end
+$var parameter 6 f' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[25] $end
+$var wire 32 g' instr_mem [31:0] $end
+$var parameter 6 h' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[26] $end
+$var wire 32 i' instr_mem [31:0] $end
+$var parameter 6 j' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[27] $end
+$var wire 32 k' instr_mem [31:0] $end
+$var parameter 6 l' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[28] $end
+$var wire 32 m' instr_mem [31:0] $end
+$var parameter 6 n' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[29] $end
+$var wire 32 o' instr_mem [31:0] $end
+$var parameter 6 p' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[30] $end
+$var wire 32 q' instr_mem [31:0] $end
+$var parameter 6 r' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[31] $end
+$var wire 32 s' instr_mem [31:0] $end
+$var parameter 6 t' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[32] $end
+$var wire 32 u' instr_mem [31:0] $end
+$var parameter 7 v' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[33] $end
+$var wire 32 w' instr_mem [31:0] $end
+$var parameter 7 x' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[34] $end
+$var wire 32 y' instr_mem [31:0] $end
+$var parameter 7 z' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[35] $end
+$var wire 32 {' instr_mem [31:0] $end
+$var parameter 7 |' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[36] $end
+$var wire 32 }' instr_mem [31:0] $end
+$var parameter 7 ~' j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[37] $end
+$var wire 32 !( instr_mem [31:0] $end
+$var parameter 7 "( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[38] $end
+$var wire 32 #( instr_mem [31:0] $end
+$var parameter 7 $( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[39] $end
+$var wire 32 %( instr_mem [31:0] $end
+$var parameter 7 &( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[40] $end
+$var wire 32 '( instr_mem [31:0] $end
+$var parameter 7 (( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[41] $end
+$var wire 32 )( instr_mem [31:0] $end
+$var parameter 7 *( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[42] $end
+$var wire 32 +( instr_mem [31:0] $end
+$var parameter 7 ,( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[43] $end
+$var wire 32 -( instr_mem [31:0] $end
+$var parameter 7 .( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[44] $end
+$var wire 32 /( instr_mem [31:0] $end
+$var parameter 7 0( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[45] $end
+$var wire 32 1( instr_mem [31:0] $end
+$var parameter 7 2( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[46] $end
+$var wire 32 3( instr_mem [31:0] $end
+$var parameter 7 4( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[47] $end
+$var wire 32 5( instr_mem [31:0] $end
+$var parameter 7 6( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[48] $end
+$var wire 32 7( instr_mem [31:0] $end
+$var parameter 7 8( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[49] $end
+$var wire 32 9( instr_mem [31:0] $end
+$var parameter 7 :( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[50] $end
+$var wire 32 ;( instr_mem [31:0] $end
+$var parameter 7 <( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[51] $end
+$var wire 32 =( instr_mem [31:0] $end
+$var parameter 7 >( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[52] $end
+$var wire 32 ?( instr_mem [31:0] $end
+$var parameter 7 @( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[53] $end
+$var wire 32 A( instr_mem [31:0] $end
+$var parameter 7 B( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[54] $end
+$var wire 32 C( instr_mem [31:0] $end
+$var parameter 7 D( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[55] $end
+$var wire 32 E( instr_mem [31:0] $end
+$var parameter 7 F( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[56] $end
+$var wire 32 G( instr_mem [31:0] $end
+$var parameter 7 H( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[57] $end
+$var wire 32 I( instr_mem [31:0] $end
+$var parameter 7 J( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[58] $end
+$var wire 32 K( instr_mem [31:0] $end
+$var parameter 7 L( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[59] $end
+$var wire 32 M( instr_mem [31:0] $end
+$var parameter 7 N( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[60] $end
+$var wire 32 O( instr_mem [31:0] $end
+$var parameter 7 P( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[61] $end
+$var wire 32 Q( instr_mem [31:0] $end
+$var parameter 7 R( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[62] $end
+$var wire 32 S( instr_mem [31:0] $end
+$var parameter 7 T( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[63] $end
+$var wire 32 U( instr_mem [31:0] $end
+$var parameter 7 V( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[64] $end
+$var wire 32 W( instr_mem [31:0] $end
+$var parameter 8 X( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[65] $end
+$var wire 32 Y( instr_mem [31:0] $end
+$var parameter 8 Z( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[66] $end
+$var wire 32 [( instr_mem [31:0] $end
+$var parameter 8 \( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[67] $end
+$var wire 32 ]( instr_mem [31:0] $end
+$var parameter 8 ^( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[68] $end
+$var wire 32 _( instr_mem [31:0] $end
+$var parameter 8 `( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[69] $end
+$var wire 32 a( instr_mem [31:0] $end
+$var parameter 8 b( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[70] $end
+$var wire 32 c( instr_mem [31:0] $end
+$var parameter 8 d( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[71] $end
+$var wire 32 e( instr_mem [31:0] $end
+$var parameter 8 f( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[72] $end
+$var wire 32 g( instr_mem [31:0] $end
+$var parameter 8 h( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[73] $end
+$var wire 32 i( instr_mem [31:0] $end
+$var parameter 8 j( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[74] $end
+$var wire 32 k( instr_mem [31:0] $end
+$var parameter 8 l( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[75] $end
+$var wire 32 m( instr_mem [31:0] $end
+$var parameter 8 n( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[76] $end
+$var wire 32 o( instr_mem [31:0] $end
+$var parameter 8 p( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[77] $end
+$var wire 32 q( instr_mem [31:0] $end
+$var parameter 8 r( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[78] $end
+$var wire 32 s( instr_mem [31:0] $end
+$var parameter 8 t( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[79] $end
+$var wire 32 u( instr_mem [31:0] $end
+$var parameter 8 v( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[80] $end
+$var wire 32 w( instr_mem [31:0] $end
+$var parameter 8 x( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[81] $end
+$var wire 32 y( instr_mem [31:0] $end
+$var parameter 8 z( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[82] $end
+$var wire 32 {( instr_mem [31:0] $end
+$var parameter 8 |( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[83] $end
+$var wire 32 }( instr_mem [31:0] $end
+$var parameter 8 ~( j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[84] $end
+$var wire 32 !) instr_mem [31:0] $end
+$var parameter 8 ") j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[85] $end
+$var wire 32 #) instr_mem [31:0] $end
+$var parameter 8 $) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[86] $end
+$var wire 32 %) instr_mem [31:0] $end
+$var parameter 8 &) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[87] $end
+$var wire 32 ') instr_mem [31:0] $end
+$var parameter 8 () j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[88] $end
+$var wire 32 )) instr_mem [31:0] $end
+$var parameter 8 *) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[89] $end
+$var wire 32 +) instr_mem [31:0] $end
+$var parameter 8 ,) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[90] $end
+$var wire 32 -) instr_mem [31:0] $end
+$var parameter 8 .) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[91] $end
+$var wire 32 /) instr_mem [31:0] $end
+$var parameter 8 0) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[92] $end
+$var wire 32 1) instr_mem [31:0] $end
+$var parameter 8 2) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[93] $end
+$var wire 32 3) instr_mem [31:0] $end
+$var parameter 8 4) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[94] $end
+$var wire 32 5) instr_mem [31:0] $end
+$var parameter 8 6) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[95] $end
+$var wire 32 7) instr_mem [31:0] $end
+$var parameter 8 8) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[96] $end
+$var wire 32 9) instr_mem [31:0] $end
+$var parameter 8 :) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[97] $end
+$var wire 32 ;) instr_mem [31:0] $end
+$var parameter 8 <) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[98] $end
+$var wire 32 =) instr_mem [31:0] $end
+$var parameter 8 >) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[99] $end
+$var wire 32 ?) instr_mem [31:0] $end
+$var parameter 8 @) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[100] $end
+$var wire 32 A) instr_mem [31:0] $end
+$var parameter 8 B) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[101] $end
+$var wire 32 C) instr_mem [31:0] $end
+$var parameter 8 D) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[102] $end
+$var wire 32 E) instr_mem [31:0] $end
+$var parameter 8 F) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[103] $end
+$var wire 32 G) instr_mem [31:0] $end
+$var parameter 8 H) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[104] $end
+$var wire 32 I) instr_mem [31:0] $end
+$var parameter 8 J) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[105] $end
+$var wire 32 K) instr_mem [31:0] $end
+$var parameter 8 L) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[106] $end
+$var wire 32 M) instr_mem [31:0] $end
+$var parameter 8 N) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[107] $end
+$var wire 32 O) instr_mem [31:0] $end
+$var parameter 8 P) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[108] $end
+$var wire 32 Q) instr_mem [31:0] $end
+$var parameter 8 R) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[109] $end
+$var wire 32 S) instr_mem [31:0] $end
+$var parameter 8 T) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[110] $end
+$var wire 32 U) instr_mem [31:0] $end
+$var parameter 8 V) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[111] $end
+$var wire 32 W) instr_mem [31:0] $end
+$var parameter 8 X) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[112] $end
+$var wire 32 Y) instr_mem [31:0] $end
+$var parameter 8 Z) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[113] $end
+$var wire 32 [) instr_mem [31:0] $end
+$var parameter 8 \) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[114] $end
+$var wire 32 ]) instr_mem [31:0] $end
+$var parameter 8 ^) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[115] $end
+$var wire 32 _) instr_mem [31:0] $end
+$var parameter 8 `) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[116] $end
+$var wire 32 a) instr_mem [31:0] $end
+$var parameter 8 b) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[117] $end
+$var wire 32 c) instr_mem [31:0] $end
+$var parameter 8 d) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[118] $end
+$var wire 32 e) instr_mem [31:0] $end
+$var parameter 8 f) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[119] $end
+$var wire 32 g) instr_mem [31:0] $end
+$var parameter 8 h) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[120] $end
+$var wire 32 i) instr_mem [31:0] $end
+$var parameter 8 j) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[121] $end
+$var wire 32 k) instr_mem [31:0] $end
+$var parameter 8 l) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[122] $end
+$var wire 32 m) instr_mem [31:0] $end
+$var parameter 8 n) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[123] $end
+$var wire 32 o) instr_mem [31:0] $end
+$var parameter 8 p) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[124] $end
+$var wire 32 q) instr_mem [31:0] $end
+$var parameter 8 r) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[125] $end
+$var wire 32 s) instr_mem [31:0] $end
+$var parameter 8 t) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[126] $end
+$var wire 32 u) instr_mem [31:0] $end
+$var parameter 8 v) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[127] $end
+$var wire 32 w) instr_mem [31:0] $end
+$var parameter 8 x) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[128] $end
+$var wire 32 y) instr_mem [31:0] $end
+$var parameter 9 z) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[129] $end
+$var wire 32 {) instr_mem [31:0] $end
+$var parameter 9 |) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[130] $end
+$var wire 32 }) instr_mem [31:0] $end
+$var parameter 9 ~) j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[131] $end
+$var wire 32 !* instr_mem [31:0] $end
+$var parameter 9 "* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[132] $end
+$var wire 32 #* instr_mem [31:0] $end
+$var parameter 9 $* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[133] $end
+$var wire 32 %* instr_mem [31:0] $end
+$var parameter 9 &* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[134] $end
+$var wire 32 '* instr_mem [31:0] $end
+$var parameter 9 (* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[135] $end
+$var wire 32 )* instr_mem [31:0] $end
+$var parameter 9 ** j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[136] $end
+$var wire 32 +* instr_mem [31:0] $end
+$var parameter 9 ,* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[137] $end
+$var wire 32 -* instr_mem [31:0] $end
+$var parameter 9 .* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[138] $end
+$var wire 32 /* instr_mem [31:0] $end
+$var parameter 9 0* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[139] $end
+$var wire 32 1* instr_mem [31:0] $end
+$var parameter 9 2* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[140] $end
+$var wire 32 3* instr_mem [31:0] $end
+$var parameter 9 4* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[141] $end
+$var wire 32 5* instr_mem [31:0] $end
+$var parameter 9 6* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[142] $end
+$var wire 32 7* instr_mem [31:0] $end
+$var parameter 9 8* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[143] $end
+$var wire 32 9* instr_mem [31:0] $end
+$var parameter 9 :* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[144] $end
+$var wire 32 ;* instr_mem [31:0] $end
+$var parameter 9 <* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[145] $end
+$var wire 32 =* instr_mem [31:0] $end
+$var parameter 9 >* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[146] $end
+$var wire 32 ?* instr_mem [31:0] $end
+$var parameter 9 @* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[147] $end
+$var wire 32 A* instr_mem [31:0] $end
+$var parameter 9 B* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[148] $end
+$var wire 32 C* instr_mem [31:0] $end
+$var parameter 9 D* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[149] $end
+$var wire 32 E* instr_mem [31:0] $end
+$var parameter 9 F* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[150] $end
+$var wire 32 G* instr_mem [31:0] $end
+$var parameter 9 H* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[151] $end
+$var wire 32 I* instr_mem [31:0] $end
+$var parameter 9 J* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[152] $end
+$var wire 32 K* instr_mem [31:0] $end
+$var parameter 9 L* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[153] $end
+$var wire 32 M* instr_mem [31:0] $end
+$var parameter 9 N* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[154] $end
+$var wire 32 O* instr_mem [31:0] $end
+$var parameter 9 P* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[155] $end
+$var wire 32 Q* instr_mem [31:0] $end
+$var parameter 9 R* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[156] $end
+$var wire 32 S* instr_mem [31:0] $end
+$var parameter 9 T* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[157] $end
+$var wire 32 U* instr_mem [31:0] $end
+$var parameter 9 V* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[158] $end
+$var wire 32 W* instr_mem [31:0] $end
+$var parameter 9 X* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[159] $end
+$var wire 32 Y* instr_mem [31:0] $end
+$var parameter 9 Z* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[160] $end
+$var wire 32 [* instr_mem [31:0] $end
+$var parameter 9 \* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[161] $end
+$var wire 32 ]* instr_mem [31:0] $end
+$var parameter 9 ^* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[162] $end
+$var wire 32 _* instr_mem [31:0] $end
+$var parameter 9 `* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[163] $end
+$var wire 32 a* instr_mem [31:0] $end
+$var parameter 9 b* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[164] $end
+$var wire 32 c* instr_mem [31:0] $end
+$var parameter 9 d* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[165] $end
+$var wire 32 e* instr_mem [31:0] $end
+$var parameter 9 f* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[166] $end
+$var wire 32 g* instr_mem [31:0] $end
+$var parameter 9 h* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[167] $end
+$var wire 32 i* instr_mem [31:0] $end
+$var parameter 9 j* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[168] $end
+$var wire 32 k* instr_mem [31:0] $end
+$var parameter 9 l* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[169] $end
+$var wire 32 m* instr_mem [31:0] $end
+$var parameter 9 n* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[170] $end
+$var wire 32 o* instr_mem [31:0] $end
+$var parameter 9 p* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[171] $end
+$var wire 32 q* instr_mem [31:0] $end
+$var parameter 9 r* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[172] $end
+$var wire 32 s* instr_mem [31:0] $end
+$var parameter 9 t* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[173] $end
+$var wire 32 u* instr_mem [31:0] $end
+$var parameter 9 v* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[174] $end
+$var wire 32 w* instr_mem [31:0] $end
+$var parameter 9 x* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[175] $end
+$var wire 32 y* instr_mem [31:0] $end
+$var parameter 9 z* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[176] $end
+$var wire 32 {* instr_mem [31:0] $end
+$var parameter 9 |* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[177] $end
+$var wire 32 }* instr_mem [31:0] $end
+$var parameter 9 ~* j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[178] $end
+$var wire 32 !+ instr_mem [31:0] $end
+$var parameter 9 "+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[179] $end
+$var wire 32 #+ instr_mem [31:0] $end
+$var parameter 9 $+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[180] $end
+$var wire 32 %+ instr_mem [31:0] $end
+$var parameter 9 &+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[181] $end
+$var wire 32 '+ instr_mem [31:0] $end
+$var parameter 9 (+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[182] $end
+$var wire 32 )+ instr_mem [31:0] $end
+$var parameter 9 *+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[183] $end
+$var wire 32 ++ instr_mem [31:0] $end
+$var parameter 9 ,+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[184] $end
+$var wire 32 -+ instr_mem [31:0] $end
+$var parameter 9 .+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[185] $end
+$var wire 32 /+ instr_mem [31:0] $end
+$var parameter 9 0+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[186] $end
+$var wire 32 1+ instr_mem [31:0] $end
+$var parameter 9 2+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[187] $end
+$var wire 32 3+ instr_mem [31:0] $end
+$var parameter 9 4+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[188] $end
+$var wire 32 5+ instr_mem [31:0] $end
+$var parameter 9 6+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[189] $end
+$var wire 32 7+ instr_mem [31:0] $end
+$var parameter 9 8+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[190] $end
+$var wire 32 9+ instr_mem [31:0] $end
+$var parameter 9 :+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[191] $end
+$var wire 32 ;+ instr_mem [31:0] $end
+$var parameter 9 <+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[192] $end
+$var wire 32 =+ instr_mem [31:0] $end
+$var parameter 9 >+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[193] $end
+$var wire 32 ?+ instr_mem [31:0] $end
+$var parameter 9 @+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[194] $end
+$var wire 32 A+ instr_mem [31:0] $end
+$var parameter 9 B+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[195] $end
+$var wire 32 C+ instr_mem [31:0] $end
+$var parameter 9 D+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[196] $end
+$var wire 32 E+ instr_mem [31:0] $end
+$var parameter 9 F+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[197] $end
+$var wire 32 G+ instr_mem [31:0] $end
+$var parameter 9 H+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[198] $end
+$var wire 32 I+ instr_mem [31:0] $end
+$var parameter 9 J+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[199] $end
+$var wire 32 K+ instr_mem [31:0] $end
+$var parameter 9 L+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[200] $end
+$var wire 32 M+ instr_mem [31:0] $end
+$var parameter 9 N+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[201] $end
+$var wire 32 O+ instr_mem [31:0] $end
+$var parameter 9 P+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[202] $end
+$var wire 32 Q+ instr_mem [31:0] $end
+$var parameter 9 R+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[203] $end
+$var wire 32 S+ instr_mem [31:0] $end
+$var parameter 9 T+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[204] $end
+$var wire 32 U+ instr_mem [31:0] $end
+$var parameter 9 V+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[205] $end
+$var wire 32 W+ instr_mem [31:0] $end
+$var parameter 9 X+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[206] $end
+$var wire 32 Y+ instr_mem [31:0] $end
+$var parameter 9 Z+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[207] $end
+$var wire 32 [+ instr_mem [31:0] $end
+$var parameter 9 \+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[208] $end
+$var wire 32 ]+ instr_mem [31:0] $end
+$var parameter 9 ^+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[209] $end
+$var wire 32 _+ instr_mem [31:0] $end
+$var parameter 9 `+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[210] $end
+$var wire 32 a+ instr_mem [31:0] $end
+$var parameter 9 b+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[211] $end
+$var wire 32 c+ instr_mem [31:0] $end
+$var parameter 9 d+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[212] $end
+$var wire 32 e+ instr_mem [31:0] $end
+$var parameter 9 f+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[213] $end
+$var wire 32 g+ instr_mem [31:0] $end
+$var parameter 9 h+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[214] $end
+$var wire 32 i+ instr_mem [31:0] $end
+$var parameter 9 j+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[215] $end
+$var wire 32 k+ instr_mem [31:0] $end
+$var parameter 9 l+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[216] $end
+$var wire 32 m+ instr_mem [31:0] $end
+$var parameter 9 n+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[217] $end
+$var wire 32 o+ instr_mem [31:0] $end
+$var parameter 9 p+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[218] $end
+$var wire 32 q+ instr_mem [31:0] $end
+$var parameter 9 r+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[219] $end
+$var wire 32 s+ instr_mem [31:0] $end
+$var parameter 9 t+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[220] $end
+$var wire 32 u+ instr_mem [31:0] $end
+$var parameter 9 v+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[221] $end
+$var wire 32 w+ instr_mem [31:0] $end
+$var parameter 9 x+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[222] $end
+$var wire 32 y+ instr_mem [31:0] $end
+$var parameter 9 z+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[223] $end
+$var wire 32 {+ instr_mem [31:0] $end
+$var parameter 9 |+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[224] $end
+$var wire 32 }+ instr_mem [31:0] $end
+$var parameter 9 ~+ j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[225] $end
+$var wire 32 !, instr_mem [31:0] $end
+$var parameter 9 ", j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[226] $end
+$var wire 32 #, instr_mem [31:0] $end
+$var parameter 9 $, j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[227] $end
+$var wire 32 %, instr_mem [31:0] $end
+$var parameter 9 &, j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[228] $end
+$var wire 32 ', instr_mem [31:0] $end
+$var parameter 9 (, j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[229] $end
+$var wire 32 ), instr_mem [31:0] $end
+$var parameter 9 *, j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[230] $end
+$var wire 32 +, instr_mem [31:0] $end
+$var parameter 9 ,, j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[231] $end
+$var wire 32 -, instr_mem [31:0] $end
+$var parameter 9 ., j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[232] $end
+$var wire 32 /, instr_mem [31:0] $end
+$var parameter 9 0, j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[233] $end
+$var wire 32 1, instr_mem [31:0] $end
+$var parameter 9 2, j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[234] $end
+$var wire 32 3, instr_mem [31:0] $end
+$var parameter 9 4, j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[235] $end
+$var wire 32 5, instr_mem [31:0] $end
+$var parameter 9 6, j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[236] $end
+$var wire 32 7, instr_mem [31:0] $end
+$var parameter 9 8, j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[237] $end
+$var wire 32 9, instr_mem [31:0] $end
+$var parameter 9 :, j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[238] $end
+$var wire 32 ;, instr_mem [31:0] $end
+$var parameter 9 <, j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[239] $end
+$var wire 32 =, instr_mem [31:0] $end
+$var parameter 9 >, j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[240] $end
+$var wire 32 ?, instr_mem [31:0] $end
+$var parameter 9 @, j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[241] $end
+$var wire 32 A, instr_mem [31:0] $end
+$var parameter 9 B, j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[242] $end
+$var wire 32 C, instr_mem [31:0] $end
+$var parameter 9 D, j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[243] $end
+$var wire 32 E, instr_mem [31:0] $end
+$var parameter 9 F, j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[244] $end
+$var wire 32 G, instr_mem [31:0] $end
+$var parameter 9 H, j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[245] $end
+$var wire 32 I, instr_mem [31:0] $end
+$var parameter 9 J, j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[246] $end
+$var wire 32 K, instr_mem [31:0] $end
+$var parameter 9 L, j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[247] $end
+$var wire 32 M, instr_mem [31:0] $end
+$var parameter 9 N, j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[248] $end
+$var wire 32 O, instr_mem [31:0] $end
+$var parameter 9 P, j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[249] $end
+$var wire 32 Q, instr_mem [31:0] $end
+$var parameter 9 R, j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[250] $end
+$var wire 32 S, instr_mem [31:0] $end
+$var parameter 9 T, j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[251] $end
+$var wire 32 U, instr_mem [31:0] $end
+$var parameter 9 V, j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[252] $end
+$var wire 32 W, instr_mem [31:0] $end
+$var parameter 9 X, j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[253] $end
+$var wire 32 Y, instr_mem [31:0] $end
+$var parameter 9 Z, j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[254] $end
+$var wire 32 [, instr_mem [31:0] $end
+$var parameter 9 \, j $end
+$upscope $end
+$scope begin Memoria_de_Instrucoes[255] $end
+$var wire 32 ], instr_mem [31:0] $end
+$var parameter 9 ^, j $end
+$upscope $end
+$scope module uut $end
+$var wire 1 _, branchAndZero $end
+$var wire 1 & clk $end
+$var wire 32 `, instruction [31:0] $end
+$var wire 1 ' reset $end
+$var wire 5 a, writeReg [4:0] $end
+$var wire 32 b, writeData [31:0] $end
+$var wire 32 c, signExtImm [31:0] $end
+$var wire 32 d, readData2 [31:0] $end
+$var wire 32 e, readData1 [31:0] $end
+$var wire 32 f, pcNext [31:0] $end
+$var wire 32 g, pcBranch [31:0] $end
+$var wire 32 h, pc [31:0] $end
+$var wire 32 i, memData [31:0] $end
+$var wire 32 j, instrucao [31:0] $end
+$var wire 32 k, aluSrcB [31:0] $end
+$var wire 32 l, aluResult [31:0] $end
+$var wire 1 m, Zero $end
+$var wire 1 # RegWrite $end
+$var wire 1 n, RegDst $end
+$var wire 1 o, MemtoReg $end
+$var wire 1 p, MemWrite $end
+$var wire 1 q, MemRead $end
+$var wire 1 $ Branch $end
+$var wire 1 % ALUSrc $end
+$var wire 2 r, ALUOp [1:0] $end
+$var wire 4 s, ALUControl [3:0] $end
+$scope module alu $end
+$var wire 1 m, Zero $end
+$var wire 32 t, B [31:0] $end
+$var wire 4 u, ALUOperation [3:0] $end
+$var wire 32 v, A [31:0] $end
+$var reg 32 w, ALUResult [31:0] $end
+$upscope $end
+$scope module alu_control $end
+$var wire 6 x, funct [5:0] $end
+$var wire 2 y, ALUOp [1:0] $end
+$var reg 4 z, ALUControl [3:0] $end
+$upscope $end
+$scope module control_unit $end
+$var wire 6 {, opcode [5:0] $end
+$var reg 2 |, ALUOp [1:0] $end
+$var reg 1 % ALUSrc $end
+$var reg 1 $ Branch $end
+$var reg 1 q, MemRead $end
+$var reg 1 p, MemWrite $end
+$var reg 1 o, MemtoReg $end
+$var reg 1 n, RegDst $end
+$var reg 1 # RegWrite $end
+$upscope $end
+$scope module data_mem $end
+$var wire 1 q, MemRead $end
+$var wire 1 p, MemWrite $end
+$var wire 32 }, address [31:0] $end
+$var wire 1 & clk $end
+$var wire 32 ~, writeData [31:0] $end
+$var wire 32 !- readData [31:0] $end
+$var integer 32 "- i [31:0] $end
+$upscope $end
+$scope module instr_mem $end
+$var wire 32 #- instrucao [31:0] $end
+$var wire 32 $- addr [31:0] $end
+$var integer 32 %- i [31:0] $end
+$upscope $end
+$scope module mux_alu_src $end
+$var wire 1 % sel $end
+$var wire 32 &- out [31:0] $end
+$var wire 32 '- in1 [31:0] $end
+$var wire 32 (- in0 [31:0] $end
+$var parameter 32 )- WIDTH $end
+$upscope $end
+$scope module mux_mem_to_reg $end
+$var wire 32 *- in0 [31:0] $end
+$var wire 32 +- in1 [31:0] $end
+$var wire 1 o, sel $end
+$var wire 32 ,- out [31:0] $end
+$var parameter 32 -- WIDTH $end
+$upscope $end
+$scope module mux_pc_src $end
+$var wire 32 .- in0 [31:0] $end
+$var wire 1 _, sel $end
+$var wire 32 /- out [31:0] $end
+$var wire 32 0- in1 [31:0] $end
+$var parameter 32 1- WIDTH $end
+$upscope $end
+$scope module mux_reg_dst $end
+$var wire 5 2- in0 [4:0] $end
+$var wire 5 3- in1 [4:0] $end
+$var wire 1 n, sel $end
+$var wire 5 4- out [4:0] $end
+$var parameter 32 5- WIDTH $end
+$upscope $end
+$scope module pc_adder $end
+$var wire 32 6- b [31:0] $end
+$var wire 32 7- sum [31:0] $end
+$var wire 32 8- a [31:0] $end
+$upscope $end
+$scope module pc_reg $end
+$var wire 1 & clk $end
+$var wire 32 9- pc_incrementado [31:0] $end
+$var wire 1 ' reset $end
+$var reg 32 :- pc [31:0] $end
+$upscope $end
+$scope module reg_file $end
+$var wire 32 ;- ReadData1 [31:0] $end
+$var wire 32 <- ReadData2 [31:0] $end
+$var wire 5 =- ReadRegister1 [4:0] $end
+$var wire 5 >- ReadRegister2 [4:0] $end
+$var wire 1 # RegWrite $end
+$var wire 32 ?- WriteData [31:0] $end
+$var wire 5 @- WriteRegister [4:0] $end
+$var wire 1 & clk $end
+$var integer 32 A- i [31:0] $end
+$upscope $end
+$scope module sign_ext $end
+$var wire 16 B- in [15:0] $end
+$var wire 32 C- out [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b101 5-
+b100000 1-
+b100000 --
+b100000 )-
+b11111111 ^,
+b11111110 \,
+b11111101 Z,
+b11111100 X,
+b11111011 V,
+b11111010 T,
+b11111001 R,
+b11111000 P,
+b11110111 N,
+b11110110 L,
+b11110101 J,
+b11110100 H,
+b11110011 F,
+b11110010 D,
+b11110001 B,
+b11110000 @,
+b11101111 >,
+b11101110 <,
+b11101101 :,
+b11101100 8,
+b11101011 6,
+b11101010 4,
+b11101001 2,
+b11101000 0,
+b11100111 .,
+b11100110 ,,
+b11100101 *,
+b11100100 (,
+b11100011 &,
+b11100010 $,
+b11100001 ",
+b11100000 ~+
+b11011111 |+
+b11011110 z+
+b11011101 x+
+b11011100 v+
+b11011011 t+
+b11011010 r+
+b11011001 p+
+b11011000 n+
+b11010111 l+
+b11010110 j+
+b11010101 h+
+b11010100 f+
+b11010011 d+
+b11010010 b+
+b11010001 `+
+b11010000 ^+
+b11001111 \+
+b11001110 Z+
+b11001101 X+
+b11001100 V+
+b11001011 T+
+b11001010 R+
+b11001001 P+
+b11001000 N+
+b11000111 L+
+b11000110 J+
+b11000101 H+
+b11000100 F+
+b11000011 D+
+b11000010 B+
+b11000001 @+
+b11000000 >+
+b10111111 <+
+b10111110 :+
+b10111101 8+
+b10111100 6+
+b10111011 4+
+b10111010 2+
+b10111001 0+
+b10111000 .+
+b10110111 ,+
+b10110110 *+
+b10110101 (+
+b10110100 &+
+b10110011 $+
+b10110010 "+
+b10110001 ~*
+b10110000 |*
+b10101111 z*
+b10101110 x*
+b10101101 v*
+b10101100 t*
+b10101011 r*
+b10101010 p*
+b10101001 n*
+b10101000 l*
+b10100111 j*
+b10100110 h*
+b10100101 f*
+b10100100 d*
+b10100011 b*
+b10100010 `*
+b10100001 ^*
+b10100000 \*
+b10011111 Z*
+b10011110 X*
+b10011101 V*
+b10011100 T*
+b10011011 R*
+b10011010 P*
+b10011001 N*
+b10011000 L*
+b10010111 J*
+b10010110 H*
+b10010101 F*
+b10010100 D*
+b10010011 B*
+b10010010 @*
+b10010001 >*
+b10010000 <*
+b10001111 :*
+b10001110 8*
+b10001101 6*
+b10001100 4*
+b10001011 2*
+b10001010 0*
+b10001001 .*
+b10001000 ,*
+b10000111 **
+b10000110 (*
+b10000101 &*
+b10000100 $*
+b10000011 "*
+b10000010 ~)
+b10000001 |)
+b10000000 z)
+b1111111 x)
+b1111110 v)
+b1111101 t)
+b1111100 r)
+b1111011 p)
+b1111010 n)
+b1111001 l)
+b1111000 j)
+b1110111 h)
+b1110110 f)
+b1110101 d)
+b1110100 b)
+b1110011 `)
+b1110010 ^)
+b1110001 \)
+b1110000 Z)
+b1101111 X)
+b1101110 V)
+b1101101 T)
+b1101100 R)
+b1101011 P)
+b1101010 N)
+b1101001 L)
+b1101000 J)
+b1100111 H)
+b1100110 F)
+b1100101 D)
+b1100100 B)
+b1100011 @)
+b1100010 >)
+b1100001 <)
+b1100000 :)
+b1011111 8)
+b1011110 6)
+b1011101 4)
+b1011100 2)
+b1011011 0)
+b1011010 .)
+b1011001 ,)
+b1011000 *)
+b1010111 ()
+b1010110 &)
+b1010101 $)
+b1010100 ")
+b1010011 ~(
+b1010010 |(
+b1010001 z(
+b1010000 x(
+b1001111 v(
+b1001110 t(
+b1001101 r(
+b1001100 p(
+b1001011 n(
+b1001010 l(
+b1001001 j(
+b1001000 h(
+b1000111 f(
+b1000110 d(
+b1000101 b(
+b1000100 `(
+b1000011 ^(
+b1000010 \(
+b1000001 Z(
+b1000000 X(
+b111111 V(
+b111110 T(
+b111101 R(
+b111100 P(
+b111011 N(
+b111010 L(
+b111001 J(
+b111000 H(
+b110111 F(
+b110110 D(
+b110101 B(
+b110100 @(
+b110011 >(
+b110010 <(
+b110001 :(
+b110000 8(
+b101111 6(
+b101110 4(
+b101101 2(
+b101100 0(
+b101011 .(
+b101010 ,(
+b101001 *(
+b101000 ((
+b100111 &(
+b100110 $(
+b100101 "(
+b100100 ~'
+b100011 |'
+b100010 z'
+b100001 x'
+b100000 v'
+b11111 t'
+b11110 r'
+b11101 p'
+b11100 n'
+b11011 l'
+b11010 j'
+b11001 h'
+b11000 f'
+b10111 d'
+b10110 b'
+b10101 `'
+b10100 ^'
+b10011 \'
+b10010 Z'
+b10001 X'
+b10000 V'
+b1111 T'
+b1110 R'
+b1101 P'
+b1100 N'
+b1011 L'
+b1010 J'
+b1001 H'
+b1000 F'
+b111 D'
+b110 B'
+b101 @'
+b100 >'
+b11 <'
+b10 :'
+b1 8'
+b0 6'
+b11111111 4'
+b11111110 2'
+b11111101 0'
+b11111100 .'
+b11111011 ,'
+b11111010 *'
+b11111001 ('
+b11111000 &'
+b11110111 $'
+b11110110 "'
+b11110101 ~&
+b11110100 |&
+b11110011 z&
+b11110010 x&
+b11110001 v&
+b11110000 t&
+b11101111 r&
+b11101110 p&
+b11101101 n&
+b11101100 l&
+b11101011 j&
+b11101010 h&
+b11101001 f&
+b11101000 d&
+b11100111 b&
+b11100110 `&
+b11100101 ^&
+b11100100 \&
+b11100011 Z&
+b11100010 X&
+b11100001 V&
+b11100000 T&
+b11011111 R&
+b11011110 P&
+b11011101 N&
+b11011100 L&
+b11011011 J&
+b11011010 H&
+b11011001 F&
+b11011000 D&
+b11010111 B&
+b11010110 @&
+b11010101 >&
+b11010100 <&
+b11010011 :&
+b11010010 8&
+b11010001 6&
+b11010000 4&
+b11001111 2&
+b11001110 0&
+b11001101 .&
+b11001100 ,&
+b11001011 *&
+b11001010 (&
+b11001001 &&
+b11001000 $&
+b11000111 "&
+b11000110 ~%
+b11000101 |%
+b11000100 z%
+b11000011 x%
+b11000010 v%
+b11000001 t%
+b11000000 r%
+b10111111 p%
+b10111110 n%
+b10111101 l%
+b10111100 j%
+b10111011 h%
+b10111010 f%
+b10111001 d%
+b10111000 b%
+b10110111 `%
+b10110110 ^%
+b10110101 \%
+b10110100 Z%
+b10110011 X%
+b10110010 V%
+b10110001 T%
+b10110000 R%
+b10101111 P%
+b10101110 N%
+b10101101 L%
+b10101100 J%
+b10101011 H%
+b10101010 F%
+b10101001 D%
+b10101000 B%
+b10100111 @%
+b10100110 >%
+b10100101 <%
+b10100100 :%
+b10100011 8%
+b10100010 6%
+b10100001 4%
+b10100000 2%
+b10011111 0%
+b10011110 .%
+b10011101 ,%
+b10011100 *%
+b10011011 (%
+b10011010 &%
+b10011001 $%
+b10011000 "%
+b10010111 ~$
+b10010110 |$
+b10010101 z$
+b10010100 x$
+b10010011 v$
+b10010010 t$
+b10010001 r$
+b10010000 p$
+b10001111 n$
+b10001110 l$
+b10001101 j$
+b10001100 h$
+b10001011 f$
+b10001010 d$
+b10001001 b$
+b10001000 `$
+b10000111 ^$
+b10000110 \$
+b10000101 Z$
+b10000100 X$
+b10000011 V$
+b10000010 T$
+b10000001 R$
+b10000000 P$
+b1111111 N$
+b1111110 L$
+b1111101 J$
+b1111100 H$
+b1111011 F$
+b1111010 D$
+b1111001 B$
+b1111000 @$
+b1110111 >$
+b1110110 <$
+b1110101 :$
+b1110100 8$
+b1110011 6$
+b1110010 4$
+b1110001 2$
+b1110000 0$
+b1101111 .$
+b1101110 ,$
+b1101101 *$
+b1101100 ($
+b1101011 &$
+b1101010 $$
+b1101001 "$
+b1101000 ~#
+b1100111 |#
+b1100110 z#
+b1100101 x#
+b1100100 v#
+b1100011 t#
+b1100010 r#
+b1100001 p#
+b1100000 n#
+b1011111 l#
+b1011110 j#
+b1011101 h#
+b1011100 f#
+b1011011 d#
+b1011010 b#
+b1011001 `#
+b1011000 ^#
+b1010111 \#
+b1010110 Z#
+b1010101 X#
+b1010100 V#
+b1010011 T#
+b1010010 R#
+b1010001 P#
+b1010000 N#
+b1001111 L#
+b1001110 J#
+b1001101 H#
+b1001100 F#
+b1001011 D#
+b1001010 B#
+b1001001 @#
+b1001000 >#
+b1000111 <#
+b1000110 :#
+b1000101 8#
+b1000100 6#
+b1000011 4#
+b1000010 2#
+b1000001 0#
+b1000000 .#
+b111111 ,#
+b111110 *#
+b111101 (#
+b111100 &#
+b111011 $#
+b111010 "#
+b111001 ~"
+b111000 |"
+b110111 z"
+b110110 x"
+b110101 v"
+b110100 t"
+b110011 r"
+b110010 p"
+b110001 n"
+b110000 l"
+b101111 j"
+b101110 h"
+b101101 f"
+b101100 d"
+b101011 b"
+b101010 `"
+b101001 ^"
+b101000 \"
+b100111 Z"
+b100110 X"
+b100101 V"
+b100100 T"
+b100011 R"
+b100010 P"
+b100001 N"
+b100000 L"
+b11111 J"
+b11110 H"
+b11101 F"
+b11100 D"
+b11011 B"
+b11010 @"
+b11001 >"
+b11000 <"
+b10111 :"
+b10110 8"
+b10101 6"
+b10100 4"
+b10011 2"
+b10010 0"
+b10001 ."
+b10000 ,"
+b1111 *"
+b1110 ("
+b1101 &"
+b1100 $"
+b1011 ""
+b1010 ~
+b1001 |
+b1000 z
+b111 x
+b110 v
+b101 t
+b100 r
+b11 p
+b10 n
+b1 l
+b0 j
+b11111 h
+b11110 f
+b11101 d
+b11100 b
+b11011 `
+b11010 ^
+b11001 \
+b11000 Z
+b10111 X
+b10110 V
+b10101 T
+b10100 R
+b10011 P
+b10010 N
+b10001 L
+b10000 J
+b1111 H
+b1110 F
+b1101 D
+b1100 B
+b1011 @
+b1010 >
+b1001 <
+b1000 :
+b111 8
+b110 6
+b101 4
+b100 2
+b11 0
+b10 .
+b1 ,
+b0 *
+$end
+#0
+$dumpvars
+b1000000 C-
+b1000000 B-
+b100000 A-
+b0 @-
+b0 ?-
+b10 >-
+b0 =-
+b0 <-
+b0 ;-
+b0 :-
+b100 9-
+b0 8-
+b100000000 7-
+b100000000 6-
+b0 4-
+b0 3-
+b10 2-
+b100000000 0-
+b100 /-
+b100 .-
+b0 ,-
+b0 +-
+b0 *-
+b0 (-
+b1000000 '-
+b0 &-
+b100000000 %-
+b0 $-
+b100000000001000000 #-
+b100000000 "-
+b0 !-
+b0 ~,
+b0 },
+b10 |,
+b0 {,
+b0 z,
+b10 y,
+b0 x,
+b0 w,
+b0 v,
+b0 u,
+b0 t,
+b0 s,
+b10 r,
+0q,
+0p,
+0o,
+1n,
+1m,
+b0 l,
+b0 k,
+b100000000001000000 j,
+b0 i,
+b0 h,
+b100000000 g,
+b100 f,
+b0 e,
+b0 d,
+b1000000 c,
+b0 b,
+b0 a,
+bz `,
+0_,
+b0 ],
+b0 [,
+b0 Y,
+b0 W,
+b0 U,
+b0 S,
+b0 Q,
+b0 O,
+b0 M,
+b0 K,
+b0 I,
+b0 G,
+b0 E,
+b0 C,
+b0 A,
+b0 ?,
+b0 =,
+b0 ;,
+b0 9,
+b0 7,
+b0 5,
+b0 3,
+b0 1,
+b0 /,
+b0 -,
+b0 +,
+b0 ),
+b0 ',
+b0 %,
+b0 #,
+b0 !,
+b0 }+
+b0 {+
+b0 y+
+b0 w+
+b0 u+
+b0 s+
+b0 q+
+b0 o+
+b0 m+
+b0 k+
+b0 i+
+b0 g+
+b0 e+
+b0 c+
+b0 a+
+b0 _+
+b0 ]+
+b0 [+
+b0 Y+
+b0 W+
+b0 U+
+b0 S+
+b0 Q+
+b0 O+
+b0 M+
+b0 K+
+b0 I+
+b0 G+
+b0 E+
+b0 C+
+b0 A+
+b0 ?+
+b0 =+
+b0 ;+
+b0 9+
+b0 7+
+b0 5+
+b0 3+
+b0 1+
+b0 /+
+b0 -+
+b0 ++
+b0 )+
+b0 '+
+b0 %+
+b0 #+
+b0 !+
+b0 }*
+b0 {*
+b0 y*
+b0 w*
+b0 u*
+b0 s*
+b0 q*
+b0 o*
+b0 m*
+b0 k*
+b0 i*
+b0 g*
+b0 e*
+b0 c*
+b0 a*
+b0 _*
+b0 ]*
+b0 [*
+b0 Y*
+b0 W*
+b0 U*
+b0 S*
+b0 Q*
+b0 O*
+b0 M*
+b0 K*
+b0 I*
+b0 G*
+b0 E*
+b0 C*
+b0 A*
+b0 ?*
+b0 =*
+b0 ;*
+b0 9*
+b0 7*
+b0 5*
+b0 3*
+b0 1*
+b0 /*
+b0 -*
+b0 +*
+b0 )*
+b0 '*
+b0 %*
+b0 #*
+b0 !*
+b0 })
+b0 {)
+b0 y)
+b0 w)
+b0 u)
+b0 s)
+b0 q)
+b0 o)
+b0 m)
+b0 k)
+b0 i)
+b0 g)
+b0 e)
+b0 c)
+b0 a)
+b0 _)
+b0 ])
+b0 [)
+b0 Y)
+b0 W)
+b0 U)
+b0 S)
+b0 Q)
+b0 O)
+b0 M)
+b0 K)
+b0 I)
+b0 G)
+b0 E)
+b0 C)
+b0 A)
+b0 ?)
+b0 =)
+b0 ;)
+b0 9)
+b0 7)
+b0 5)
+b0 3)
+b0 1)
+b0 /)
+b0 -)
+b0 +)
+b0 ))
+b0 ')
+b0 %)
+b0 #)
+b0 !)
+b0 }(
+b0 {(
+b0 y(
+b0 w(
+b0 u(
+b0 s(
+b0 q(
+b0 o(
+b0 m(
+b0 k(
+b0 i(
+b0 g(
+b0 e(
+b0 c(
+b0 a(
+b0 _(
+b0 ](
+b0 [(
+b0 Y(
+b0 W(
+b0 U(
+b0 S(
+b0 Q(
+b0 O(
+b0 M(
+b0 K(
+b0 I(
+b0 G(
+b0 E(
+b0 C(
+b0 A(
+b0 ?(
+b0 =(
+b0 ;(
+b0 9(
+b0 7(
+b0 5(
+b0 3(
+b0 1(
+b0 /(
+b0 -(
+b0 +(
+b0 )(
+b0 '(
+b0 %(
+b0 #(
+b0 !(
+b0 }'
+b0 {'
+b0 y'
+b0 w'
+b0 u'
+b0 s'
+b0 q'
+b0 o'
+b0 m'
+b0 k'
+b0 i'
+b0 g'
+b0 e'
+b0 c'
+b0 a'
+b0 _'
+b0 ]'
+b0 ['
+b1100 Y'
+b100011100000000000000000010 W'
+b11000110101110000001000 U'
+b100011000000110000000000010000 S'
+b101011000000110000000000010000 Q'
+b10010101001100000001000 O'
+b100011000000101000000000000001 M'
+b100011000000100100000000000000 K'
+b100011100000000000000000010 I'
+b11000110101110000001000 G'
+b1101011010110100000000000101 E'
+b110100000000000000 C'
+b100011000000110000000000010000 A'
+b101011000000110000000000010000 ?'
+b10010101001100000001000 ='
+b100011000000101000000000000001 ;'
+b100011000000100100000000000000 9'
+b1101010000100000000000000000 7'
+b100000000001000000 5'
+b0 3'
+b0 1'
+b0 /'
+b0 -'
+b0 +'
+b0 )'
+b0 ''
+b0 %'
+b0 #'
+b0 !'
+b0 }&
+b0 {&
+b0 y&
+b0 w&
+b0 u&
+b0 s&
+b0 q&
+b0 o&
+b0 m&
+b0 k&
+b0 i&
+b0 g&
+b0 e&
+b0 c&
+b0 a&
+b0 _&
+b0 ]&
+b0 [&
+b0 Y&
+b0 W&
+b0 U&
+b0 S&
+b0 Q&
+b0 O&
+b0 M&
+b0 K&
+b0 I&
+b0 G&
+b0 E&
+b0 C&
+b0 A&
+b0 ?&
+b0 =&
+b0 ;&
+b0 9&
+b0 7&
+b0 5&
+b0 3&
+b0 1&
+b0 /&
+b0 -&
+b0 +&
+b0 )&
+b0 '&
+b0 %&
+b0 #&
+b0 !&
+b0 }%
+b0 {%
+b0 y%
+b0 w%
+b0 u%
+b0 s%
+b0 q%
+b0 o%
+b0 m%
+b0 k%
+b0 i%
+b0 g%
+b0 e%
+b0 c%
+b0 a%
+b0 _%
+b0 ]%
+b0 [%
+b0 Y%
+b0 W%
+b0 U%
+b0 S%
+b0 Q%
+b0 O%
+b0 M%
+b0 K%
+b0 I%
+b0 G%
+b0 E%
+b0 C%
+b0 A%
+b0 ?%
+b0 =%
+b0 ;%
+b0 9%
+b0 7%
+b0 5%
+b0 3%
+b0 1%
+b0 /%
+b0 -%
+b0 +%
+b0 )%
+b0 '%
+b0 %%
+b0 #%
+b0 !%
+b0 }$
+b0 {$
+b0 y$
+b0 w$
+b0 u$
+b0 s$
+b0 q$
+b0 o$
+b0 m$
+b0 k$
+b0 i$
+b0 g$
+b0 e$
+b0 c$
+b0 a$
+b0 _$
+b0 ]$
+b0 [$
+b0 Y$
+b0 W$
+b0 U$
+b0 S$
+b0 Q$
+b0 O$
+b0 M$
+b0 K$
+b0 I$
+b0 G$
+b0 E$
+b0 C$
+b0 A$
+b0 ?$
+b0 =$
+b0 ;$
+b0 9$
+b0 7$
+b0 5$
+b0 3$
+b0 1$
+b0 /$
+b0 -$
+b0 +$
+b0 )$
+b0 '$
+b0 %$
+b0 #$
+b0 !$
+b0 }#
+b0 {#
+b0 y#
+b0 w#
+b0 u#
+b0 s#
+b0 q#
+b0 o#
+b0 m#
+b0 k#
+b0 i#
+b0 g#
+b0 e#
+b0 c#
+b0 a#
+b0 _#
+b0 ]#
+b0 [#
+b0 Y#
+b0 W#
+b0 U#
+b0 S#
+b0 Q#
+b0 O#
+b0 M#
+b0 K#
+b0 I#
+b0 G#
+b0 E#
+b0 C#
+b0 A#
+b0 ?#
+b0 =#
+b0 ;#
+b0 9#
+b0 7#
+b0 5#
+b0 3#
+b0 1#
+b0 /#
+b0 -#
+b0 +#
+b0 )#
+b0 '#
+b0 %#
+b0 ##
+b0 !#
+b0 }"
+b0 {"
+b0 y"
+b0 w"
+b0 u"
+b0 s"
+b0 q"
+b0 o"
+b0 m"
+b0 k"
+b0 i"
+b0 g"
+b0 e"
+b0 c"
+b0 a"
+b0 _"
+b0 ]"
+b0 ["
+b0 Y"
+b0 W"
+b0 U"
+b0 S"
+b0 Q"
+b0 O"
+b0 M"
+b0 K"
+b0 I"
+b0 G"
+b0 E"
+b0 C"
+b0 A"
+b0 ?"
+b0 ="
+b0 ;"
+b0 9"
+b0 7"
+b0 5"
+b0 3"
+b0 1"
+b0 /"
+b0 -"
+b0 +"
+b0 )"
+b0 '"
+b0 %"
+b0 #"
+b0 !"
+b0 }
+b0 {
+b0 y
+b0 w
+b0 u
+b0 s
+b0 q
+b0 o
+b0 m
+b0 k
+b0 i
+b0 g
+b0 e
+b0 c
+b0 a
+b0 _
+b0 ]
+b0 [
+b0 Y
+b0 W
+b0 U
+b0 S
+b0 Q
+b0 O
+b0 M
+b0 K
+b0 I
+b0 G
+b0 E
+b0 C
+b0 A
+b0 ?
+b0 =
+b0 ;
+b0 9
+b0 7
+b0 5
+b0 3
+b0 1
+b0 /
+b0 -
+b0 +
+b0 )
+bx (
+1'
+0&
+0%
+0$
+1#
+b0 "
+bz !
+$end
+#10000
+0'
+#15000
+b10 s,
+b10 u,
+b10 z,
+b10 a,
+b10 4-
+b10 @-
+b0 6-
+b0 r,
+b0 y,
+b0 |,
+0#
+0n,
+b0 c,
+b0 '-
+b0 C-
+b0 B-
+b1010 =-
+b11 {,
+b1101010000100000000000000000 j,
+b1101010000100000000000000000 #-
+b1000 f,
+b1000 /-
+b1000 9-
+b100 g,
+b100 0-
+b100 7-
+b1000 .-
+b100 "
+b100 h,
+b100 $-
+b100 8-
+b100 :-
+b100000 (
+1&
+#20000
+0&
+#25000
+0m,
+b100000000000000 b,
+b100000000000000 ,-
+b100000000000000 ?-
+b100000000000000 l,
+b100000000000000 w,
+b100000000000000 },
+b100000000000000 *-
+b100000000000000 k,
+b100000000000000 t,
+b100000000000000 &-
+b10000000000000000 6-
+1#
+1%
+b100000000000000 c,
+b100000000000000 '-
+b100000000000000 C-
+b100000000000000 B-
+b1000 3-
+b11000 =-
+b1000 {,
+b100011000000100100000000000000 j,
+b100011000000100100000000000000 #-
+b1100 f,
+b1100 /-
+b1100 9-
+b10000000000001000 g,
+b10000000000001000 0-
+b10000000000001000 7-
+b1100 .-
+b1000 "
+b1000 h,
+b1000 $-
+b1000 8-
+b1000 :-
+b100000 (
+1&
+#30000
+0&
+#35000
+b11111111111111111000000000000001 b,
+b11111111111111111000000000000001 ,-
+b11111111111111111000000000000001 ?-
+b11111111111111111000000000000001 l,
+b11111111111111111000000000000001 w,
+b11111111111111111000000000000001 },
+b11111111111111111000000000000001 *-
+b11111111111111111000000000000001 k,
+b11111111111111111000000000000001 t,
+b11111111111111111000000000000001 &-
+b11111111111111100000000000000100 6-
+b1 x,
+b11111111111111111000000000000001 c,
+b11111111111111111000000000000001 '-
+b11111111111111111000000000000001 C-
+b1000000000000001 B-
+b10000 3-
+b100011000000101000000000000001 j,
+b100011000000101000000000000001 #-
+b10000 f,
+b10000 /-
+b10000 9-
+b100000000000000 d,
+b100000000000000 ~,
+b100000000000000 (-
+b100000000000000 <-
+b100000000000000 -
+b11111111111111100000000000010000 g,
+b11111111111111100000000000010000 0-
+b11111111111111100000000000010000 7-
+b10000 .-
+b1100 "
+b1100 h,
+b1100 $-
+b1100 8-
+b1100 :-
+b100000 (
+1&
+#40000
+0&
+#45000
+1m,
+b0 b,
+b0 ,-
+b0 ?-
+b0 s,
+b0 u,
+b0 z,
+b0 k,
+b0 t,
+b0 &-
+b11111111111111100110000000100000 6-
+b10011 a,
+b10011 4-
+b10011 @-
+b0 l,
+b0 w,
+b0 },
+b0 *-
+b10 r,
+b10 y,
+b10 |,
+0%
+1n,
+b1000 x,
+b11111111111111111001100000001000 c,
+b11111111111111111001100000001000 '-
+b11111111111111111001100000001000 C-
+b1001100000001000 B-
+b10011 3-
+b1010 2-
+b1010 >-
+b11111111111111111000000000000001 e,
+b11111111111111111000000000000001 v,
+b11111111111111111000000000000001 ;-
+b10 =-
+b0 {,
+b10010101001100000001000 j,
+b10010101001100000001000 #-
+b10100 f,
+b10100 /-
+b10100 9-
+b0 d,
+b0 ~,
+b0 (-
+b0 <-
+b11111111111111111000000000000001 -
+b11111111111111100110000000110000 g,
+b11111111111111100110000000110000 0-
+b11111111111111100110000000110000 7-
+b10100 .-
+b10000 "
+b10000 h,
+b10000 $-
+b10000 8-
+b10000 :-
+b100000 (
+1&
+#50000
+0&
+#55000
+b10 s,
+b10 u,
+b10 z,
+b1000000 6-
+b11 a,
+b11 4-
+b11 @-
+b0 r,
+b0 y,
+b0 |,
+0#
+0n,
+b10000 x,
+b10000 c,
+b10000 '-
+b10000 C-
+b10000 B-
+b0 3-
+b11 2-
+b11 >-
+b0 e,
+b0 v,
+b0 ;-
+b11000 =-
+b1010 {,
+b101011000000110000000000010000 j,
+b101011000000110000000000010000 #-
+b11000 f,
+b11000 /-
+b11000 9-
+b1010100 g,
+b1010100 0-
+b1010100 7-
+b11000 .-
+b10100 "
+b10100 h,
+b10100 $-
+b10100 8-
+b10100 :-
+b100000 (
+1&
+#60000
+0&
+#65000
+0m,
+b10000 b,
+b10000 ,-
+b10000 ?-
+b10000 l,
+b10000 w,
+b10000 },
+b10000 *-
+b10000 k,
+b10000 t,
+b10000 &-
+1#
+1%
+b1000 {,
+b100011000000110000000000010000 j,
+b100011000000110000000000010000 #-
+b11100 f,
+b11100 /-
+b11100 9-
+b1011000 g,
+b1011000 0-
+b1011000 7-
+b11100 .-
+b11000 "
+b11000 h,
+b11000 $-
+b11000 8-
+b11000 :-
+b100000 (
+1&
+#70000
+0&
+#75000
+1m,
+b0 b,
+b0 ,-
+b0 ?-
+b0 l,
+b0 w,
+b0 },
+b0 *-
+b1000 a,
+b1000 4-
+b1000 @-
+b0 s,
+b0 u,
+b0 z,
+b10000000000000000 6-
+b10 r,
+b10 y,
+b10 |,
+0%
+1n,
+b0 x,
+b100000000000000 c,
+b100000000000000 '-
+b100000000000000 C-
+b100000000000000 B-
+b1000 3-
+b0 =-
+b0 {,
+b110100000000000000 j,
+b110100000000000000 #-
+b100000 f,
+b100000 /-
+b100000 9-
+b10000 d,
+b10000 ~,
+b10000 (-
+b10000 <-
+b10000 /
+b10000000000011100 g,
+b10000000000011100 0-
+b10000000000011100 7-
+b100000 .-
+b11100 "
+b11100 h,
+b11100 $-
+b11100 8-
+b11100 :-
+b100000 (
+1&
+#80000
+0&
+#85000
+b1011 a,
+b1011 4-
+b1011 @-
+b10 s,
+b10 u,
+b10 z,
+b10000000000010100 6-
+b0 k,
+b0 t,
+b0 &-
+b0 r,
+b0 y,
+b0 |,
+0#
+0n,
+b101 x,
+b100000000000101 c,
+b100000000000101 '-
+b100000000000101 C-
+b100000000000101 B-
+b1011 2-
+b0 d,
+b0 ~,
+b0 (-
+b0 <-
+b1011 >-
+b1011 =-
+b11 {,
+b1101011010110100000000000101 j,
+b1101011010110100000000000101 #-
+b100100 f,
+b100100 /-
+b100100 9-
+b10000000000110100 g,
+b10000000000110100 0-
+b10000000000110100 7-
+b100100 .-
+b100000 "
+b100000 h,
+b100000 $-
+b100000 8-
+b100000 :-
+b100000 (
+1&
+#90000
+0&
+#95000
+0m,
+b10000 b,
+b10000 ,-
+b10000 ?-
+b0 s,
+b0 u,
+b0 z,
+b10111000000100000 6-
+b10000 k,
+b10000 t,
+b10000 &-
+b10000 l,
+b10000 w,
+b10000 },
+b10000 *-
+b10 r,
+b10 y,
+b10 |,
+1#
+1n,
+b1000 x,
+b101110000001000 c,
+b101110000001000 '-
+b101110000001000 C-
+b101110000001000 B-
+b1011 3-
+b11 2-
+b10000 d,
+b10000 ~,
+b10000 (-
+b10000 <-
+b11 >-
+b10000 e,
+b10000 v,
+b10000 ;-
+b11 =-
+b0 {,
+b11000110101110000001000 j,
+b11000110101110000001000 #-
+b101000 f,
+b101000 /-
+b101000 9-
+b10111000001000100 g,
+b10111000001000100 0-
+b10111000001000100 7-
+b101000 .-
+b100100 "
+b100100 h,
+b100100 $-
+b100100 8-
+b100100 :-
+b100000 (
+1&
+#100000
+0&
+#105000
+b10 s,
+b10 u,
+b10 z,
+b1000 6-
+b10000 a,
+b10000 4-
+b10000 @-
+b0 k,
+b0 t,
+b0 &-
+b0 r,
+b0 y,
+b0 |,
+0#
+0n,
+b10 x,
+b10 c,
+b10 '-
+b10 C-
+b10 B-
+b0 3-
+b10000 2-
+b0 d,
+b0 ~,
+b0 (-
+b0 <-
+b10000 >-
+b1 {,
+b100011100000000000000000010 j,
+b100011100000000000000000010 #-
+b101100 f,
+b101100 /-
+b101100 9-
+b10000 ?
+b110000 g,
+b110000 0-
+b110000 7-
+b101100 .-
+b101000 "
+b101000 h,
+b101000 $-
+b101000 8-
+b101000 :-
+b100000 (
+1&
+#110000
+0&
+#115000
+0m,
+b100000000000000 b,
+b100000000000000 ,-
+b100000000000000 ?-
+b10000000000000000 6-
+b10 a,
+b10 4-
+b10 @-
+b100000000000000 k,
+b100000000000000 t,
+b100000000000000 &-
+b100000000000000 l,
+b100000000000000 w,
+b100000000000000 },
+b100000000000000 *-
+1#
+1%
+b0 x,
+b100000000000000 c,
+b100000000000000 '-
+b100000000000000 C-
+b100000000000000 B-
+b1000 3-
+b10 2-
+b11111111111111111000000000000001 d,
+b11111111111111111000000000000001 ~,
+b11111111111111111000000000000001 (-
+b11111111111111111000000000000001 <-
+b10 >-
+b0 e,
+b0 v,
+b0 ;-
+b11000 =-
+b1000 {,
+b100011000000100100000000000000 j,
+b100011000000100100000000000000 #-
+b110000 f,
+b110000 /-
+b110000 9-
+b10000000000101100 g,
+b10000000000101100 0-
+b10000000000101100 7-
+b110000 .-
+b101100 "
+b101100 h,
+b101100 $-
+b101100 8-
+b101100 :-
+b100000 (
+1&
+#120000
+0&
+#125000
+b11111111111111111000000000000001 b,
+b11111111111111111000000000000001 ,-
+b11111111111111111000000000000001 ?-
+b11111111111111111000000000000001 l,
+b11111111111111111000000000000001 w,
+b11111111111111111000000000000001 },
+b11111111111111111000000000000001 *-
+b11111111111111111000000000000001 k,
+b11111111111111111000000000000001 t,
+b11111111111111111000000000000001 &-
+b11111111111111100000000000000100 6-
+b1 x,
+b11111111111111111000000000000001 c,
+b11111111111111111000000000000001 '-
+b11111111111111111000000000000001 C-
+b1000000000000001 B-
+b10000 3-
+b100011000000101000000000000001 j,
+b100011000000101000000000000001 #-
+b110100 f,
+b110100 /-
+b110100 9-
+b100000000000000 d,
+b100000000000000 ~,
+b100000000000000 (-
+b100000000000000 <-
+b100000000000000 -
+b11111111111111100000000000110100 g,
+b11111111111111100000000000110100 0-
+b11111111111111100000000000110100 7-
+b110100 .-
+b110000 "
+b110000 h,
+b110000 $-
+b110000 8-
+b110000 :-
+b100000 (
+1&
+#130000
+0&
+#135000
+1m,
+b0 b,
+b0 ,-
+b0 ?-
+b0 s,
+b0 u,
+b0 z,
+b0 k,
+b0 t,
+b0 &-
+b11111111111111100110000000100000 6-
+b10011 a,
+b10011 4-
+b10011 @-
+b0 l,
+b0 w,
+b0 },
+b0 *-
+b10 r,
+b10 y,
+b10 |,
+0%
+1n,
+b1000 x,
+b11111111111111111001100000001000 c,
+b11111111111111111001100000001000 '-
+b11111111111111111001100000001000 C-
+b1001100000001000 B-
+b10011 3-
+b1010 2-
+b1010 >-
+b11111111111111111000000000000001 e,
+b11111111111111111000000000000001 v,
+b11111111111111111000000000000001 ;-
+b10 =-
+b0 {,
+b10010101001100000001000 j,
+b10010101001100000001000 #-
+b111000 f,
+b111000 /-
+b111000 9-
+b0 d,
+b0 ~,
+b0 (-
+b0 <-
+b11111111111111111000000000000001 -
+b11111111111111100110000001010100 g,
+b11111111111111100110000001010100 0-
+b11111111111111100110000001010100 7-
+b111000 .-
+b110100 "
+b110100 h,
+b110100 $-
+b110100 8-
+b110100 :-
+b100000 (
+1&
+#140000
+0&
+#145000
+0m,
+b10000 b,
+b10000 ,-
+b10000 ?-
+b10000 l,
+b10000 w,
+b10000 },
+b10000 *-
+b10 s,
+b10 u,
+b10 z,
+b1000000 6-
+b11 a,
+b11 4-
+b11 @-
+b10000 k,
+b10000 t,
+b10000 &-
+b0 r,
+b0 y,
+b0 |,
+0#
+0n,
+b10000 x,
+b10000 c,
+b10000 '-
+b10000 C-
+b10000 B-
+b0 3-
+b11 2-
+b10000 d,
+b10000 ~,
+b10000 (-
+b10000 <-
+b11 >-
+b0 e,
+b0 v,
+b0 ;-
+b11000 =-
+b1010 {,
+b101011000000110000000000010000 j,
+b101011000000110000000000010000 #-
+b111100 f,
+b111100 /-
+b111100 9-
+b1111000 g,
+b1111000 0-
+b1111000 7-
+b111100 .-
+b111000 "
+b111000 h,
+b111000 $-
+b111000 8-
+b111000 :-
+b100000 (
+1&
+#150000
+0&
+#155000
+1#
+1%
+b1000 {,
+b100011000000110000000000010000 j,
+b100011000000110000000000010000 #-
+b1000000 f,
+b1000000 /-
+b1000000 9-
+b1111100 g,
+b1111100 0-
+b1111100 7-
+b1000000 .-
+b111100 "
+b111100 h,
+b111100 $-
+b111100 8-
+b111100 :-
+b100000 (
+1&
+#160000
+0&
+#165000
+b10000 b,
+b10000 ,-
+b10000 ?-
+b1011 a,
+b1011 4-
+b1011 @-
+b0 s,
+b0 u,
+b0 z,
+b10111000000100000 6-
+b10000 l,
+b10000 w,
+b10000 },
+b10000 *-
+b10 r,
+b10 y,
+b10 |,
+0%
+1n,
+b1000 x,
+b101110000001000 c,
+b101110000001000 '-
+b101110000001000 C-
+b101110000001000 B-
+b1011 3-
+b10000 e,
+b10000 v,
+b10000 ;-
+b11 =-
+b0 {,
+b11000110101110000001000 j,
+b11000110101110000001000 #-
+b1000100 f,
+b1000100 /-
+b1000100 9-
+b10111000001100000 g,
+b10111000001100000 0-
+b10111000001100000 7-
+b1000100 .-
+b1000000 "
+b1000000 h,
+b1000000 $-
+b1000000 8-
+b1000000 :-
+b100000 (
+1&
+#170000
+0&
+#175000
+b10 s,
+b10 u,
+b10 z,
+b1000 6-
+b10000 a,
+b10000 4-
+b10000 @-
+b0 k,
+b0 t,
+b0 &-
+b0 r,
+b0 y,
+b0 |,
+0#
+0n,
+b10 x,
+b10 c,
+b10 '-
+b10 C-
+b10 B-
+b0 3-
+b10000 2-
+b0 d,
+b0 ~,
+b0 (-
+b0 <-
+b10000 >-
+b1 {,
+b100011100000000000000000010 j,
+b100011100000000000000000010 #-
+b1001000 f,
+b1001000 /-
+b1001000 9-
+b1001100 g,
+b1001100 0-
+b1001100 7-
+b1001000 .-
+b1000100 "
+b1000100 h,
+b1000100 $-
+b1000100 8-
+b1000100 :-
+b100000 (
+1&
+#180000
+0&
+#185000
+1m,
+b0 b,
+b0 ,-
+b0 ?-
+b0 s,
+b0 u,
+b0 z,
+b110000 6-
+b0 a,
+b0 4-
+b0 @-
+b0 l,
+b0 w,
+b0 },
+b0 *-
+b10 r,
+b10 y,
+b10 |,
+1#
+1n,
+b1100 x,
+b1100 c,
+b1100 '-
+b1100 C-
+b1100 B-
+b0 2-
+b0 >-
+b0 e,
+b0 v,
+b0 ;-
+b0 =-
+b0 {,
+b1100 j,
+b1100 #-
+b1001100 f,
+b1001100 /-
+b1001100 9-
+b1111000 g,
+b1111000 0-
+b1111000 7-
+b1001100 .-
+b1001000 "
+b1001000 h,
+b1001000 $-
+b1001000 8-
+b1001000 :-
+b100000 (
+1&
+#190000
+0&
+#195000
+b0 6-
+b0 x,
+b0 c,
+b0 '-
+b0 C-
+b0 B-
+b0 j,
+b0 #-
+b1010000 f,
+b1010000 /-
+b1010000 9-
+b1001100 g,
+b1001100 0-
+b1001100 7-
+b1010000 .-
+b1001100 "
+b1001100 h,
+b1001100 $-
+b1001100 8-
+b1001100 :-
+b100000 (
+1&
+#200000
+0&
+#205000
+b1010100 f,
+b1010100 /-
+b1010100 9-
+b1010000 g,
+b1010000 0-
+b1010000 7-
+b1010100 .-
+b1010000 "
+b1010000 h,
+b1010000 $-
+b1010000 8-
+b1010000 :-
+b100000 (
+1&
+#210000
+0&

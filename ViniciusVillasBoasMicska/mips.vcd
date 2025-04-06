@@ -1,0 +1,713 @@
+$date
+	Sun Feb 16 23:51:56 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module MIPS_tb $end
+$var reg 1 ! clk $end
+$var reg 1 " reset $end
+$scope module dut $end
+$var wire 1 ! clk $end
+$var wire 32 # newPcAdrs [31:0] $end
+$var wire 1 " reset $end
+$var wire 1 $ zero $end
+$var wire 32 % signExtendedOffset [31:0] $end
+$var wire 32 & shiftedOffset [31:0] $end
+$var wire 32 ' pcIncrementado [31:0] $end
+$var wire 32 ( memoryRead [31:0] $end
+$var wire 32 ) instrucao [31:0] $end
+$var wire 10 * ctrl_signals [9:0] $end
+$var wire 32 + branchAddress [31:0] $end
+$var wire 32 , beqAdrs [31:0] $end
+$var wire 5 - WriteRegister [4:0] $end
+$var wire 32 . WriteData [31:0] $end
+$var wire 32 / ResultadoALU [31:0] $end
+$var wire 32 0 ReadData2 [31:0] $end
+$var wire 32 1 ReadData1 [31:0] $end
+$var wire 4 2 Operation [3:0] $end
+$var wire 28 3 JumpshiftedOffset [27:0] $end
+$var wire 32 4 EntradaALU [31:0] $end
+$scope module M_Alu $end
+$var wire 1 5 sel $end
+$var wire 32 6 true [31:0] $end
+$var wire 32 7 o_output [31:0] $end
+$var wire 32 8 false [31:0] $end
+$upscope $end
+$scope module M_RegDst $end
+$var wire 5 9 false [4:0] $end
+$var wire 1 : sel $end
+$var wire 5 ; true [4:0] $end
+$var wire 5 < o_output [4:0] $end
+$upscope $end
+$scope module M_beq $end
+$var wire 1 = sel $end
+$var wire 32 > true [31:0] $end
+$var wire 32 ? o_output [31:0] $end
+$var wire 32 @ false [31:0] $end
+$upscope $end
+$scope module M_dataMemory $end
+$var wire 1 A sel $end
+$var wire 32 B true [31:0] $end
+$var wire 32 C o_output [31:0] $end
+$var wire 32 D false [31:0] $end
+$upscope $end
+$scope module M_jump $end
+$var wire 32 E false [31:0] $end
+$var wire 32 F o_output [31:0] $end
+$var wire 1 G sel $end
+$var wire 32 H true [31:0] $end
+$upscope $end
+$scope module Mux_jump $end
+$var wire 64 I Entradas [63:0] $end
+$var wire 32 J Saida [31:0] $end
+$var wire 1 K selector $end
+$var parameter 32 L DATA_WIDTH $end
+$var parameter 32 M SEL_WIDTH $end
+$upscope $end
+$scope module add_beq $end
+$var wire 32 N sum [31:0] $end
+$var wire 32 O b [31:0] $end
+$var wire 32 P a [31:0] $end
+$upscope $end
+$scope module alu $end
+$var wire 32 Q B [31:0] $end
+$var wire 1 $ Zero $end
+$var wire 4 R ALUOperation [3:0] $end
+$var wire 32 S A [31:0] $end
+$var reg 32 T ALUResult [31:0] $end
+$upscope $end
+$scope module controle_alu $end
+$var wire 2 U AluOp [1:0] $end
+$var wire 6 V Instruction [5:0] $end
+$var reg 4 W Operation [3:0] $end
+$upscope $end
+$scope module datamemory $end
+$var wire 1 X MemRead $end
+$var wire 1 Y MemWrite $end
+$var wire 32 Z address [31:0] $end
+$var wire 1 ! clk $end
+$var wire 32 [ writeData [31:0] $end
+$var wire 32 \ readData [31:0] $end
+$var integer 32 ] i [31:0] $end
+$upscope $end
+$scope module shiftLeft_beq $end
+$var wire 32 ^ out [31:0] $end
+$var wire 32 _ in [31:0] $end
+$var parameter 32 ` DATA_IN $end
+$var parameter 32 a DATA_SHIFT $end
+$var parameter 32 b SHIFT_AMOUNT $end
+$upscope $end
+$scope module shiftLeft_jump $end
+$var wire 26 c in [25:0] $end
+$var wire 28 d out [27:0] $end
+$var parameter 32 e DATA_IN $end
+$var parameter 32 f DATA_SHIFT $end
+$var parameter 32 g SHIFT_AMOUNT $end
+$upscope $end
+$scope module signExtend $end
+$var wire 16 h in [15:0] $end
+$var wire 32 i out [31:0] $end
+$var parameter 32 j DATA_IN $end
+$var parameter 32 k DATA_OUT $end
+$upscope $end
+$scope module unidade_controle $end
+$var wire 6 l OpCode [5:0] $end
+$var reg 10 m ControlSignals [9:0] $end
+$upscope $end
+$scope module unidade_fetch $end
+$var wire 1 ! clk $end
+$var wire 32 n pcSet [31:0] $end
+$var wire 1 " reset $end
+$var wire 32 o pc_incrementado [31:0] $end
+$var wire 32 p instrucao [31:0] $end
+$var reg 32 q pc [31:0] $end
+$scope module memoria $end
+$var wire 32 r addr [31:0] $end
+$var wire 32 s instrucao [31:0] $end
+$upscope $end
+$scope module somador $end
+$var wire 32 t in [31:0] $end
+$var wire 32 u out [31:0] $end
+$upscope $end
+$upscope $end
+$scope module unidade_registradores $end
+$var wire 32 v ReadData1 [31:0] $end
+$var wire 32 w ReadData2 [31:0] $end
+$var wire 5 x ReadRegister1 [4:0] $end
+$var wire 5 y ReadRegister2 [4:0] $end
+$var wire 1 z RegWrite $end
+$var wire 32 { WriteData [31:0] $end
+$var wire 5 | WriteRegister [4:0] $end
+$var integer 32 } i [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin $ivl_for_loop0 $end
+$var integer 32 ~ i [31:0] $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 !" \registers[0] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 "" \registers[1] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 #" \registers[2] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 $" \registers[3] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 %" \registers[4] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 &" \registers[5] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 '" \registers[6] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 (" \registers[7] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 )" \registers[8] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 *" \registers[9] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 +" \registers[10] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 ," \registers[11] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 -" \registers[12] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 ." \registers[13] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 /" \registers[14] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 0" \registers[15] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 1" \registers[16] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 2" \registers[17] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 3" \registers[18] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 4" \registers[19] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 5" \registers[20] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 6" \registers[21] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 7" \registers[22] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 8" \registers[23] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 9" \registers[24] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 :" \registers[25] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 ;" \registers[26] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 <" \registers[27] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 =" \registers[28] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 >" \registers[29] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 ?" \registers[30] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MIPS_tb $end
+$scope module dut $end
+$scope module unidade_registradores $end
+$var reg 32 @" \registers[31] [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100000 k
+b10000 j
+b10 g
+b11100 f
+b11010 e
+b10 b
+b100000 a
+b100000 `
+b1 M
+b100000 L
+$end
+#0
+$dumpvars
+b0 @"
+b0 ?"
+b0 >"
+b0 ="
+b0 <"
+b0 ;"
+b0 :"
+b0 9"
+b0 8"
+b0 7"
+b0 6"
+b0 5"
+b0 4"
+b0 3"
+b0 2"
+b0 1"
+b0 0"
+b0 /"
+b0 ."
+b0 -"
+b0 ,"
+b0 +"
+b0 *"
+b0 )"
+b0 ("
+b0 '"
+b0 &"
+b0 %"
+b0 $"
+b0 #"
+b0 ""
+b0 !"
+b100000 ~
+b100000 }
+bx |
+bx {
+xz
+bx y
+bx x
+bx w
+bx v
+bx u
+bx t
+bx s
+bx r
+bx q
+bx p
+bx o
+bx n
+bx m
+bx l
+bx i
+bx h
+bx00 d
+bx c
+bx _
+bx00 ^
+b100000000 ]
+bx \
+bx [
+bx Z
+xY
+xX
+bx W
+bx V
+bx U
+bx T
+bx S
+bx R
+bx Q
+bx P
+bx00 O
+bx N
+xK
+bx J
+bx00xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx I
+bx00 H
+xG
+bx F
+bx E
+bx D
+bx C
+bx B
+xA
+bx @
+bx ?
+bx >
+x=
+bx <
+bx ;
+x:
+bx 9
+bx 8
+bx 7
+bx 6
+x5
+bx 4
+bx00 3
+bx 2
+bx 1
+bx 0
+bx /
+bx .
+bx -
+bx ,
+bx +
+bx *
+bx )
+bx (
+bx '
+bx00 &
+bx %
+x$
+bx #
+0"
+0!
+$end
+#5
+b1010 )"
+b100 #
+b100 F
+b100 J
+b100 n
+b100 ,
+b100 ?
+b100 E
+0=
+b0 (
+b0 B
+b0 \
+b101100 +
+b101100 >
+b101100 N
+0$
+b1010 .
+b1010 C
+b1010 {
+0K
+0G
+15
+0A
+0:
+0Y
+0X
+b0 U
+1z
+b1000000000000000101000 3
+b1000000000000000101000 d
+b1000 -
+b1000 <
+b1000 |
+b10 2
+b10 R
+b10 W
+b101000 &
+b101000 O
+b101000 ^
+b1010 4
+b1010 7
+b1010 Q
+b1010 /
+b1010 D
+b1010 T
+b1010 Z
+b10100000 *
+b10100000 m
+b10000000000000001010 c
+b0 ;
+b1000 9
+b1010 V
+b1010 %
+b1010 6
+b1010 _
+b1010 i
+b1010 h
+b1010 0
+b1010 8
+b1010 [
+b1010 w
+b1000 y
+b0 1
+b0 S
+b0 v
+b0 x
+b1000 l
+b100000000010000000000000001010 )
+b100000000010000000000000001010 p
+b100000000010000000000000001010 s
+b100000000000000010100000000000000000000000000000000100 I
+b1000000000000000101000 H
+b100 '
+b100 @
+b100 P
+b100 o
+b100 u
+b0 q
+b0 r
+b0 t
+1"
+1!
+#10
+0"
+0!
+#15
+b110010 *"
+b110010 .
+b110010 C
+b110010 {
+b110010 /
+b110010 D
+b110010 T
+b110010 Z
+b1001000000000011001000 H
+b1001000000000011001000 3
+b1001000000000011001000 d
+b1001 -
+b1001 <
+b1001 |
+b11001000 &
+b11001000 O
+b11001000 ^
+b110010 4
+b110010 7
+b110010 Q
+b10010000000000110010 c
+b1001 9
+b110010 V
+b110010 %
+b110010 6
+b110010 _
+b110010 i
+b110010 h
+b110010 0
+b110010 8
+b110010 [
+b110010 w
+b1001 y
+b100000000010010000000000110010 )
+b100000000010010000000000110010 p
+b100000000010010000000000110010 s
+b1000 #
+b1000 F
+b1000 J
+b1000 n
+b100100000000001100100000000000000000000000000000001000 I
+b1000 ,
+b1000 ?
+b1000 E
+b11010000 +
+b11010000 >
+b11010000 N
+b1000 '
+b1000 @
+b1000 P
+b1000 o
+b1000 u
+b100 q
+b100 r
+b100 t
+1!
+#20
+0!
+#25
+b100000000 +"
+b100000000 .
+b100000000 C
+b100000000 {
+b100000000 /
+b100000000 D
+b100000000 T
+b100000000 Z
+b1010000000010000000000 H
+b1010000000010000000000 3
+b1010000000010000000000 d
+b1010 -
+b1010 <
+b1010 |
+b10000000000 &
+b10000000000 O
+b10000000000 ^
+b100000000 4
+b100000000 7
+b100000000 Q
+b10100000000100000000 c
+b1010 9
+b0 V
+b100000000 %
+b100000000 6
+b100000000 _
+b100000000 i
+b100000000 h
+b100000000 0
+b100000000 8
+b100000000 [
+b100000000 w
+b1010 y
+b100000000010100000000100000000 )
+b100000000010100000000100000000 p
+b100000000010100000000100000000 s
+b1100 #
+b1100 F
+b1100 J
+b1100 n
+b101000000001000000000000000000000000000000000000001100 I
+b1100 ,
+b1100 ?
+b1100 E
+b10000001100 +
+b10000001100 >
+b10000001100 N
+b1100 '
+b1100 @
+b1100 P
+b1100 o
+b1100 u
+b1000 q
+b1000 r
+b1000 t
+1!
+#30
+0!
+#35
