@@ -1,3 +1,5 @@
+EXCELENTE! E fez mais do que pedi. 
+
 Terceiro trabalho da materia de Arquitetura de Computadores
 Aluno: Davi Araújo do Nascimento
 Turma 03

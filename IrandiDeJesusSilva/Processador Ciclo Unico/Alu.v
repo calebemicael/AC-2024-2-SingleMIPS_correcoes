@@ -1,4 +1,4 @@
-// Unidade Lógica e Aritmética
+// ALU (Unidade Lógica e Aritmética)
 module ALU(
     input [31:0] input1, input2, // Dois operandos de 32 bits
     input [3:0] ALUControl,      // Sinal de controle para selecionar a operação

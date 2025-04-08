@@ -9,7 +9,7 @@
 `include "Mux2_5bit.v"
 `include "Mux2.v"
 `include "Registradores.v"
-`include "Shiftleft2.v"
+`include "ShiftLeft2.v"
 `include "SignalExtend.v"
 
 module TesteMIPS();

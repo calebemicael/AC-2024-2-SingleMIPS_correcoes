@@ -1,0 +1,1 @@
+Fez bem mais do que o pedido. A implementação com pipeline começa a virar um desafio interessante de tentar.

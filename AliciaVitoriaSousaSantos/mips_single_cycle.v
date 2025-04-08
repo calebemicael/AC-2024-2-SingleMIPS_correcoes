@@ -1,9 +1,9 @@
-module mips_single_cycle(
-    input clk, reset;
-    input [31:0] instruction;
-    output [31:0] pc;
-    output reg_write, alu_src, branch, jump;
-    output [31:0] alu_input_2;
+module mips_single_cycle( // entregou com erros de sintaxe ~ nao rodou antes de entregar?
+    input clk, reset,
+    input [31:0] instruction,
+    output [31:0] pc,
+    output reg_write, alu_src, branch, jump,
+    output [31:0] alu_input_2
 );
     wire [31:0] pc_prox;
     wire [31:0] read_data_1, read_data_2, write_data, alu_result, sign_extend, mem_read_data;
@@ -12,24 +12,25 @@ module mips_single_cycle(
     wire pc_src;
 
     // Program Counter
-  pc pc_inst (
+  pc pc_inst ( // as entradas e saídas estão corretas?
+        .pc_prox(pc_prox),
         .clk(clk),
         .reset(reset),
-        .pc_src(pc_src),
+        //.pc_src(pc_src),
         .pc(pc)
 );
     assign pc_prox = (jump) ? {pc[31:28], instruction[25:0], 2'b00} :
                      (branch & zero) ? (pc + 4 + (sign_extend << 2)) : (pc + 4);
 
     // Memória de Instruções
-    instruction_memory IM (
-        .clk(clk),
+    instruction_memory IM ( // as entradas e saídas estão corretas?
+        //.clk(clk),
         .addr(pc),
         .instruction(instruction)
 );
 
     // Unidade de Controle
-    control_unit cu_inst (
+    control_unit cu_inst ( // as entradas e saídas estão corretas?
         .opcode(instruction[31:26]),
         .funct(instruction[5:0]),
         .reg_dst(reg_dst),
@@ -44,9 +45,9 @@ module mips_single_cycle(
     );
 
     // Banco de Registradores
-    register_file rf_inst (
+    register_file rf_inst ( // as entradas e saídas estão corretas?
         .clk(clk),
-        .reset(reset),
+        // .reset(reset),
         .read_reg_1(instruction[25:21]),
         .read_reg_2(instruction[20:16]),
         .write_reg(instruction[15:11]),
@@ -57,8 +58,8 @@ module mips_single_cycle(
     );
 
     // ALU
-    alu alu_inst (
-        .clk(clk),
+    alu alu_inst ( // as entradas e saídas estão corretas?
+        // .clk(clk),
         .op(alu_op),
         .input_1(read_data_1),
         .input_2(alu_input_2),
@@ -74,9 +75,9 @@ module mips_single_cycle(
     );
 
     // Extensão de Sinal
-    sign_extension se_inst (
-        .input(instruction[15:0]),
-        .output(sign_extend)
+    sign_extension se_inst ( // as entradas e saídas estão corretas?
+        .immediate(instruction[15:0]),
+        .extended(sign_extend)
     );
 
     // Memória de Dados

@@ -1,6 +1,6 @@
-IVERILOG = iverilog.exe
-VVP = vvp.exe
-GTKWAVE = gtkwave.exe
+IVERILOG = iverilog
+VVP = vvp
+GTKWAVE = gtkwave
 
 # Lista manual de arquivos fonte 
 SRC = mips_single_cycle.v tb_mips_single_cycle.v instruction_memory.v data_memory.v register_file.v alu.v control_unit.v mux2to1.v sign_extension.v alu_control_unit.v pc.v

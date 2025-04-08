@@ -28,7 +28,7 @@ SRC = processador_mips.v \
 WAVE_FILE = processador_mips.vcd
 
 # Regra padrão: compilar e rodar a simulação
-all: compilar rodar
+all: compilar rodar ondas
 
 # Regra para compilar
 compilar:

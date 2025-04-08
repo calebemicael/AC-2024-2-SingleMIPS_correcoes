@@ -1,3 +1,4 @@
+// é aqui que mora o perigo
 module hazard_unit(
     input [4:0] RsD, RtD, RsE, RtE, WriteRegE, WriteRegM, WriteRegW,
     input RegWriteM, RegWriteW, MemtoRegE, MemtoRegM, BranchD, RegWriteE,

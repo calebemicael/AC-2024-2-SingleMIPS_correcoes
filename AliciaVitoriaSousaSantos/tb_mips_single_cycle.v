@@ -20,7 +20,7 @@ module tb_mips_single_cycle;
         .reg_write(reg_write),
         .alu_src(alu_src),
         .branch(branch),
-        alu_input_2 = uut.alu_input_2,
+        //alu_input_2 = uut.alu_input_2, //??? o que se tentou fazer aqui?
         .jump(jump)
     );
 
