@@ -26,4 +26,4 @@ view: $(VCD)
 
 # Limpa os arquivos gerados
 clean:
-	del /f $(EXEC) $(VCD)
+	rm -rf $(EXEC) $(VCD)

@@ -2,8 +2,8 @@
 IVERILOG = iverilog
 VVP = vvp
 GTKWAVE = gtkwave
-EXEC = sim.out
-VCD = dump.vcd
+EXEC = sim
+VCD = processor_cycle.vcd
 
 # Arquivo principal do projeto
 DUT = MIPSProcessor.v
@@ -11,7 +11,7 @@ DUT = MIPSProcessor.v
 # Lista de arquivos Verilog (módulos + testbench)
 SRC_FILES = Add4.v FetchUnit.v MemoriaDeInstrucoes.v SignalExtend.v \
             mux2x1_1.v mux2x1_2.v mux2x1.v ALU.v ShiftLeft2.v \
-            DataMemory.v Registradores.v ControlUnit.v ALUControl.v \
+            DataMemory.v Registradores.v ControlUnit.v aluControl.v \
             MIPSProcessor.v test_MIPSProcessor.v
 
 # Regras

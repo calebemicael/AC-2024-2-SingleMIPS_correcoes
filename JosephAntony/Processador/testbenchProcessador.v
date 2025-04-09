@@ -30,7 +30,7 @@ module testbenchProcessador;
 
  
     initial begin
-        $dumpfile("processador_tb.vcd");
+        $dumpfile("out/processador_tb.vcd");
         $dumpvars(0, testbenchProcessador);
     end
 

@@ -5,7 +5,7 @@ COMPILER = iverilog
 SIMULATOR = vvp
 
 # Arquivos Verilog
-SRC_FILES = data_memory.v instr_mem.v mips.v aluControl.v control.v tb_mips16.v
+SRC_FILES = dataMemory.v instr_mem.v mips.v aluControl.v control.v tb_mips16.v
 
 # Nome do executável de simulação
 SIM_EXEC = mips16_tb.vvp
