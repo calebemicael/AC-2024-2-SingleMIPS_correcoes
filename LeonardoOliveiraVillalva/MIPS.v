@@ -1,3 +1,14 @@
+`include "ALU.v"
+`include "ControlUnit.v"
+`include "DataMemory.v"
+`include "InstructionMemory.v"
+`include "MuxALUSrc.v"
+`include "MuxJump.v"
+`include "MuxMemToReg.v"
+`include "MuxPCSrc.v"
+`include "MuxRegDst.v"
+`include "Registradores.v"
+
 module MIPS(
     input wire clk,
     input wire reset
@@ -20,7 +31,7 @@ module MIPS(
     assign JumpAddress = {PCValue[31:28], Instruction[25:0], 2'b00};  // Endereço de jump
 
     // Instâncias dos módulos
-    PC pc (.clk(clk), .reset(reset), .nextPC(NextPC), .jump(Jump), .jumpAddress(JumpAddress), .PCValue(PCValue));
+    PC pc (.clk(clk), .reset(reset), .nextPC(NextPC), .jump(Jump), .jumpAddress(JumpAddress), .PCValue(PCValue)); // cade esse modulo?
     InstructionMemory imem (.Address(PCValue), .Instruction(Instruction));
     ControlUnit control (.opcode(Instruction[31:26]), .RegWrite(RegWrite), .ALUSrc(ALUSrc), .MemWrite(MemWrite), .MemRead(MemRead), .Branch(Branch), .Jump(Jump), .MemToReg(MemToReg), .RegDst(RegDst), .ALUOperation(ALUOperation));
     MuxRegDst muxRegDst (.rt(Instruction[20:16]), .rd(Instruction[15:11]), .RegDst(RegDst), .WriteRegister(WriteRegister));

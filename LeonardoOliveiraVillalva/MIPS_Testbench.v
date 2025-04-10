@@ -1,3 +1,4 @@
+`include "MIPS.v"
 module MIPS_Testbench;
     reg clk;
     reg reset;

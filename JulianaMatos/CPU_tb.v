@@ -1,5 +1,5 @@
 `timescale 1ns/1ps
-//`include "CPU.v"
+`include "CPU.v"
 /*
 `include "ALU.v"
 `include "Registradores.v"

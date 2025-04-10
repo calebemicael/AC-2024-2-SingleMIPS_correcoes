@@ -2,7 +2,7 @@
 IVERILOG = iverilog
 VVP = vvp
 GTKWAVE = gtkwave
-DUT = simulacao.v
+DUT = MIPS_Testbench.v
 EXEC = sim.vvp
 VCD = typeR.vcd
 

@@ -1,4 +1,4 @@
-/*
+
 `include "ALU.v"
 `include "Registradores.v"
 `include "SignalExtend.v"
@@ -12,7 +12,7 @@
 `include "ControlUnit.v"
 `include "Decodificador.v"
 `include "MUX.v"
-*/
+
 
 module CPU (
     input wire clk,
@@ -26,6 +26,7 @@ module CPU (
     wire [1:0] ALUOp;
     wire [3:0] ALUOperation;
     wire RegDst, ALUSrc, MemToReg, RegWrite, MemRead, MemWrite, Branch, Jump, Zero, PCSrc;
+    
     
 
     FetchUnit fetch (
@@ -108,7 +109,7 @@ module CPU (
         .Adder32(branchAddress),
         .Add4(pcPlus4),
         .seletor1(PCSrc),
-        .mux1(next_pc),
+        .mux1(next_pc), // chama de pc_mais_4
 
         //mux2
         .rt(instrucao[20:16]),
@@ -135,6 +136,11 @@ module CPU (
         .mux5(pc)
     );
 
-    
+    reg [31:0] pc_proximo;
+    always@(posedge clk or posedge reset) begin
+        if(reset) begin
+            PC <= 32'h00000000;
+        end
+    end
 
 endmodule
