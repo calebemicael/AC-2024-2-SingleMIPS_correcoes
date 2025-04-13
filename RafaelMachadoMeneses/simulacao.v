@@ -1,3 +1,5 @@
+`define MEM_FILE "programa.mem"
+
 module simulacao; 
 
     reg clk;

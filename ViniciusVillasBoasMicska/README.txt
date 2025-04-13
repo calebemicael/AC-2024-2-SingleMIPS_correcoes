@@ -61,3 +61,19 @@ Creio eu ter consertado as operações de ADDi pois para o código (da primeira 
 Enfim, peço desculpas por não ter conseguido entregar funcionando mesmo com a extensão do prazo de entrega. 
 
 
+-- 
+
+Comecei a depurar teu código e realmente há alguns problemas. COmecei isolando os ciclos. Comecei pelo fetch de instruções.
+
+Por que concatenas tanto as entradas? Tu poderias separá-las. Juntando-as assim fica ilegivel e dificulta a depuração.
+Por exemplo, seus sinais de controle estão concatenados, e acabas os referenciando por meio dos indices. Nada legivel.
+É confuso jogar pcIncrementado para fora de fetch, e calcular o pcSet fora do modulo. Fica mais organizado jogar os sinais de 
+controle dos multiplexadores e a instancia dos extensores de sinal para dentro do modulo fetch.
+
+Fixei os seletores, para não depender de sinais que ainda estão isolados. Primeiro, vou garantir o fluxo sequencial. Fixei
+também as entradas alternativas.
+Notei que beqAddrs é driveado em duas saídas de modulo, gerando um sinal em alta impedância.
+
+
+Buenas, há muito erros. Recomendo seguir por conta essa metodologia de isolar os ciclos e garanti-los antes de habilitar
+os modulos dos demais ciclos. Deixei no código exemplos de como fazer esse isolamento. Mas é preciso investir tempo.

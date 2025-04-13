@@ -1,0 +1,54 @@
+[*]
+[*] GTKWave Analyzer v3.3.116 (w)1999-2023 BSI
+[*] Thu Apr 10 13:07:04 2025
+[*]
+[dumpfile] "/home/calebemicael/Dropbox/UFS/Materias/ArquiteturaDeComputadores/2024-2/projetos/AC-2024-2-SingleMIPS_correcoes/MariaEduardaDaSIlva/processador.vcd"
+[dumpfile_mtime] "Thu Apr 10 12:52:49 2025"
+[dumpfile_size] 6367
+[savefile] "/home/calebemicael/Dropbox/UFS/Materias/ArquiteturaDeComputadores/2024-2/projetos/AC-2024-2-SingleMIPS_correcoes/MariaEduardaDaSIlva/sinais.gtkw"
+[timestart] 0
+[size] 1854 1001
+[pos] -137 -143
+*-4.805816 80 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] Simulacao.
+[treeopen] Simulacao.processador.
+[sst_width] 278
+[signals_width] 372
+[sst_expanded] 1
+[sst_vpaned_height] 297
+@28
+Simulacao.reset
+Simulacao.clk
+Simulacao.processador.Control.ALUOp[1:0]
+Simulacao.processador.Control.ALUSrc
+Simulacao.processador.Control.Branch
+Simulacao.processador.Control.Jump
+Simulacao.processador.Control.MemRead
+Simulacao.processador.Control.MemWrite
+Simulacao.processador.Control.MemtoReg
+Simulacao.processador.Control.RegDst
+Simulacao.processador.Control.RegWrite
+@22
+Simulacao.processador.Control.opcode[5:0]
+Simulacao.processador.instruction[31:0]
+@200
+-
+@22
+Simulacao.processador.pc[31:0]
+Simulacao.processador.prox_pc[31:0]
+@200
+-
+@22
+Simulacao.processador.pc_desvio[31:0]
+Simulacao.processador.pc_incrementado[31:0]
+Simulacao.processador.pc_jump[31:0]
+@28
+Simulacao.processador.zero
+@200
+-
+@23
+Simulacao.processador.somador_desvio.a[31:0]
+Simulacao.processador.somador_desvio.b[31:0]
+Simulacao.processador.somador_desvio.sum[31:0]
+[pattern_trace] 1
+[pattern_trace] 0

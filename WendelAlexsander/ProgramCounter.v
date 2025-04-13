@@ -1,5 +1,5 @@
 // PC (Program Counter) - Contador de Programa
-module PogramCounter(
+module ProgramCounter(
     input clk,                   // Sinal de clock
     input rst,                   // Sinal de reset
     input [31:0] next_instruction,        // Próximo valor da próxima isntrução

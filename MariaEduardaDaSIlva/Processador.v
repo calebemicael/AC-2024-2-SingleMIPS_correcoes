@@ -136,9 +136,11 @@ module Processador (
 
   // Mux para escolher o próx PC
   wire [31:0] prox_pc;
-  assign prox_pc = (jump) ? pc_jump :   // jump
-                   (branch & zero) ? pc_desvio :
-                   pc_incrementado;
+  // assign prox_pc = (jump) ? pc_jump :   // jump
+  //                  (branch & zero) ? pc_desvio :
+  //                  pc_incrementado;
+
+  assign prox_pc = (!(branch & zero)) ? pc_incrementado :((jump) ? pc_jump :pc_desvio);
   
   always @(posedge clk or posedge reset) begin
     if (reset)

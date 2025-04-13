@@ -1,13 +1,13 @@
-`include "ALU.v"
-`include "ALUControl.v"
-`include "controlUnit.v"
-`include "dataMemory.v"
-`include "MemoriaDeInstrucoes.v"
-`include "MUX1.v"
-`include "ProgramCounter.v"
-`include "registers.v"
-`include "signExtended.v"
-`include "ALU.v"
+// `include "ALU.v"
+// `include "ALUControl.v"
+// `include "controlUnit.v"
+// `include "dataMemory.v"
+// `include "MemoriaDeInstrucoes.v"
+// `include "MUX1.v"
+// `include "ProgramCounter.v"
+// `include "registers.v"
+// `include "signExtended.v"
+// `include "ALU.v"
 module processador(
    
     input clk,                   // Sinal de clk
@@ -19,11 +19,11 @@ module processador(
     output branch,               // Sinal de desvio BEQ
     output jump                  // Sinal de salto JUMP
 
-)
+);
 
   // Fios das conexões entre módulos
     wire [31:0] pc, next_pc, readData1, readData2, alu_result, mem_data, sign_ext_imm;
-    wire [31:0] pc_+_4, branch_target, jump_target, pc_next_temp, write_data;
+    wire [31:0] pc_mais_4, branch_target, jump_target, pc_next_temp, write_data;
     wire [4:0] writeReg;
     wire [3:0] alu_control;
     wire zero, MemtoReg, MemRead, MemWrite, RegDst;
@@ -66,7 +66,7 @@ module processador(
 
     );
     
-    dataMemory inst_data_mem(// Memória de Dados
+    DataMemory inst_data_mem(// Memória de Dados
 
         .clk(clk),
         .MemRead(MemRead),   // para leitura da memória
@@ -122,7 +122,7 @@ module processador(
 
     );
 
-    programCounter inst_programCounter( // PC (Program Counter) - Contador de Programa
+    ProgramCounter inst_programCounter( // PC (Program Counter) - Contador de Programa
 
         .clk(clk),
         .rst(rst),
@@ -152,12 +152,12 @@ module processador(
     );
 
     // Cálculo do endereço do branch (desvio condicional)
-    assign branch_target = pc_+_4 + (sign_ext_imm << 2); // PC + 4 + deslocamento do imediato
+    assign branch_target = pc_mais_4 + (sign_ext_imm << 2); // PC + 4 + deslocamento do imediato
 
     // Cálculo do endereço do jump (salto incondicional)
-    assign jump_target = {pc_+_4[31:28], instruction[25:0] << 2}; // Endereço do jump
+    assign jump_target = {pc_mais_4[31:28], instruction[25:0] << 2}; // Endereço do jump
 
     
-    assign pc_+_4 = pc + 4;//incrementa o PC para o endereço da próxima insttrução
+    assign pc_mais_4 = pc + 4;//incrementa o PC para o endereço da próxima insttrução
 
 endmodule

@@ -32,7 +32,7 @@ module MIPS(
     .instrucao(instrucao),
     .pc_incrementado(pcIncrementado)
   );
-
+/*
   ControlUnit unidade_controle (
     .OpCode(instrucao[31:26]),
     .ControlSignals(ctrl_signals)
@@ -93,14 +93,14 @@ module MIPS(
     .sel(ctrl_signals[8]),
     .o_output(WriteRegister)
   );
-  
+  */
   Mux32_bits M_beq(
     .true(branchAddress),
     .false(pcIncrementado),
-    .sel((ctrl_signals[2] & zero)),
-    .o_output(beqAdrs)
+    .sel(1'b0/*(ctrl_signals[2] & zero)*/),
+    .o_output(beqAdrs) //beqAdrs é driveado aqui e...
   );
-
+/*
   Mux32_bits M_dataMemory(
     .true(memoryRead),
     .false(ResultadoALU),
@@ -115,15 +115,15 @@ module MIPS(
     .sel(ctrl_signals[7]),
     .o_output(EntradaALU)
   );
-
+*/
   Mux32_bits M_jump(
-    .true({pcIncrementado[31:28], JumpshiftedOffset}),
+    .true(32'h00000000/*{pcIncrementado[31:28], JumpshiftedOffset}*/),
     .false(beqAdrs),
-    .sel(ctrl_signals[9]),
+    .sel(1'b0/*ctrl_signals[9]*/),
     .o_output(newPcAdrs)
   );
 
-  
+  /*
   // MuxGeneral  Mux_Alu (
   //   .Entradas({signExtendedOffset, ReadData2}),
   //   .selector(ctrl_signals[7]),
@@ -142,13 +142,13 @@ module MIPS(
   //   .selector(ctrl_signals[6]),
   //   .Saida(WriteData)
   // );
-
-  // MuxGeneral Mux_beq (
-  //   .Entradas({branchAddress, pcIncrementado}),
-  //   .selector(ctrl_signals[2] & zero),
-  //   .Saida(beqAdrs)
-  // );
-
+*/
+   MuxGeneral Mux_beq (
+     .Entradas({branchAddress, pcIncrementado}),
+     .selector(ctrl_signals[2] & zero),
+     .Saida(beqAdrs) //beqAdrs é driveado aqui e...
+   );
+/*
   ShiftLeft #(
     .DATA_IN(26),
     .DATA_SHIFT(28)) shiftLeft_jump (
@@ -161,7 +161,7 @@ module MIPS(
     .selector(ctrl_signals[9]),
     .Saida(newPcAdrs)
   );
-
+*/
 endmodule
 
 

@@ -25,7 +25,7 @@ view: $(VCD)
 	$(GTKWAVE) $(VCD)
 #windows: 
 clean:
-	del /f /q $(EXEC) $(VCD)
+	rm -rf $(EXEC) $(VCD)
 # Limpa os arquivos gerados
 # linux
 #clean:

@@ -21,7 +21,7 @@ sum4b somador(
 sum32b somador32 (
     .a(pc_summed32),
     .b(addr_extended),
-    .sum(inst_added)
+    .res(inst_added)
 );
 
 mux32b m32(

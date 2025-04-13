@@ -7,8 +7,8 @@
 `include "processador.v"
 `include "ProgramCounter.v"
 `include "registers.v"
-`include "signExtended.v"
-`include "ALU.v"
+`include "signExtend.v"
+//`include "ALU.v"
 
 `timescale 1ns / 1ps
 
@@ -21,16 +21,29 @@ module simulacao();
     wire RegWrite, ALUSrc, Branch, Jump; 
 
     reg [31:0] registerArray [31:0];
+/* // conferindo a instanciação do processador
+module processador(
+   
+    input clk,                   // Sinal de clk
+    input rst,                   // Sinal de rst
+    output [31:0] programCounter,// Program Counter
+    output [31:0] instruction,   // Instrução atual 
+    output RegWrite,             // Sinal para escrever no banco de registradores
+    output ALUSource,            // Sinal da fonte do segundo operando da ALU
+    output branch,               // Sinal de desvio BEQ
+    output jump                  // Sinal de salto JUMP
 
+);
+*/
     processador inst_processador (
         .clk(clk),
         .rst(rst),
-        .pc(pc),
+        .pc(pc), // porta nao declarada
         .instruction(instruction),
         .RegWrite(RegWrite),
-        .ALUSrc(ALUSrc),
-        .Branch(Branch),
-        .Jump(Jump)
+        .ALUSrc(ALUSrc), // o nome correto é ALUSrc
+        .Branch(Branch), // o nome correto é branch, minusculo
+        .Jump(Jump) // o nome correto é jump, minusculo
     );
 
     // Bloco principal de inicialização 

@@ -43,7 +43,7 @@ module main(clock, reset);
         .clock(clock),
         .reset(reset),
         .branch(branch_result),
-        .extended_address(shifted_extended),
+        .addr_extended(shifted_extended),
         .inst(inst)
     );
 

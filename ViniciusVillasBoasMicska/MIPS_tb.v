@@ -17,10 +17,10 @@ module MIPS_tb();
   initial begin
     $dumpfile("mips.vcd"); // Nome do arquivo de saída
     $dumpvars(0, MIPS_tb);    // Registrar todas as variáveis deste módulo
-
+/*
     for (integer i = 0; i < 32; i = i + 1) begin
       $dumpvars(0, MIPS_tb.dut.unidade_registradores.registers[i]); // Monitora cada registrador
-    end
+    end*/
       clk = 0;
       reset = 0;
 
@@ -29,12 +29,16 @@ module MIPS_tb();
       #5
       reset = 0;
 
-
       
-      #1000;
+      #100;
       $finish;
   end
 
+  // Monitoramento dos sinais
+    initial begin
+  //      $monitor("Time: %0d | PC: %h | Instruction: %h",
+  //          $time, dut.unidade_fetch.pc, dut.unidade_fetch.instrucao);
+    end
 
 endmodule
 

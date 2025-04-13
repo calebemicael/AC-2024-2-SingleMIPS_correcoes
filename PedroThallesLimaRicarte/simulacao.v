@@ -3,7 +3,7 @@
 `include "Adder32.v"
 `include "ALU.v"
 `include "ALUControl.v"
-`include "and.v"
+`include "And.v"
 `include "Control.v"
 `include "DataMemory.v"
 `include "MemoriaDeInstrucoes.v"

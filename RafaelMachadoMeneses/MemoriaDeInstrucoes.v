@@ -5,7 +5,7 @@ module MemoriaDeInstrucoes(
     reg [31:0] memoria [255:0];
 
     initial begin
-        $readmemh(`MEM_FILE, memoria); 
+        $readmemh("programa.mem", memoria); 
     end
 
     assign instrucao = memoria[addr[9:2]];

@@ -1,5 +1,5 @@
 module Control(
-    input reg [5:0] OP,
+    input [5:0] OP,
     output reg [1:0] ALUOp,
     output reg RegDst,
     output reg Branch,

@@ -2,7 +2,7 @@
 IVERILOG = iverilog
 VVP = vvp
 GTKWAVE = gtkwave
-SRC = MIPS.v MIPS_tb.v  # Inclui o testbench
+SRC = MIPS_tb.v  # Inclui o testbench
 EXEC = MIPS.vvp
 VCD = MIPS_tb.vcd
 
